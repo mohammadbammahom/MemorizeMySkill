@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  margin: 0;
+  padding: 2rem;
+  color: #111827;
+}
+
+.card {
+  max-width: 480px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.product-card {
+  display: block;
+  width: 100%;
+  margin-top: 0.8rem;
+  padding: 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #f9fafb;
+}

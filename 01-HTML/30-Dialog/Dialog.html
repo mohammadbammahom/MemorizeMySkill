@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dialog Element</title>
+  <link rel="stylesheet" href="Dialog.css">
+</head>
+<body>
+  <main class="card">
+    <h1>پنجره‌ی مدال</h1>
+    <button id="openDialog">نمایش پیام</button>
+    <dialog id="sampleDialog">
+      <h2>پیام مهم</h2>
+      <p>این یک پنجره‌ی مدال ساده است.</p>
+      <button id="closeDialog">بستن</button>
+    </dialog>
+  </main>
+  <script>
+    const dialog = document.getElementById('sampleDialog');
+    document.getElementById('openDialog').addEventListener('click', () => dialog.showModal());
+    document.getElementById('closeDialog').addEventListener('click', () => dialog.close());
+  </script>
+</body>
+</html>

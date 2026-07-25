@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Attributes</title>
+  <link rel="stylesheet" href="DataAttributes.css">
+</head>
+<body>
+  <main class="card">
+    <h1>استفاده از data-* در UI</h1>
+    <button class="product-card" data-product-id="101" data-price="250000">محصول ۱</button>
+    <button class="product-card" data-product-id="102" data-price="320000">محصول ۲</button>
+  </main>
+  <script>
+    document.querySelectorAll('.product-card').forEach(button => {
+      button.addEventListener('click', () => {
+        const id = button.dataset.productId;
+        const price = button.dataset.price;
+        alert(`محصول ${id} با قیمت ${price}`);
+      });
+    });
+  </script>
+</body>
+</html>

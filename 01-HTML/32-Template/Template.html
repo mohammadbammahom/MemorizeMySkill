@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template Element</title>
+  <link rel="stylesheet" href="Template.css">
+</head>
+<body>
+  <main class="card">
+    <h1>الگوهای قابل استفاده مجدد</h1>
+    <template id="cardTemplate">
+      <article class="item-card">
+        <h3></h3>
+        <p></p>
+      </article>
+    </template>
+    <div id="container"></div>
+  </main>
+  <script>
+    const template = document.getElementById('cardTemplate');
+    const container = document.getElementById('container');
+    const data = [
+      { title: 'پروژه A', text: 'توضیح پروژه اول' },
+      { title: 'پروژه B', text: 'توضیح پروژه دوم' }
+    ];
+
+    data.forEach(item => {
+      const clone = template.content.firstElementChild.cloneNode(true);
+      clone.querySelector('h3').textContent = item.title;
+      clone.querySelector('p').textContent = item.text;
+      container.appendChild(clone);
+    });
+  </script>
+</body>
+</html>

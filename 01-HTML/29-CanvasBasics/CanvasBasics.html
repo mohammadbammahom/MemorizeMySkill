@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Basics</title>
+  <link rel="stylesheet" href="CanvasBasics.css">
+</head>
+<body>
+  <main class="card">
+    <h1>نقاشی ساده با Canvas</h1>
+    <canvas id="demoCanvas" width="320" height="220"></canvas>
+  </main>
+  <script>
+    const canvas = document.getElementById('demoCanvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#2563eb';
+    ctx.fillRect(40, 40, 120, 80);
+    ctx.beginPath();
+    ctx.arc(240, 110, 50, 0, Math.PI * 2);
+    ctx.fillStyle = '#f59e0b';
+    ctx.fill();
+  </script>
+</body>
+</html>

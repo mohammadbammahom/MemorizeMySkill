@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2ff;
+  margin: 0;
+  padding: 2rem;
+  color: #111827;
+}
+
+.video-card {
+  max-width: 720px;
+  margin: auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+video {
+  border-radius: 12px;
+  margin-top: 1rem;
+}

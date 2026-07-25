@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  padding: 2rem;
+  color: #203047;
+}
+
+.dashboard {
+  display: grid;
+  gap: 1rem;
+  max-width: 720px;
+  margin: auto;
+}
+
+.panel {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+}
+
+progress, meter {
+  width: 100%;
+  margin: 0.8rem 0;
+}

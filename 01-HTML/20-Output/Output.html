@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Output Element</title>
+  <link rel="stylesheet" href="Output.css">
+</head>
+<body>
+  <main class="card">
+    <h1>محاسبه قیمت آنلاین</h1>
+    <form id="orderForm">
+      <label for="price">قیمت واحد</label>
+      <input type="number" id="price" value="120000" min="0">
+
+      <label for="quantity">تعداد</label>
+      <input type="number" id="quantity" value="3" min="1">
+
+      <label for="discount">تخفیف (%)</label>
+      <input type="number" id="discount" value="10" min="0" max="100">
+
+      <div class="result">
+        <span>جمع کل:</span>
+        <output id="totalOutput" for="price quantity discount">0</output>
+      </div>
+    </form>
+  </main>
+
+  <script>
+    const form = document.getElementById('orderForm');
+    const price = document.getElementById('price');
+    const quantity = document.getElementById('quantity');
+    const discount = document.getElementById('discount');
+    const totalOutput = document.getElementById('totalOutput');
+
+    function calculate() {
+      const total = price.value * quantity.value;
+      const discounted = total - (total * discount.value / 100);
+      totalOutput.value = discounted.toLocaleString('fa-IR') + ' تومان';
+    }
+
+    [price, quantity, discount].forEach(input => {
+      input.addEventListener('input', calculate);
+    });
+
+    calculate();
+  </script>
+</body>
+</html>
