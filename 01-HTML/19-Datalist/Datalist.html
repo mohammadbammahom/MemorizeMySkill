@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+    <link rel="stylesheet" href="Datalist.css">
+</head>
+<body>
+    <header>
+        <h1>Datalist</h1>
+        <p>پیشنهادات خودکار برای inputs</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Datalist ساده</h2>
+            <form>
+                <label for="browser">مرورگر را انتخاب کنید:</label>
+                <input list="browsers" id="browser" name="browser">
+                <datalist id="browsers">
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                    <option value="Safari"></option>
+                    <option value="Edge"></option>
+                </datalist>
+            </form>
+        </section>
+
+        <section>
+            <h2>Datalist برای شهرها</h2>
+            <form>
+                <label for="city">شهر:</label>
+                <input list="cities" id="city" name="city">
+                <datalist id="cities">
+                    <option value="تهران"></option>
+                    <option value="شیراز"></option>
+                    <option value="اصفهان"></option>
+                    <option value="مشهد"></option>
+                </datalist>
+            </form>
+        </section>
+
+        <section>
+            <h2>Datalist برای رنگ‌ها</h2>
+            <form>
+                <label for="color">رنگ پسندیده:</label>
+                <input type="color" list="colors" id="color" name="color">
+                <datalist id="colors">
+                    <option value="#FF0000"></option>
+                    <option value="#00FF00"></option>
+                    <option value="#0000FF"></option>
+                    <option value="#FFFF00"></option>
+                </datalist>
+            </form>
+        </section>
+
+        <section>
+            <h2>Datalist برای اعداد</h2>
+            <form>
+                <label for="quantity">تعداد:</label>
+                <input type="number" list="quantities" id="quantity" min="0" max="100">
+                <datalist id="quantities">
+                    <option value="10"></option>
+                    <option value="25"></option>
+                    <option value="50"></option>
+                    <option value="100"></option>
+                </datalist>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ۲۰۲۵</p>
+    </footer>
+</body>
+</html>

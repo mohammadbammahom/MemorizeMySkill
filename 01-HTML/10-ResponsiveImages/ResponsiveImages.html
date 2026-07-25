@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عکس‌های Responsive</title>
+    <link rel="stylesheet" href="ResponsiveImages.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Images</h1>
+        <p>عکس‌های مختلف برای screens مختلف</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>srcset برای resolution</h2>
+            <img src="photo-400.jpg" 
+                 srcset="photo-400.jpg 1x, photo-800.jpg 2x" 
+                 alt="عکس responsive">
+        </section>
+
+        <section>
+            <h2>srcset برای width</h2>
+            <img src="photo.jpg" 
+                 srcset="photo-300.jpg 300w, photo-600.jpg 600w, photo-1200.jpg 1200w" 
+                 sizes="(max-width: 600px) 100vw, 50vw" 
+                 alt="عکس responsive width">
+        </section>
+
+        <section>
+            <h2>Picture element</h2>
+            <picture>
+                <source media="(max-width: 768px)" srcset="photo-mobile.jpg">
+                <source media="(max-width: 1024px)" srcset="photo-tablet.jpg">
+                <img src="photo-desktop.jpg" alt="عکس مختلف">
+            </picture>
+        </section>
+
+        <section>
+            <h2>WebP format</h2>
+            <picture>
+                <source type="image/webp" srcset="photo.webp">
+                <img src="photo.jpg" alt="عکس modern format">
+            </picture>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ۲۰۲۵</p>
+    </footer>
+</body>
+</html>

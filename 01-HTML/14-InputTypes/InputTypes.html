@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انواع Input</title>
+    <link rel="stylesheet" href="InputTypes.css">
+</head>
+<body>
+    <header>
+        <h1>انواع Input</h1>
+        <p>Input types مختلف برای داده‌های مختلف</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Text Inputs</h2>
+            <form>
+                <div class="form-group">
+                    <label for="text">Text:</label>
+                    <input type="text" id="text">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password">
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Number:</label>
+                    <input type="number" id="number">
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Date و Time</h2>
+            <form>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time">
+                </div>
+
+                <div class="form-group">
+                    <label for="datetime">DateTime:</label>
+                    <input type="datetime-local" id="datetime">
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Checkbox و Radio</h2>
+            <form>
+                <div class="form-group">
+                    <input type="checkbox" id="check1" name="skill">
+                    <label for="check1">HTML</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="check2" name="skill">
+                    <label for="check2">CSS</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="radio" id="radio1" name="level">
+                    <label for="radio1">Beginner</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="radio" id="radio2" name="level">
+                    <label for="radio2">Expert</label>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Select</h2>
+            <form>
+                <div class="form-group">
+                    <label for="country">کشور:</label>
+                    <select id="country" name="country">
+                        <option value="">-- انتخاب کنید --</option>
+                        <option value="ir">ایران</option>
+                        <option value="ae">امارات</option>
+                        <option value="sa">عربستان</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ۲۰۲۵</p>
+    </footer>
+</body>
+</html>

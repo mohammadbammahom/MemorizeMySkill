@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    direction: rtl;
+    background: #f9f9f9;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #667eea;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+strong {
+    font-weight: 700;
+    color: #d63384;
+}
+
+em {
+    font-style: italic;
+    color: #0d6efd;
+}
+
+mark {
+    background: #fff3cd;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+del {
+    text-decoration: line-through;
+    color: #999;
+}
+
+ins {
+    background: #d4edda;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+code {
+    background: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    color: #d63384;
+}
+
+small {
+    font-size: 0.9em;
+}
+
+sup, sub {
+    font-size: 0.8em;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}

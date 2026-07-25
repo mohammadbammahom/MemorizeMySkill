@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم‌ها مقدماتی</title>
+    <link rel="stylesheet" href="FormsBasics.css">
+</head>
+<body>
+    <header>
+        <h1>فرم‌های HTML</h1>
+        <p>ورودی و ارتباط کاربر</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>فرم ساده</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">نام:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">ایمیل:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">پیام:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit">ارسال</button>
+                <button type="reset">پاک کردن</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>فرم با Fieldset</h2>
+            <form>
+                <fieldset>
+                    <legend>اطلاعات شخصی</legend>
+                    
+                    <div class="form-group">
+                        <label for="fname">نام:</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fage">سن:</label>
+                        <input type="number" id="fage" name="fage">
+                    </div>
+                </fieldset>
+
+                <button type="submit">ثبت</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ۲۰۲۵</p>
+    </footer>
+</body>
+</html>
