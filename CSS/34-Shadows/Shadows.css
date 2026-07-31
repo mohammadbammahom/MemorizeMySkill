@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2ff;
+  color: #111827;
+}
+
+.surface-grid {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 1.4rem;
+  box-shadow:
+    0 12px 28px rgba(15, 23, 42, 0.16),
+    0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.soft {
+  box-shadow:
+    0 8px 20px rgba(59, 130, 246, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}

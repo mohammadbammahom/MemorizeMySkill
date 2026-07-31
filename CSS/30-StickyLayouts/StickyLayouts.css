@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #1d4ed8;
+  color: white;
+  padding: 1rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.sidebar {
+  position: sticky;
+  top: 72px;
+  align-self: start;
+  background: white;
+  border: 1px solid #cbd5e1;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.article {
+  background: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 1rem;
+}

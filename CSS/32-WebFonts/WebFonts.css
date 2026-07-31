@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: linear-gradient(135deg, #eff6ff, #f8fafc);
+  color: #111827;
+}
+
+.company-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.hero {
+  background: rgba(255, 255, 255, 0.82);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid #dbe4f0;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-weight: 800;
+  font-size: 0.74rem;
+}
+
+h1 {
+  margin: 0.5rem 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.lead {
+  max-width: 60ch;
+  line-height: 1.9;
+}

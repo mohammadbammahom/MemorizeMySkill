@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.panel {
+  padding: 2rem;
+}
+
+.scroll-area {
+  width: 280px;
+  height: 180px;
+  overflow: auto;
+  border: 1px solid #94a3b8;
+  border-radius: 14px;
+  padding: 0.75rem;
+  background: white;
+  scroll-behavior: smooth;
+}
+
+.scroll-area p {
+  margin: 0.4rem 0;
+}

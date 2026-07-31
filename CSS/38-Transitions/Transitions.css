@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.app-shell {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.action-button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 0.9rem 1.3rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition-property: transform, background-color, box-shadow;
+  transition-duration: 220ms;
+  transition-delay: 40ms;
+  transition-timing-function: ease-out;
+}
+
+.action-button:hover {
+  transform: translateY(-2px) scale(1.02);
+  background: #1d4ed8;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.22);
+}
+
+.card-panel {
+  margin-top: 1rem;
+  padding: 1.2rem;
+  background: white;
+  border: 1px solid #dbe4f0;
+  border-radius: 16px;
+  transition: transform 260ms ease, box-shadow 260ms ease;
+}
+
+.card-panel:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.08);
+}

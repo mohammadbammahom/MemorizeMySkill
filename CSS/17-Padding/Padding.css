@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.content-shell {
+  padding: 2.5rem;
+}
+
+.product-card {
+  max-width: 480px;
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+button {
+  background: #1d4ed8;
+  border: none;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+}
