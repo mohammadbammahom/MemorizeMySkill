@@ -1,0 +1,17 @@
+/* استایل: ScrollBehavior.css
+   مثال استفاده از overflow-anchor و scroll-behavior */
+:root{--bg:#f9fafb;--accent:#2563eb}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:#0f172a}
+.site-header{position:sticky;top:0;background:#fff;padding:0.6rem;border-bottom:1px solid #eef2ff}
+.site-header nav{display:flex;gap:1rem}
+.section{min-height:70vh;padding:2rem}
+
+/* با CSS می‌توان smooth scroll را فعال کرد */
+html{scroll-behavior:smooth}
+
+/* کنترل anchor positioning */
+:target{scroll-margin-top:6rem}
+
+/* جلوگیری از jump در بارگذاری با overflow-anchor */
+.main{overflow-anchor:auto}

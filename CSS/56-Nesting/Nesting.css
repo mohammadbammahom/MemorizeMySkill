@@ -1,0 +1,15 @@
+/* Using modern nesting syntax (where supported) */
+:root{--bg:#ffffff;--muted:#6b7280}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;background:#f8fafc;color:#0f172a}
+.nest-shell{max-width:900px;margin:2rem auto;padding:1rem}
+
+.card{background:#fff;padding:1rem;border-radius:10px;border:1px solid #eef2ff}
+.card{
+  & h2{margin:0 0 0.4rem}
+  & .lead{color:var(--muted)}
+}
+
+/* Fallback for environments without nesting support */
+.card h2{margin:0 0 0.4rem}
+.card .lead{color:var(--muted)}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dark Mode</title>
+  <link rel="stylesheet" href="DarkMode.css" />
+</head>
+<body>
+  <main class="dm-shell">
+    <header class="top">
+      <h1>Toggle Dark Mode</h1>
+      <button id="theme-toggle" aria-pressed="false">Toggle</button>
+    </header>
+    <article class="preview">
+      <p>این یک پیش‌نمایش از حالت تاریک است.</p>
+    </article>
+  </main>
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    btn.addEventListener('click', ()=>{
+      document.documentElement.classList.toggle('theme-dark');
+      const pressed = document.documentElement.classList.contains('theme-dark');
+      btn.setAttribute('aria-pressed', pressed);
+    });
+  </script>
+</body>
+</html>

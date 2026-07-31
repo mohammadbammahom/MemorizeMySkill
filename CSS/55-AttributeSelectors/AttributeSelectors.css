@@ -1,0 +1,15 @@
+:root{--bg:#fffaf6;--muted:#64748b}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:#0f172a}
+.attr-shell{max-width:900px;margin:2rem auto;padding:1rem}
+.cards{display:grid;grid-template-columns:1fr;gap:0.8rem}
+.card{padding:1rem;background:#fff;border-radius:8px;border:1px solid #eef2ff}
+
+/* Attribute selectors examples */
+.card[data-type="post"]{border-left:4px solid #f97316}
+button[data-action]{background:#2563eb;color:#fff;padding:0.4rem 0.6rem;border-radius:6px}
+
+/* prefix/suffix contains */
+[data-id^="4"]{background:#fff7ed}
+[data-id$="2"]{font-weight:600}
+[data-id*="2"]{color:var(--muted)}

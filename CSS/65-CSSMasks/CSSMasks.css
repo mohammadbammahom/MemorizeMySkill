@@ -1,0 +1,12 @@
+/* ماسک‌ها برای برش دادن المان‌ها با تصاویر یا گرادینت */
+:root{--bg:#f8fafc}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:#0f172a}
+.mask-shell{max-width:980px;margin:2rem auto;padding:1rem}
+.photo{position:relative;border-radius:12px;overflow:hidden}
+.photo img{display:block;width:100%;height:auto}
+
+/* ماسک با گرادینت */
+.photo img{mask-image:linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0));-webkit-mask-image:linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0))}
+
+/* استفاده از mask-size, mask-position برای کنترل */

@@ -1,0 +1,10 @@
+/* BEM example styles */
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;background:#f8fafc;color:#0f172a}
+.demo-shell{max-width:900px;margin:2rem auto;padding:1rem}
+.card{background:#fff;padding:1rem;border-radius:10px;border:1px solid #e6eef8}
+.card__title{margin:0 0 0.5rem}
+.card__desc{margin:0 0 1rem;color:#64748b}
+.card__actions{display:flex;gap:0.5rem}
+.card__btn{padding:0.5rem 0.9rem;border-radius:8px;border:1px solid #dbe4f0;background:white;cursor:pointer}
+.card__btn--primary{background:#2563eb;color:white;border-color:#1e40af}

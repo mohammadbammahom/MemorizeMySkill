@@ -1,0 +1,14 @@
+:root{--bg:#fbfbfd;--accent:#0ea5e9}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:#0f172a}
+.comb-shell{max-width:900px;margin:2rem auto;padding:1rem}
+.menu ul{list-style:none;padding:0;display:flex;gap:0.6rem}
+.menu .item a{display:block;padding:0.4rem 0.6rem;border-radius:6px;text-decoration:none;color:inherit}
+/* Descendant */
+.menu .item a{opacity:0.85}
+/* Child */
+.menu > ul > .current a{background:var(--accent);color:white}
+/* Adjacent sibling */
+.card + .note{margin-top:1rem;color:#64748b}
+/* General sibling */
+.card ~ .hint{color:#94a3b8}

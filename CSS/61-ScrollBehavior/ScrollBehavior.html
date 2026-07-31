@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ScrollBehavior</title>
+  <link rel="stylesheet" href="ScrollBehavior.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="#section1">بخش ۱</a>
+      <a href="#section2">بخش ۲</a>
+      <a href="#section3">بخش ۳</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="section1" class="section"><h2>بخش اول</h2><p>محتوا...</p></section>
+    <section id="section2" class="section"><h2>بخش دوم</h2><p>محتوا...</p></section>
+    <section id="section3" class="section"><h2>بخش سوم</h2><p>محتوا...</p></section>
+  </main>
+  <script>
+    // Smooth scroll with CSS fallback: script sets behavior for browsers that don't respect CSS
+    document.querySelectorAll('nav a').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>

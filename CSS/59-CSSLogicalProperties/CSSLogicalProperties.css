@@ -1,0 +1,13 @@
+/* خواص منطقی برای پشتیبانی از writing-mode و جهت‌های مختلف */
+:root{--bg:#fff;--card:#ffffff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;background:#f8fafc;color:#0f172a}
+.card{max-width:900px;margin:2rem auto;padding:1rem;border-radius:10px;background:var(--card);border:1px solid #eef2ff}
+
+/* استفاده از logical properties به جای left/right/top/bottom */
+.card{padding-block:1rem;padding-inline:1rem}
+.card h1{margin-block-end:0.6rem}
+
+/* position با inset-inline */
+.badge{position:relative}
+.badge::after{content:"NEW";position:absolute;inset-inline-end:1rem;inset-block-start:0.8rem;background:#f97316;color:#fff;padding:0.2rem 0.4rem;border-radius:6px}

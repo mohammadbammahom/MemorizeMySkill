@@ -1,0 +1,8 @@
+:root{--bg:#f8fafc;--surface:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:#0f172a}
+.perf-shell{max-width:980px;margin:2rem auto;padding:1rem}
+.metrics{background:var(--surface);padding:1.2rem;border-radius:10px;border:1px solid #e6eef8}
+
+/* Example: prefer transform and opacity for animations */
+.demo-move{transition:transform 300ms ease}

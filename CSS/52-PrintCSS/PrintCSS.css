@@ -1,0 +1,9 @@
+@page{size: A4; margin:20mm}
+@media print{
+  body{background:#fff;color:#000}
+  .noprint{display:none!important}
+  .doc{max-width:100%;font-size:12pt}
+}
+
+body{font-family:Arial, sans-serif;margin:2rem}
+.doc{background:#fff;padding:1rem;border-radius:6px}
