@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  margin: 0;
+  padding: 2rem;
+  color: #111827;
+}
+
+.card {
+  max-width: 720px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}

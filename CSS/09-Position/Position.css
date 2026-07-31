@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #1d4ed8;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.page {
+  padding: 2rem;
+}
+
+.card {
+  position: relative;
+  background: white;
+  border: 1px solid #dbe3f0;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 420px;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+}

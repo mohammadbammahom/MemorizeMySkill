@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.dashboard {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #dbe3f0;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+}
+
+.card--primary {
+  background: #dbeafe;
+}
+
+.card--secondary {
+  background: #ede9fe;
+}
+
+#analytics {
+  background: #eff6ff;
+}
+
+[data-status="active"] {
+  color: #0f766e;
+  font-weight: 700;
+}
+
+.panel h2 {
+  color: #1d4ed8;
+}

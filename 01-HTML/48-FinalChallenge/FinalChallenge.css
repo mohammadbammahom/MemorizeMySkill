@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2ff;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.challenge-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+}

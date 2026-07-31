@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  margin: 0;
+  padding: 2rem;
+  color: #111827;
+}
+
+header, main, section, article {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  margin-right: 1rem;
+}

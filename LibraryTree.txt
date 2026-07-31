@@ -131,10 +131,30 @@
 │   │   ├── 📄 GlobalAttributes.css
 │   │   ├── 📄 GlobalAttributes.html
 │   │   └── 📄 GlobalAttributes.md
-│   └── 📁 34-DataAttributes
-│       ├── 📄 DataAttributes.css
-│       ├── 📄 DataAttributes.html
-│       └── 📄 DataAttributes.md
+│   ├── 📁 34-DataAttributes
+│   │   ├── 📄 DataAttributes.css
+│   │   ├── 📄 DataAttributes.html
+│   │   └── 📄 DataAttributes.md
+│   ├── 📁 35-CustomAttributes
+│   │   ├── 📄 CustomAttributes.css
+│   │   ├── 📄 CustomAttributes.html
+│   │   └── 📄 CustomAttributes.md
+│   ├── 📁 36-HTMLAccessibility
+│   │   ├── 📄 HTMLAccessibility.css
+│   │   ├── 📄 HTMLAccessibility.html
+│   │   └── 📄 HTMLAccessibility.md
+│   ├── 📁 37-ARIABasics
+│   │   ├── 📄 ARIABasics.css
+│   │   ├── 📄 ARIABasics.html
+│   │   └── 📄 ARIABasics.md
+│   ├── 📁 38-SEOForHTML
+│   │   ├── 📄 SEOForHTML.css
+│   │   ├── 📄 SEOForHTML.html
+│   │   └── 📄 SEOForHTML.md
+│   └── 📁 39-HTMLPerformance
+│       ├── 📄 HTMLPerformance.css
+│       ├── 📄 HTMLPerformance.html
+│       └── 📄 HTMLPerformance.md
 └── 📄 oldSkill.md
-پوشه‌ها: 35
-فایل‌ها: 103
+پوشه‌ها: 40
+فایل‌ها: 118

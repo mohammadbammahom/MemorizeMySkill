@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARIA Basics</title>
+  <link rel="stylesheet" href="ARIABasics.css">
+</head>
+<body>
+  <main class="card">
+    <h1>مبانی ARIA</h1>
+    <button aria-expanded="false" aria-controls="menuPanel">منو</button>
+    <div id="menuPanel" role="region" aria-label="منوی نمونه">
+      <a href="#">صفحه اصلی</a>
+      <a href="#">محصولات</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.brand-panel {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  padding: 3rem;
+  background: linear-gradient(135deg, #eef6ff, #ffffff);
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem 1.4rem;
+}
+
+.swatches {
+  display: grid;
+  gap: 1rem;
+}
+
+.swatch {
+  padding: 1rem;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.swatch--primary {
+  background: #2563eb;
+}
+
+.swatch--rgb {
+  background: rgb(34, 197, 94);
+}
+
+.swatch--rgba {
+  background: rgba(245, 158, 11, 0.8);
+}
+
+.swatch--hsl {
+  background: hsl(330, 80%, 55%);
+}
+
+.swatch--hsla {
+  background: hsla(220, 70%, 40%, 0.85);
+}

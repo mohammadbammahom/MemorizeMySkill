@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #0f172a;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  border-bottom: 1px solid #dbe3f0;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  color: #2563eb;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.85rem 1.2rem;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}

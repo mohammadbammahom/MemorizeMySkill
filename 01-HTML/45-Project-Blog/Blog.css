@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  color: #111827;
+}
+
+header, footer {
+  background: #111827;
+  color: white;
+  padding: 1rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 1rem auto;
+}
+
+.content, .sidebar {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+}
