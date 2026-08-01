@@ -1,14 +1,1 @@
-:root{--bg:#f8fafc;--surface:#fff;--focus:#2563eb}
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:#0f172a}
-.access-shell{max-width:980px;margin:2rem auto;padding:1rem}
-.skip-links a{position:absolute;left:-9999px}
-.skip-links a:focus{position:static;background:var(--surface);padding:0.4rem 0.6rem;border-radius:6px;border:1px solid #e6eef8}
-
-input:focus{outline:3px solid var(--focus);outline-offset:3px}
-
-/* reduced motion respect */
-@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
-
-/* accessible colors example */
-.high-contrast{background:#111827;color:#fff;padding:0.6rem;border-radius:8px}
+   -

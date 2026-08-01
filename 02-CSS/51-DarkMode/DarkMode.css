@@ -1,10 +1,1 @@
-:root{--bg:#f8fafc;--text:#0f172a;--card:#fff}
-.theme-dark{--bg:#0b1220;--text:#e6eef8;--card:#0f172a}
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text)}
-.dm-shell{max-width:900px;margin:2rem auto;padding:1rem}
-.top{display:flex;justify-content:space-between;align-items:center}
-.preview{background:var(--card);padding:1rem;border-radius:8px}
-
-/* prefer-system default */
-@media (prefers-color-scheme: dark){:root:not(.theme-dark){documentElement:classList.toggle('theme-dark')}}
+   -

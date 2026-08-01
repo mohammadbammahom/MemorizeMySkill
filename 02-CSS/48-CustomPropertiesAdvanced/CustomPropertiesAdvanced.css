@@ -1,16 +1,1 @@
-/* Advanced custom properties */
-:root{
-  --primary: #2563eb;
-  --surface: #ffffff;
-  --muted: #64748b;
-  --radius: 12px;
-}
-
-[data-theme="dark"]{--primary:#60a5fa;--surface:#0b1220;--muted:#9aa6b2}
-
-body{margin:0;font-family:Arial, sans-serif;background:var(--surface);color:color-mix(in srgb, var(--muted) 88%, var(--primary) 12%)}
-.theme-demo{max-width:980px;margin:2rem auto;padding:1rem}
-.card{background:var(--surface);padding:1.2rem;border-radius:var(--radius);border:1px solid color-mix(in srgb, var(--primary) 10%, white 90%)}
-
-/* nested variable example */
-.component{--accent: color-mix(in srgb, var(--primary) 70%, black 30%)}
+   -

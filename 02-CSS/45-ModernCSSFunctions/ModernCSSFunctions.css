@@ -1,12 +1,1 @@
-/* Modern functions demo */
-:root{
-  --gap: clamp(0.75rem, 1.6vw, 1.5rem);
-  --card-w: min(60ch, 92%);
-  --fg: color-mix(in srgb, #0f172a 85%, white 15%);
-}
-
-body{margin:0;font-family:Arial, sans-serif;background:#f8fafc;color:var(--fg)}
-.tooling-shell{display:grid;place-items:center;min-height:100vh;padding:var(--gap)}
-.demo-card{width:var(--card-w);background:white;padding:clamp(1rem,2vw,2rem);border-radius:14px;border:1px solid #e6eef8}
-
-a[data-size]{font-size:attr(data-size px)}
+   -
