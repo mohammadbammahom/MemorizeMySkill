@@ -3,7 +3,7 @@ import re
 
 ROOT = Path(".")
 OUTPUT = ROOT / "LibraryTree.txt"
-EXTENSIONS = {".html", ".css" , ".js" , ".jsx" , ".tsx" , ".md"}
+EXTENSIONS = {".html", ".css" , ".js" , ".jsx" , ".ts" , ".tsx" , ".md" , ".txt"}
 
 folders = 0
 files = 0

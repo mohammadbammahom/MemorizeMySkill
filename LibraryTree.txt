@@ -1,197 +1,4 @@
-├── 📁 01-HTML
-│   ├── 📁 01-DocumentStructure
-│   │   ├── 📄 DocumentStructure.css
-│   │   ├── 📄 DocumentStructure.html
-│   │   └── 📄 DocumentStructure.md
-│   ├── 📁 02-SemanticHTML
-│   │   ├── 📄 SemanticHTML.css
-│   │   ├── 📄 SemanticHTML.html
-│   │   └── 📄 SemanticHTML.md
-│   ├── 📁 03-HeadAndMeta
-│   │   ├── 📄 HeadAndMeta.css
-│   │   ├── 📄 HeadAndMeta.html
-│   │   └── 📄 HeadAndMeta.md
-│   ├── 📁 04-TextAndParagraphs
-│   │   ├── 📄 TextAndParagraphs.css
-│   │   ├── 📄 TextAndParagraphs.html
-│   │   └── 📄 TextAndParagraphs.md
-│   ├── 📁 05-TextFormatting
-│   │   ├── 📄 TextFormatting.css
-│   │   ├── 📄 TextFormatting.html
-│   │   └── 📄 TextFormatting.md
-│   ├── 📁 06-DivAndSpan
-│   │   ├── 📄 DivAndSpan.css
-│   │   ├── 📄 DivAndSpan.html
-│   │   └── 📄 DivAndSpan.md
-│   ├── 📁 07-Lists
-│   │   ├── 📄 Lists.css
-│   │   ├── 📄 Lists.html
-│   │   └── 📄 Lists.md
-│   ├── 📁 08-LinksAndNavigation
-│   │   ├── 📄 LinksAndNavigation.css
-│   │   ├── 📄 LinksAndNavigation.html
-│   │   └── 📄 LinksAndNavigation.md
-│   ├── 📁 09-Images
-│   │   ├── 📄 Images.css
-│   │   ├── 📄 Images.html
-│   │   └── 📄 Images.md
-│   ├── 📁 10-ResponsiveImages
-│   │   ├── 📄 ResponsiveImages.css
-│   │   ├── 📄 ResponsiveImages.html
-│   │   └── 📄 ResponsiveImages.md
-│   ├── 📁 11-FigureAndFigcaption
-│   │   ├── 📄 FigureAndFigcaption.css
-│   │   ├── 📄 FigureAndFigcaption.html
-│   │   └── 📄 FigureAndFigcaption.md
-│   ├── 📁 12-Tables
-│   │   ├── 📄 Tables.css
-│   │   ├── 📄 Tables.html
-│   │   └── 📄 Tables.md
-│   ├── 📁 13-FormsBasics
-│   │   ├── 📄 FormsBasics.css
-│   │   ├── 📄 FormsBasics.html
-│   │   └── 📄 FormsBasics.md
-│   ├── 📁 14-InputTypes
-│   │   ├── 📄 InputTypes.css
-│   │   ├── 📄 InputTypes.html
-│   │   └── 📄 InputTypes.md
-│   ├── 📁 15-FormValidation
-│   │   ├── 📄 FormValidation.css
-│   │   ├── 📄 FormValidation.html
-│   │   └── 📄 FormValidation.md
-│   ├── 📁 16-Buttons
-│   │   ├── 📄 Buttons.css
-│   │   ├── 📄 Buttons.html
-│   │   └── 📄 Buttons.md
-│   ├── 📁 17-Labels
-│   │   ├── 📄 Labels.css
-│   │   ├── 📄 Labels.html
-│   │   └── 📄 Labels.md
-│   ├── 📁 18-FieldsetAndLegend
-│   │   ├── 📄 FieldsetAndLegend.css
-│   │   ├── 📄 FieldsetAndLegend.html
-│   │   └── 📄 FieldsetAndLegend.md
-│   ├── 📁 19-Datalist
-│   │   ├── 📄 Datalist.css
-│   │   ├── 📄 Datalist.html
-│   │   └── 📄 Datalist.md
-│   ├── 📁 20-Output
-│   │   ├── 📄 Output.css
-│   │   ├── 📄 Output.html
-│   │   └── 📄 Output.md
-│   ├── 📁 21-ProgressAndMeter
-│   │   ├── 📄 ProgressAndMeter.css
-│   │   ├── 📄 ProgressAndMeter.html
-│   │   └── 📄 ProgressAndMeter.md
-│   ├── 📁 22-SemanticHTMLAdvanced
-│   │   ├── 📄 SemanticHTMLAdvanced.css
-│   │   ├── 📄 SemanticHTMLAdvanced.html
-│   │   └── 📄 SemanticHTMLAdvanced.md
-│   ├── 📁 23-HeaderMainFooter
-│   │   ├── 📄 HeaderMainFooter.css
-│   │   ├── 📄 HeaderMainFooter.html
-│   │   └── 📄 HeaderMainFooter.md
-│   ├── 📁 24-SectionArticleAside
-│   │   ├── 📄 SectionArticleAside.css
-│   │   ├── 📄 SectionArticleAside.html
-│   │   └── 📄 SectionArticleAside.md
-│   ├── 📁 25-Audio
-│   │   ├── 📄 Audio.css
-│   │   ├── 📄 Audio.html
-│   │   └── 📄 Audio.md
-│   ├── 📁 26-Video
-│   │   ├── 📄 Video.css
-│   │   ├── 📄 Video.html
-│   │   └── 📄 Video.md
-│   ├── 📁 27-Iframe
-│   │   ├── 📄 Iframe.css
-│   │   ├── 📄 Iframe.html
-│   │   └── 📄 Iframe.md
-│   ├── 📁 28-SVG
-│   │   ├── 📄 SVG.css
-│   │   ├── 📄 SVG.html
-│   │   └── 📄 SVG.md
-│   ├── 📁 29-CanvasBasics
-│   │   ├── 📄 CanvasBasics.css
-│   │   ├── 📄 CanvasBasics.html
-│   │   └── 📄 CanvasBasics.md
-│   ├── 📁 30-Dialog
-│   │   ├── 📄 Dialog.css
-│   │   ├── 📄 Dialog.html
-│   │   └── 📄 Dialog.md
-│   ├── 📁 31-DetailsAndSummary
-│   │   ├── 📄 DetailsAndSummary.css
-│   │   ├── 📄 DetailsAndSummary.html
-│   │   └── 📄 DetailsAndSummary.md
-│   ├── 📁 32-Template
-│   │   ├── 📄 Template.css
-│   │   ├── 📄 Template.html
-│   │   └── 📄 Template.md
-│   ├── 📁 33-GlobalAttributes
-│   │   ├── 📄 GlobalAttributes.css
-│   │   ├── 📄 GlobalAttributes.html
-│   │   └── 📄 GlobalAttributes.md
-│   ├── 📁 34-DataAttributes
-│   │   ├── 📄 DataAttributes.css
-│   │   ├── 📄 DataAttributes.html
-│   │   └── 📄 DataAttributes.md
-│   ├── 📁 35-CustomAttributes
-│   │   ├── 📄 CustomAttributes.css
-│   │   ├── 📄 CustomAttributes.html
-│   │   └── 📄 CustomAttributes.md
-│   ├── 📁 36-HTMLAccessibility
-│   │   ├── 📄 HTMLAccessibility.css
-│   │   ├── 📄 HTMLAccessibility.html
-│   │   └── 📄 HTMLAccessibility.md
-│   ├── 📁 37-ARIABasics
-│   │   ├── 📄 ARIABasics.css
-│   │   ├── 📄 ARIABasics.html
-│   │   └── 📄 ARIABasics.md
-│   ├── 📁 38-SEOForHTML
-│   │   ├── 📄 SEOForHTML.css
-│   │   ├── 📄 SEOForHTML.html
-│   │   └── 📄 SEOForHTML.md
-│   ├── 📁 39-HTMLPerformance
-│   │   ├── 📄 HTMLPerformance.css
-│   │   ├── 📄 HTMLPerformance.html
-│   │   └── 📄 HTMLPerformance.md
-│   ├── 📁 40-BrowserDevTools
-│   │   ├── 📄 BrowserDevTools.css
-│   │   ├── 📄 BrowserDevTools.html
-│   │   └── 📄 BrowserDevTools.md
-│   ├── 📁 41-HTMLBestPractices
-│   │   ├── 📄 HTMLBestPractices.css
-│   │   ├── 📄 HTMLBestPractices.html
-│   │   └── 📄 HTMLBestPractices.md
-│   ├── 📁 42-CommonHTMLMistakes
-│   │   ├── 📄 CommonHTMLMistakes.css
-│   │   ├── 📄 CommonHTMLMistakes.html
-│   │   └── 📄 CommonHTMLMistakes.md
-│   ├── 📁 43-InterviewQuestions
-│   │   ├── 📄 InterviewQuestions.css
-│   │   ├── 📄 InterviewQuestions.html
-│   │   └── 📄 InterviewQuestions.md
-│   ├── 📁 44-Project-LandingPage
-│   │   ├── 📄 LandingPage.css
-│   │   ├── 📄 LandingPage.html
-│   │   └── 📄 LandingPage.md
-│   ├── 📁 45-Project-Blog
-│   │   ├── 📄 Blog.css
-│   │   ├── 📄 Blog.html
-│   │   └── 📄 Blog.md
-│   ├── 📁 46-Project-Ecommerce
-│   │   ├── 📄 Ecommerce.css
-│   │   ├── 📄 Ecommerce.html
-│   │   └── 📄 Ecommerce.md
-│   ├── 📁 47-Project-AdminDashboard
-│   │   ├── 📄 AdminDashboard.css
-│   │   ├── 📄 AdminDashboard.html
-│   │   └── 📄 AdminDashboard.md
-│   └── 📁 48-FinalChallenge
-│       ├── 📄 FinalChallenge.css
-│       ├── 📄 FinalChallenge.html
-│       └── 📄 FinalChallenge.md
-├── 📁 02-CSS
+├── 📁 01-CSS
 │   ├── 📁 01-CSSIntroduction
 │   │   ├── 📄 CSSIntroduction.css
 │   │   ├── 📄 CSSIntroduction.html
@@ -399,14 +206,257 @@
 │   │   ├── 📄 PrintCSS.css
 │   │   ├── 📄 PrintCSS.html
 │   │   └── 📄 PrintCSS.md
-│   └── 📁 53-PseudoElements
-│       ├── 📄 PseudoElements.css
-│       ├── 📄 PseudoElements.html
-│       └── 📄 PseudoElements.md
+│   ├── 📁 53-PseudoElements
+│   │   ├── 📄 PseudoElements.css
+│   │   ├── 📄 PseudoElements.html
+│   │   └── 📄 PseudoElements.md
+│   ├── 📁 54-Combinators
+│   │   ├── 📄 Combinators.css
+│   │   ├── 📄 Combinators.html
+│   │   └── 📄 Combinators.md
+│   ├── 📁 55-AttributeSelectors
+│   │   ├── 📄 AttributeSelectors.css
+│   │   ├── 📄 AttributeSelectors.html
+│   │   └── 📄 AttributeSelectors.md
+│   ├── 📁 56-Nesting
+│   │   ├── 📄 Nesting.css
+│   │   ├── 📄 Nesting.html
+│   │   └── 📄 Nesting.md
+│   ├── 📁 57-CSSFunctions
+│   │   ├── 📄 CSSFunctions.css
+│   │   ├── 📄 CSSFunctions.html
+│   │   └── 📄 CSSFunctions.md
+│   ├── 📁 58-CSSMathFunctions
+│   │   ├── 📄 CSSMathFunctions.css
+│   │   ├── 📄 CSSMathFunctions.html
+│   │   └── 📄 CSSMathFunctions.md
+│   ├── 📁 59-CSSLogicalProperties
+│   │   ├── 📄 CSSLogicalProperties.css
+│   │   ├── 📄 CSSLogicalProperties.html
+│   │   └── 📄 CSSLogicalProperties.md
+│   ├── 📁 60-WritingModes
+│   │   ├── 📄 WritingModes.css
+│   │   ├── 📄 WritingModes.html
+│   │   └── 📄 WritingModes.md
+│   ├── 📁 61-ScrollBehavior
+│   │   ├── 📄 ScrollBehavior.css
+│   │   ├── 📄 ScrollBehavior.html
+│   │   └── 📄 ScrollBehavior.md
+│   ├── 📁 62-ScrollSnap
+│   │   ├── 📄 ScrollSnap.css
+│   │   ├── 📄 ScrollSnap.html
+│   │   └── 📄 ScrollSnap.md
+│   ├── 📁 63-OverscrollBehavior
+│   │   ├── 📄 OverscrollBehavior.css
+│   │   ├── 📄 OverscrollBehavior.html
+│   │   └── 📄 OverscrollBehavior.md
+│   ├── 📁 64-ScrollbarStyling
+│   │   ├── 📄 ScrollbarStyling.css
+│   │   ├── 📄 ScrollbarStyling.html
+│   │   └── 📄 ScrollbarStyling.md
+│   └── 📁 65-CSSMasks
+│       ├── 📄 CSSMasks.css
+│       ├── 📄 CSSMasks.html
+│       └── 📄 CSSMasks.md
+├── 📁 02-HTML
+│   ├── 📁 01-DocumentStructure
+│   │   ├── 📄 DocumentStructure.css
+│   │   ├── 📄 DocumentStructure.html
+│   │   └── 📄 DocumentStructure.md
+│   ├── 📁 02-SemanticHTML
+│   │   ├── 📄 SemanticHTML.css
+│   │   ├── 📄 SemanticHTML.html
+│   │   └── 📄 SemanticHTML.md
+│   ├── 📁 03-HeadAndMeta
+│   │   ├── 📄 HeadAndMeta.css
+│   │   ├── 📄 HeadAndMeta.html
+│   │   └── 📄 HeadAndMeta.md
+│   ├── 📁 04-TextAndParagraphs
+│   │   ├── 📄 TextAndParagraphs.css
+│   │   ├── 📄 TextAndParagraphs.html
+│   │   └── 📄 TextAndParagraphs.md
+│   ├── 📁 05-TextFormatting
+│   │   ├── 📄 TextFormatting.css
+│   │   ├── 📄 TextFormatting.html
+│   │   └── 📄 TextFormatting.md
+│   ├── 📁 06-DivAndSpan
+│   │   ├── 📄 DivAndSpan.css
+│   │   ├── 📄 DivAndSpan.html
+│   │   └── 📄 DivAndSpan.md
+│   ├── 📁 07-Lists
+│   │   ├── 📄 Lists.css
+│   │   ├── 📄 Lists.html
+│   │   └── 📄 Lists.md
+│   ├── 📁 08-LinksAndNavigation
+│   │   ├── 📄 LinksAndNavigation.css
+│   │   ├── 📄 LinksAndNavigation.html
+│   │   └── 📄 LinksAndNavigation.md
+│   ├── 📁 09-Images
+│   │   ├── 📄 Images.css
+│   │   ├── 📄 Images.html
+│   │   └── 📄 Images.md
+│   ├── 📁 10-ResponsiveImages
+│   │   ├── 📄 ResponsiveImages.css
+│   │   ├── 📄 ResponsiveImages.html
+│   │   └── 📄 ResponsiveImages.md
+│   ├── 📁 11-FigureAndFigcaption
+│   │   ├── 📄 FigureAndFigcaption.css
+│   │   ├── 📄 FigureAndFigcaption.html
+│   │   └── 📄 FigureAndFigcaption.md
+│   ├── 📁 12-Tables
+│   │   ├── 📄 Tables.css
+│   │   ├── 📄 Tables.html
+│   │   └── 📄 Tables.md
+│   ├── 📁 13-FormsBasics
+│   │   ├── 📄 FormsBasics.css
+│   │   ├── 📄 FormsBasics.html
+│   │   └── 📄 FormsBasics.md
+│   ├── 📁 14-InputTypes
+│   │   ├── 📄 InputTypes.css
+│   │   ├── 📄 InputTypes.html
+│   │   └── 📄 InputTypes.md
+│   ├── 📁 15-FormValidation
+│   │   ├── 📄 FormValidation.css
+│   │   ├── 📄 FormValidation.html
+│   │   └── 📄 FormValidation.md
+│   ├── 📁 16-Buttons
+│   │   ├── 📄 Buttons.css
+│   │   ├── 📄 Buttons.html
+│   │   └── 📄 Buttons.md
+│   ├── 📁 17-Labels
+│   │   ├── 📄 Labels.css
+│   │   ├── 📄 Labels.html
+│   │   └── 📄 Labels.md
+│   ├── 📁 18-FieldsetAndLegend
+│   │   ├── 📄 FieldsetAndLegend.css
+│   │   ├── 📄 FieldsetAndLegend.html
+│   │   └── 📄 FieldsetAndLegend.md
+│   ├── 📁 19-Datalist
+│   │   ├── 📄 Datalist.css
+│   │   ├── 📄 Datalist.html
+│   │   └── 📄 Datalist.md
+│   ├── 📁 20-Output
+│   │   ├── 📄 Output.css
+│   │   ├── 📄 Output.html
+│   │   └── 📄 Output.md
+│   ├── 📁 21-ProgressAndMeter
+│   │   ├── 📄 ProgressAndMeter.css
+│   │   ├── 📄 ProgressAndMeter.html
+│   │   └── 📄 ProgressAndMeter.md
+│   ├── 📁 22-SemanticHTMLAdvanced
+│   │   ├── 📄 SemanticHTMLAdvanced.css
+│   │   ├── 📄 SemanticHTMLAdvanced.html
+│   │   └── 📄 SemanticHTMLAdvanced.md
+│   ├── 📁 23-HeaderMainFooter
+│   │   ├── 📄 HeaderMainFooter.css
+│   │   ├── 📄 HeaderMainFooter.html
+│   │   └── 📄 HeaderMainFooter.md
+│   ├── 📁 24-SectionArticleAside
+│   │   ├── 📄 SectionArticleAside.css
+│   │   ├── 📄 SectionArticleAside.html
+│   │   └── 📄 SectionArticleAside.md
+│   ├── 📁 25-Audio
+│   │   ├── 📄 Audio.css
+│   │   ├── 📄 Audio.html
+│   │   └── 📄 Audio.md
+│   ├── 📁 26-Video
+│   │   ├── 📄 Video.css
+│   │   ├── 📄 Video.html
+│   │   └── 📄 Video.md
+│   ├── 📁 27-Iframe
+│   │   ├── 📄 Iframe.css
+│   │   ├── 📄 Iframe.html
+│   │   └── 📄 Iframe.md
+│   ├── 📁 28-SVG
+│   │   ├── 📄 SVG.css
+│   │   ├── 📄 SVG.html
+│   │   └── 📄 SVG.md
+│   ├── 📁 29-CanvasBasics
+│   │   ├── 📄 CanvasBasics.css
+│   │   ├── 📄 CanvasBasics.html
+│   │   └── 📄 CanvasBasics.md
+│   ├── 📁 30-Dialog
+│   │   ├── 📄 Dialog.css
+│   │   ├── 📄 Dialog.html
+│   │   └── 📄 Dialog.md
+│   ├── 📁 31-DetailsAndSummary
+│   │   ├── 📄 DetailsAndSummary.css
+│   │   ├── 📄 DetailsAndSummary.html
+│   │   └── 📄 DetailsAndSummary.md
+│   ├── 📁 32-Template
+│   │   ├── 📄 Template.css
+│   │   ├── 📄 Template.html
+│   │   └── 📄 Template.md
+│   ├── 📁 33-GlobalAttributes
+│   │   ├── 📄 GlobalAttributes.css
+│   │   ├── 📄 GlobalAttributes.html
+│   │   └── 📄 GlobalAttributes.md
+│   ├── 📁 34-DataAttributes
+│   │   ├── 📄 DataAttributes.css
+│   │   ├── 📄 DataAttributes.html
+│   │   └── 📄 DataAttributes.md
+│   ├── 📁 35-CustomAttributes
+│   │   ├── 📄 CustomAttributes.css
+│   │   ├── 📄 CustomAttributes.html
+│   │   └── 📄 CustomAttributes.md
+│   ├── 📁 36-HTMLAccessibility
+│   │   ├── 📄 HTMLAccessibility.css
+│   │   ├── 📄 HTMLAccessibility.html
+│   │   └── 📄 HTMLAccessibility.md
+│   ├── 📁 37-ARIABasics
+│   │   ├── 📄 ARIABasics.css
+│   │   ├── 📄 ARIABasics.html
+│   │   └── 📄 ARIABasics.md
+│   ├── 📁 38-SEOForHTML
+│   │   ├── 📄 SEOForHTML.css
+│   │   ├── 📄 SEOForHTML.html
+│   │   └── 📄 SEOForHTML.md
+│   ├── 📁 39-HTMLPerformance
+│   │   ├── 📄 HTMLPerformance.css
+│   │   ├── 📄 HTMLPerformance.html
+│   │   └── 📄 HTMLPerformance.md
+│   ├── 📁 40-BrowserDevTools
+│   │   ├── 📄 BrowserDevTools.css
+│   │   ├── 📄 BrowserDevTools.html
+│   │   └── 📄 BrowserDevTools.md
+│   ├── 📁 41-HTMLBestPractices
+│   │   ├── 📄 HTMLBestPractices.css
+│   │   ├── 📄 HTMLBestPractices.html
+│   │   └── 📄 HTMLBestPractices.md
+│   ├── 📁 42-CommonHTMLMistakes
+│   │   ├── 📄 CommonHTMLMistakes.css
+│   │   ├── 📄 CommonHTMLMistakes.html
+│   │   └── 📄 CommonHTMLMistakes.md
+│   ├── 📁 43-InterviewQuestions
+│   │   ├── 📄 InterviewQuestions.css
+│   │   ├── 📄 InterviewQuestions.html
+│   │   └── 📄 InterviewQuestions.md
+│   ├── 📁 44-Project-LandingPage
+│   │   ├── 📄 LandingPage.css
+│   │   ├── 📄 LandingPage.html
+│   │   └── 📄 LandingPage.md
+│   ├── 📁 45-Project-Blog
+│   │   ├── 📄 Blog.css
+│   │   ├── 📄 Blog.html
+│   │   └── 📄 Blog.md
+│   ├── 📁 46-Project-Ecommerce
+│   │   ├── 📄 Ecommerce.css
+│   │   ├── 📄 Ecommerce.html
+│   │   └── 📄 Ecommerce.md
+│   ├── 📁 47-Project-AdminDashboard
+│   │   ├── 📄 AdminDashboard.css
+│   │   ├── 📄 AdminDashboard.html
+│   │   └── 📄 AdminDashboard.md
+│   └── 📁 48-FinalChallenge
+│       ├── 📄 FinalChallenge.css
+│       ├── 📄 FinalChallenge.html
+│       └── 📄 FinalChallenge.md
 ├── 📁 03-Vite
 │   └── 📄 Vite.md
 ├── 📄 HTML-Roadmap.md
 ├── 📄 HTMLCheatSheet.md
-└── 📄 oldSkill.md
-پوشه‌ها: 104
-فایل‌ها: 306
+├── 📄 LibraryTree.txt
+├── 📄 oldSkill.md
+└── 📄 README.txt
+پوشه‌ها: 116
+فایل‌ها: 344
