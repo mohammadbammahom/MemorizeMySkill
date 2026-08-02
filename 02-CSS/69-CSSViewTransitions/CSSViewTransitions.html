@@ -1,1 +1,48 @@
-   -
+   <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS View Transitions</title>
+    <link rel="stylesheet" href="CSSViewTransitions.css">
+</head>
+<body>
+    <main class="app">
+        <h1>CSS View Transitions مثال</h1>
+        
+        <section class="example-section">
+            <h2>مثال: صفحه 1</h2>
+            <p>محتویات صفحه اول</p>
+            <button onclick="navigate('page2')">برو به صفحه 2</button>
+        </section>
+
+        <div id="page2" class="page hidden">
+            <section class="example-section">
+                <h2>مثال: صفحه 2</h2>
+                <p>محتویات صفحه دوم</p>
+                <button onclick="navigate('page1')">برگرد به صفحه 1</button>
+            </section>
+        </div>
+
+        <section class="example-section info-section">
+            <h2>اطلاعات مهم</h2>
+            <p>🎬 View Transitions برای صفحات است</p>
+            <p>📱 Desktop browsers فقط</p>
+            <p>⚡ Smooth transitions</p>
+        </section>
+    </main>
+
+    <script>
+        function navigate(pageId) {
+            const pages = document.querySelectorAll('.page, main');
+            pages.forEach(p => p.classList.add('hidden'));
+            
+            if (pageId === 'page1') {
+                document.querySelector('main').classList.remove('hidden');
+            } else {
+                document.getElementById(pageId).classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

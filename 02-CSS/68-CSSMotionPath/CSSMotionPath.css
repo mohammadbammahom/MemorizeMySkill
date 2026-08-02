@@ -1,1 +1,213 @@
-   -
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    direction: rtl;
+}
+
+.app {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #667eea;
+    font-size: 2rem;
+}
+
+.example-section {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.canvas {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to right, #f5f5f5, #e8e8e8);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border: 2px dashed #ddd;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* مثال 1: خطی */
+.dot1 {
+    offset-path: path('M 30 30 L 350 30');
+    animation: motion1 5s infinite ease-in-out;
+}
+
+@keyframes motion1 {
+    0%, 100% {
+        offset-distance: 0%;
+    }
+    50% {
+        offset-distance: 100%;
+    }
+}
+
+/* مثال 2: مربع */
+.canvas-square {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect x="50" y="50" width="300" height="200" fill="none" stroke="%23ddd" stroke-dasharray="5,5"/></svg>');
+    background-repeat: no-repeat;
+}
+
+.dot2 {
+    offset-path: path('M 50 50 L 350 50 L 350 250 L 50 250 Z');
+    animation: motion2 8s infinite linear;
+}
+
+@keyframes motion2 {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+/* مثال 3: منحنی */
+.canvas-curve {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><path d="M 30 150 Q 200 50 370 150" fill="none" stroke="%23ddd" stroke-dasharray="5,5"/></svg>');
+    background-repeat: no-repeat;
+}
+
+.dot3 {
+    offset-path: path('M 30 150 Q 200 50 370 150');
+    animation: motion3 6s infinite ease-in-out;
+}
+
+@keyframes motion3 {
+    0%, 100% {
+        offset-distance: 0%;
+    }
+    50% {
+        offset-distance: 100%;
+    }
+}
+
+/* مثال 4: مثلث */
+.canvas-triangle {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><polygon points="200,50 350,250 50,250" fill="none" stroke="%23ddd" stroke-dasharray="5,5"/></svg>');
+    background-repeat: no-repeat;
+}
+
+.dot4 {
+    offset-path: path('M 200 50 L 350 250 L 50 250 Z');
+    animation: motion4 7s infinite linear;
+}
+
+@keyframes motion4 {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+/* مثال 5: سرعت متغیر */
+.dot5 {
+    offset-path: path('M 30 30 L 370 30');
+    animation: motion5 8s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes motion5 {
+    0%, 100% {
+        offset-distance: 0%;
+    }
+    50% {
+        offset-distance: 100%;
+    }
+}
+
+/* مثال 6: چرخش */
+.dot6 {
+    width: 25px;
+    height: 25px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    offset-path: path('M 30 30 L 370 30');
+    offset-rotate: auto;
+    animation: motion6 5s infinite ease-in-out;
+}
+
+@keyframes motion6 {
+    0%, 100% {
+        offset-distance: 0%;
+    }
+    50% {
+        offset-distance: 100%;
+    }
+}
+
+/* مثال 7: Delay */
+.dot-delay {
+    animation: motion1 5s infinite ease-in-out;
+    animation-delay: 2.5s;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    box-shadow: 0 4px 12px rgba(245, 87, 108, 0.4);
+}
+
+/* Info section */
+.info-section {
+    background: #f0f7ff;
+    border-left: 4px solid #667eea;
+}
+
+.info-section h2 {
+    color: #667eea;
+}
+
+.info-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.info-section strong {
+    color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .app {
+        padding: 10px;
+    }
+
+    .example-section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .canvas {
+        height: 200px;
+    }
+}

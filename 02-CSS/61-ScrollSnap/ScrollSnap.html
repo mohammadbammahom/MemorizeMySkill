@@ -1,1 +1,135 @@
-   -
+   <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Scroll Snap</title>
+    <link rel="stylesheet" href="ScrollSnap.css">
+</head>
+<body>
+    <main>
+        <h1>CSS Scroll Snap مثال</h1>
+        
+        <section class="example-section">
+            <h2>مثال ساده: شمار‌نامه‌ها</h2>
+            <div class="container simple-example">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+            </div>
+            <p class="instruction">به افقی اسکرول کنید</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال متوسط: گالری تصویر</h2>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <div class="photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span>عکس 1</span>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span>عکس 2</span>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span>عکس 3</span>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <span>عکس 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال حرفه‌ای: کاروسل با نقاط</h2>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="slide">
+                        <h3>سلاید ۱</h3>
+                        <p>محتوای سلاید اول - بهبود تجربه اسکرول</p>
+                    </div>
+                    <div class="slide">
+                        <h3>سلاید ۲</h3>
+                        <p>محتوای سلاید دوم - بدون نیاز به JavaScript</p>
+                    </div>
+                    <div class="slide">
+                        <h3>سلاید ۳</h3>
+                        <p>محتوای سلاید سوم - برای گالری‌ها ایده‌آل</p>
+                    </div>
+                    <div class="slide">
+                        <h3>سلاید ۴</h3>
+                        <p>محتوای سلاید چهارم - تمام مرورگرها پشتیبان‌اند</p>
+                    </div>
+                </div>
+                <div class="dots">
+                    <button class="dot active" onclick="scrollToSlide(0)"></button>
+                    <button class="dot" onclick="scrollToSlide(1)"></button>
+                    <button class="dot" onclick="scrollToSlide(2)"></button>
+                    <button class="dot" onclick="scrollToSlide(3)"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال عمودی: صفحات</h2>
+            <div class="vertical-scroll">
+                <div class="page">
+                    <div class="page-content">
+                        <h3>صفحه 1</h3>
+                        <p>این اولین صفحه است</p>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="page-content">
+                        <h3>صفحه 2</h3>
+                        <p>این صفحه دوم است</p>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="page-content">
+                        <h3>صفحه 3</h3>
+                        <p>این صفحه سوم است</p>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="page-content">
+                        <h3>صفحه 4</h3>
+                        <p>این صفحه چهارم است</p>
+                    </div>
+                </div>
+            </div>
+            <p class="instruction">به عمودی اسکرول کنید</p>
+        </section>
+    </main>
+
+    <script>
+        // به‌روز کردن نقاط هنگام اسکرول
+        const carouselContainer = document.querySelector('.carousel-container');
+        const dots = document.querySelectorAll('.dot');
+
+        carouselContainer.addEventListener('scroll', () => {
+            const slideWidth = carouselContainer.offsetWidth;
+            const activeSlide = Math.round(carouselContainer.scrollLeft / slideWidth);
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === activeSlide);
+            });
+        });
+
+        function scrollToSlide(index) {
+            const slideWidth = carouselContainer.offsetWidth;
+            carouselContainer.scrollLeft = slideWidth * index;
+        }
+    </script>
+</body>
+</html>

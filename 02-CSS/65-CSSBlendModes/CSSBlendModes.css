@@ -1,1 +1,225 @@
-   -
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    direction: rtl;
+}
+
+.app {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #667eea;
+    font-size: 2rem;
+}
+
+.example-section {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.example-section p {
+    color: #666;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+/* Demo boxes */
+.demo-box {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.blend-element {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+}
+
+/* Blend modes */
+.demo-box.multiply .blend-element {
+    mix-blend-mode: multiply;
+}
+
+.demo-box.screen .blend-element {
+    mix-blend-mode: screen;
+}
+
+.demo-box.overlay .blend-element {
+    mix-blend-mode: overlay;
+}
+
+.demo-box.lighten .blend-element {
+    mix-blend-mode: lighten;
+}
+
+.demo-box.darken .blend-element {
+    mix-blend-mode: darken;
+}
+
+.demo-box.color-dodge .blend-element {
+    mix-blend-mode: color-dodge;
+}
+
+.demo-box.color-burn .blend-element {
+    mix-blend-mode: color-burn;
+}
+
+.demo-box.hard-light .blend-element {
+    mix-blend-mode: hard-light;
+}
+
+.demo-box.soft-light .blend-element {
+    mix-blend-mode: soft-light;
+}
+
+.demo-box.difference .blend-element {
+    mix-blend-mode: difference;
+}
+
+.demo-box.exclusion .blend-element {
+    mix-blend-mode: exclusion;
+}
+
+.demo-box.hue .blend-element {
+    mix-blend-mode: hue;
+}
+
+.demo-box.saturation .blend-element {
+    mix-blend-mode: saturation;
+}
+
+.demo-box.color .blend-element {
+    mix-blend-mode: color;
+}
+
+.demo-box.luminosity .blend-element {
+    mix-blend-mode: luminosity;
+}
+
+/* Grid demo */
+.grid-demo {
+    background: white;
+}
+
+.blend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.blend-item {
+    text-align: center;
+}
+
+.blend-box {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.blend-box::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+    border-radius: 8px;
+}
+
+.blend-item p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.blend-box.multiply::after {
+    mix-blend-mode: multiply;
+}
+
+.blend-box.screen::after {
+    mix-blend-mode: screen;
+}
+
+.blend-box.overlay::after {
+    mix-blend-mode: overlay;
+}
+
+.blend-box.darken::after {
+    mix-blend-mode: darken;
+}
+
+.blend-box.lighten::after {
+    mix-blend-mode: lighten;
+}
+
+.blend-box.color-dodge::after {
+    mix-blend-mode: color-dodge;
+}
+
+/* Info section */
+.info-section {
+    background: #f0f7ff;
+    border-left: 4px solid #667eea;
+}
+
+.info-section h2 {
+    color: #667eea;
+}
+
+.info-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.info-section strong {
+    color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .app {
+        padding: 10px;
+    }
+
+    .example-section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .demo-box {
+        height: 150px;
+    }
+
+    .blend-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

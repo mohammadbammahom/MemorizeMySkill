@@ -1,1 +1,143 @@
-   -
+   <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overscroll Behavior</title>
+    <link rel="stylesheet" href="OverscrollBehavior.css">
+</head>
+<body>
+    <div class="app-demo">
+        <h1>Overscroll Behavior مثال</h1>
+        
+        <!-- مثال ساده -->
+        <section class="example-section">
+            <h2>مثال ساده: Container بسته‌شده</h2>
+            <div class="container simple-example">
+                <div class="scrollable-box">
+                    <p>محتویات ScrollBox - اسکرول کنید تا تفاوت را احساس کنید</p>
+                    <p>این text بسیار زیاد است و اسکرول شدنی است.</p>
+                    <p>وقتی به انتهای این بخش برسید، صفحه اصلی اسکرول نمی‌شود.</p>
+                    <p>این نمونه‌ای از overscroll-behavior: contain است.</p>
+                    <p>عناصر بیشتر برای تکمیل دادن محتوا...</p>
+                    <p>محتویات بیشتر...</p>
+                    <p>محتویات بیشتر...</p>
+                    <p>محتویات بیشتر...</p>
+                    <p>محتویات بیشتر...</p>
+                    <p>محتویات بیشتر...</p>
+                </div>
+            </div>
+            <p class="instruction">در داخل دایره اسکرول کنید</p>
+        </section>
+
+        <!-- مثال متوسط: Modal -->
+        <section class="example-section">
+            <h2>مثال متوسط: Modal نوفعال</h2>
+            <button class="btn-modal" onclick="openModal()">باز کردن Modal</button>
+            
+            <div class="modal-overlay" id="modal">
+                <div class="modal">
+                    <div class="modal-header">
+                        <h3>Modal Dialog</h3>
+                        <button class="close-btn" onclick="closeModal()">×</button>
+                    </div>
+                    <div class="modal-content">
+                        <p>این یک modal است که overscroll-behavior: contain دارد.</p>
+                        <p>وقتی modal اسکرول می‌شود، صفحه پشت اسکرول نمی‌شود.</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-close" onclick="closeModal()">بستن</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- مثال حرفه‌ای: Dashboard -->
+        <section class="example-section">
+            <h2>مثال حرفه‌ای: Dashboard با Sidebar</h2>
+            <div class="dashboard">
+                <aside class="sidebar">
+                    <div class="sidebar-header">
+                        <h3>منو</h3>
+                    </div>
+                    <nav class="nav-menu">
+                        <a href="#" class="nav-item active">صفحه اصلی</a>
+                        <a href="#" class="nav-item">پروفایل</a>
+                        <a href="#" class="nav-item">تنظیمات</a>
+                        <a href="#" class="nav-item">محتویات</a>
+                        <a href="#" class="nav-item">آمار</a>
+                        <a href="#" class="nav-item">کمک</a>
+                        <a href="#" class="nav-item">درباره ما</a>
+                        <a href="#" class="nav-item">تماس</a>
+                        <a href="#" class="nav-item">سوالات متداول</a>
+                        <a href="#" class="nav-item">اطلاعات بیشتر</a>
+                    </nav>
+                </aside>
+                
+                <main class="main-content">
+                    <div class="content-wrapper">
+                        <h3>محتوای اصلی</h3>
+                        <p>این محتوای اصلی است که می‌تواند اسکرول شود.</p>
+                        <p>sidebar و main-content با overscroll-behavior: contain جدا هستند.</p>
+                        <p>اسکرول در sidebar از main-content جدا است.</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                        <p>محتویات بیشتر...</p>
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <!-- توضیحات -->
+        <section class="example-section info-section">
+            <h2>توضیحات</h2>
+            <p><strong>overscroll-behavior: auto</strong> - رفتار پیش‌فرض (اسکرول می‌تواند parent را تأثیر دهد)</p>
+            <p><strong>overscroll-behavior: contain</strong> - اسکرول محدود است (تأثیر روی parent نمی‌گذارد)</p>
+            <p><strong>overscroll-behavior: none</strong> - تمام overscroll behavior غیرفعال است</p>
+        </section>
+    </div>
+
+    <script>
+        function openModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        // بستن modal با کلیک بر روی overlay
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // بستن modal با Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

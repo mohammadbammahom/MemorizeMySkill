@@ -1,1 +1,39 @@
-   -
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    direction: rtl;
+}
+
+.app {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #667eea;
+}
+
+.box {
+    padding: 40px;
+    border-radius: 4px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+.box1 {
+    background: color-mix(in srgb, red 50%, blue 50%);
+}
+
+.box2 {
+    background: color-mix(in srgb, red 75%, blue 25%);
+}

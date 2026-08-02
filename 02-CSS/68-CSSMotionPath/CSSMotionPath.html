@@ -1,1 +1,80 @@
-   -
+   <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Motion Path</title>
+    <link rel="stylesheet" href="CSSMotionPath.css">
+</head>
+<body>
+    <svg width="0" height="0" style="display: none;">
+        <defs>
+            <path id="path1" d="M 50 50 L 350 50 L 350 350 L 50 350 Z"/>
+            <path id="path2" d="M 0 100 Q 150 0 300 100"/>
+            <path id="path3" d="M 50 150 L 250 50 L 250 250 L 50 250 Z"/>
+        </defs>
+    </svg>
+
+    <main class="app">
+        <h1>CSS Motion Path مثال‌ها</h1>
+        
+        <section class="example-section">
+            <h2>مثال ساده: خطی</h2>
+            <div class="canvas">
+                <div class="dot dot1"></div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: مربع</h2>
+            <div class="canvas canvas-square">
+                <div class="dot dot2"></div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: منحنی</h2>
+            <div class="canvas canvas-curve">
+                <div class="dot dot3"></div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: مثلث</h2>
+            <div class="canvas canvas-triangle">
+                <div class="dot dot4"></div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: سرعت متغیر</h2>
+            <div class="canvas">
+                <div class="dot dot5"></div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: چرخش خودکار</h2>
+            <div class="canvas">
+                <div class="dot dot6"></div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: چند اشیاء</h2>
+            <div class="canvas">
+                <div class="dot dot1"></div>
+                <div class="dot dot-delay"></div>
+            </div>
+        </section>
+
+        <section class="example-section info-section">
+            <h2>اطلاعات مهم</h2>
+            <p>🛤️ <strong>offset-path</strong> - مسیر</p>
+            <p>📏 <strong>offset-distance</strong> - فاصله</p>
+            <p>🔄 <strong>offset-rotate</strong> - چرخش</p>
+            <p>⚠️ <strong>Experimental:</strong> browser support محدود</p>
+        </section>
+    </main>
+</body>
+</html>

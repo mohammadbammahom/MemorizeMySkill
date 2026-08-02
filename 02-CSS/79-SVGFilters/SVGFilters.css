@@ -1,1 +1,43 @@
-   -
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    direction: rtl;
+}
+
+.app {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #667eea;
+}
+
+.box {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.brightness {
+    filter: brightness(1.5);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}

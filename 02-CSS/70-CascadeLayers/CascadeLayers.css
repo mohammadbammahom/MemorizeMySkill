@@ -1,1 +1,92 @@
-   -
+   @layer reset, base, theme, utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    direction: rtl;
+}
+
+.app {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #667eea;
+    font-size: 2rem;
+}
+
+.example-section {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+@layer base {
+    p {
+        color: black;
+        margin-bottom: 15px;
+    }
+
+    .text-base {
+        color: blue;
+    }
+}
+
+@layer theme {
+    .text-theme {
+        color: red;
+    }
+}
+
+@layer utilities {
+    .text-demo {
+        color: green;
+    }
+}
+
+.info-section {
+    background: #f0f7ff;
+    border-left: 4px solid #667eea;
+}
+
+.info-section h2 {
+    color: #667eea;
+}
+
+.info-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .app {
+        padding: 10px;
+    }
+
+    .example-section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}

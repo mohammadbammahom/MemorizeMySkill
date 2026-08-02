@@ -1,1 +1,98 @@
-   -
+   <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Masks</title>
+    <link rel="stylesheet" href="CSSMasks.css">
+</head>
+<body>
+    <svg width="0" height="0" style="display: none;">
+        <defs>
+            <mask id="circle-mask">
+                <circle cx="50%" cy="50%" r="40%" fill="black"/>
+            </mask>
+            <mask id="wave-mask">
+                <path d="M0,50 Q25,25 50,50 T100,50 L100,0 L0,0 Z" fill="black"/>
+            </mask>
+            <mask id="polygon-mask">
+                <polygon points="50,0 100,38 82,100 18,100 0,38" fill="black"/>
+            </mask>
+        </defs>
+    </svg>
+
+    <main class="app">
+        <h1>CSS Masks مثال‌ها</h1>
+        
+        <section class="example-section">
+            <h2>مثال ساده: دایره Mask</h2>
+            <div class="mask-simple">
+                <div class="gradient-box"></div>
+            </div>
+            <p>از radial-gradient برای ایجاد دایره استفاده شده است.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال متوسط: Gradient Mask</h2>
+            <div class="mask-gradient">
+                <div class="color-box"></div>
+            </div>
+            <p>تصویر به سمت راست محو می‌شود.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال SVG Mask: Circle</h2>
+            <div class="mask-svg-circle"></div>
+            <p>SVG mask برای شکل دایره‌ای دقیق.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال SVG Mask: Star</h2>
+            <div class="mask-svg-star"></div>
+            <p>SVG mask برای شکل ستاره.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Wave Pattern Mask</h2>
+            <div class="mask-wave"></div>
+            <p>SVG wave pattern با repeat.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Radial Gradient Mask</h2>
+            <div class="mask-radial"></div>
+            <p>Radial gradient برای ایجاد spotlight effect.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Conic Gradient Mask</h2>
+            <div class="mask-conic"></div>
+            <p>Conic gradient برای ایجاد pie-chart effect.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Image Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item circular">
+                    <div class="color-box" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+                </div>
+                <div class="gallery-item hexagon">
+                    <div class="color-box" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+                </div>
+                <div class="gallery-item diamond">
+                    <div class="color-box" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="example-section info-section">
+            <h2>اطلاعات مهم</h2>
+            <p>🎭 <strong>mask-image</strong> - تعریف mask (SVG یا gradient)</p>
+            <p>📏 <strong>mask-size</strong> - اندازه mask</p>
+            <p>🎯 <strong>mask-position</strong> - موقعیت mask</p>
+            <p>🔄 <strong>mask-repeat</strong> - تکرار mask</p>
+            <p>⚠️ <strong>Prefix:</strong> -webkit-mask-image برای بهتر browser support</p>
+        </section>
+    </main>
+</body>
+</html>

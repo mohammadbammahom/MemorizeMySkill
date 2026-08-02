@@ -1,1 +1,173 @@
-   -
+   <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Blend Modes</title>
+    <link rel="stylesheet" href="CSSBlendModes.css">
+</head>
+<body>
+    <main class="app">
+        <h1>CSS Blend Modes</h1>
+        
+        <section class="example-section">
+            <h2>مثال ساده: Multiply</h2>
+            <div class="demo-box multiply">
+                <div class="blend-element"></div>
+            </div>
+            <p>multiply رنگ‌ها را تاریک می‌کند.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال ساده: Screen</h2>
+            <div class="demo-box screen">
+                <div class="blend-element"></div>
+            </div>
+            <p>screen رنگ‌ها را روشن می‌کند.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال متوسط: Overlay</h2>
+            <div class="demo-box overlay">
+                <div class="blend-element"></div>
+            </div>
+            <p>overlay ترکیبی از multiply و screen است.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال متوسط: Lighten</h2>
+            <div class="demo-box lighten">
+                <div class="blend-element"></div>
+            </div>
+            <p>lighten روشن‌ترین رنگ را انتخاب می‌کند.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال متوسط: Darken</h2>
+            <div class="demo-box darken">
+                <div class="blend-element"></div>
+            </div>
+            <p>darken تاریک‌ترین رنگ را انتخاب می‌کند.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Color-Dodge</h2>
+            <div class="demo-box color-dodge">
+                <div class="blend-element"></div>
+            </div>
+            <p>color-dodge روشن کردن شدید است.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Color-Burn</h2>
+            <div class="demo-box color-burn">
+                <div class="blend-element"></div>
+            </div>
+            <p>color-burn تاریک کردن شدید است.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Hard-Light</h2>
+            <div class="demo-box hard-light">
+                <div class="blend-element"></div>
+            </div>
+            <p>hard-light مشابه overlay است.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Soft-Light</h2>
+            <div class="demo-box soft-light">
+                <div class="blend-element"></div>
+            </div>
+            <p>soft-light نرم‌تر از hard-light است.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Difference</h2>
+            <div class="demo-box difference">
+                <div class="blend-element"></div>
+            </div>
+            <p>difference تفاوت رنگ‌ها را نشان می‌دهد.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Exclusion</h2>
+            <div class="demo-box exclusion">
+                <div class="blend-element"></div>
+            </div>
+            <p>exclusion مشابه difference است.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Hue</h2>
+            <div class="demo-box hue">
+                <div class="blend-element"></div>
+            </div>
+            <p>hue جنبه رنگ را تغییر می‌دهد.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Saturation</h2>
+            <div class="demo-box saturation">
+                <div class="blend-element"></div>
+            </div>
+            <p>saturation اشباع رنگ را تغییر می‌دهد.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Color</h2>
+            <div class="demo-box color">
+                <div class="blend-element"></div>
+            </div>
+            <p>color رنگ را حفظ می‌کند.</p>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Luminosity</h2>
+            <div class="demo-box luminosity">
+                <div class="blend-element"></div>
+            </div>
+            <p>luminosity روشنایی را حفظ می‌کند.</p>
+        </section>
+
+        <section class="example-section grid-demo">
+            <h2>نمایش تمام Blend Modes</h2>
+            <div class="blend-grid">
+                <div class="blend-item">
+                    <div class="blend-box multiply"></div>
+                    <p>multiply</p>
+                </div>
+                <div class="blend-item">
+                    <div class="blend-box screen"></div>
+                    <p>screen</p>
+                </div>
+                <div class="blend-item">
+                    <div class="blend-box overlay"></div>
+                    <p>overlay</p>
+                </div>
+                <div class="blend-item">
+                    <div class="blend-box darken"></div>
+                    <p>darken</p>
+                </div>
+                <div class="blend-item">
+                    <div class="blend-box lighten"></div>
+                    <p>lighten</p>
+                </div>
+                <div class="blend-item">
+                    <div class="blend-box color-dodge"></div>
+                    <p>color-dodge</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="example-section info-section">
+            <h2>اطلاعات مهم</h2>
+            <p>🎨 <strong>mix-blend-mode</strong> - برای elements و text</p>
+            <p>🖼️ <strong>background-blend-mode</strong> - برای backgrounds</p>
+            <p>📊 <strong>multiply/screen</strong> - پرکاربردترین modes</p>
+            <p>⚡ <strong>Performance:</strong> GPU intensive هستند</p>
+            <p>♿ <strong>Accessibility:</strong> contrast را چک کنید</p>
+        </section>
+    </main>
+</body>
+</html>

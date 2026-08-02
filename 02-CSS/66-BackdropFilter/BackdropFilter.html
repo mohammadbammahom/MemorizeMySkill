@@ -1,1 +1,119 @@
-   -
+   <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backdrop Filter</title>
+    <link rel="stylesheet" href="BackdropFilter.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <main class="app">
+        <h1>Backdrop Filter مثال‌ها</h1>
+        
+        <section class="example-section">
+            <h2>مثال ساده: Blur</h2>
+            <div class="container">
+                <div class="glass-simple">
+                    محتوای ساده
+                </div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال متوسط: Multiple Filters</h2>
+            <div class="container">
+                <div class="glass-multi">
+                    محتوای متوسط
+                </div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال حرفه‌ای: Glass Card</h2>
+            <div class="container">
+                <div class="glass-card">
+                    <h3>Glass Card</h3>
+                    <p>این یک glass card است با frosted glass effect.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Brightness</h2>
+            <div class="container">
+                <div class="glass-brightness">
+                    محتوای روشن‌تر
+                </div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Contrast</h2>
+            <div class="container">
+                <div class="glass-contrast">
+                    محتوای کنتراست بالا
+                </div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Grayscale</h2>
+            <div class="container">
+                <div class="glass-grayscale">
+                    محتوای خاکستری
+                </div>
+            </div>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Navigation Bar</h2>
+            <nav class="glass-nav">
+                <a href="#">خانه</a>
+                <a href="#">درباره</a>
+                <a href="#">خدمات</a>
+                <a href="#">تماس</a>
+            </nav>
+        </section>
+
+        <section class="example-section">
+            <h2>مثال: Modal Overlay</h2>
+            <button onclick="openModal()">باز کردن Modal</button>
+            
+            <div class="modal-overlay" id="modal">
+                <div class="glass-modal">
+                    <h3>Modal Dialog</h3>
+                    <p>این یک modal با backdrop filter است.</p>
+                    <button onclick="closeModal()">بستن</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="example-section info-section">
+            <h2>اطلاعات مهم</h2>
+            <p>🔍 <strong>blur()</strong> - blur filter</p>
+            <p>☀️ <strong>brightness()</strong> - روشنایی</p>
+            <p>⚙️ <strong>contrast()</strong> - کنتراست</p>
+            <p>🎨 <strong>multiple filters</strong> - ترکیب filters</p>
+            <p>⚠️ <strong>Prefix:</strong> -webkit-backdrop-filter</p>
+        </section>
+    </main>
+
+    <script>
+        function openModal() {
+            document.getElementById('modal').classList.add('show');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('show');
+        }
+
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
