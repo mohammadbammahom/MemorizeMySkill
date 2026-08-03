@@ -1,89 +1,67 @@
-   # CSS Cheat Sheet
-
+# CSS Cheat Sheet
 ---
-
-## معرفی
-
-کل CSS را در یک جا دید.
-
+## این مبحث چیست؟
+این cheat sheet یک مرور سریع از قوانین اصلی CSS را ارائه می‌دهد. هدف آن یادآوری دستورات پرکاربرد برای طراحی صفحات وب است.
 ---
-
 ## Selectors
-
 ```css
-* { }              /* Universal */
-.class { }         /* Class */
-#id { }            /* ID */
-element { }        /* Element */
-[attr] { }         /* Attribute */
-::pseudo { }       /* Pseudo-element */
-:pseudo { }        /* Pseudo-class */
+* { }
+.class { }
+#id { }
+element { }
+[attr] { }
+::pseudo-element { }
+:pseudo-class { }
 ```
-
 ---
-
 ## Box Model
-
 ```css
-margin: 10px;      /* Outer space */
-padding: 10px;     /* Inner space */
-border: 1px solid; /* Border */
-width: 100px;      /* Width */
-height: 100px;     /* Height */
+margin: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+width: 100px;
+height: 100px;
 ```
-
 ---
-
 ## Display
-
 ```css
-display: block;        /* Full width */
-display: inline;       /* Inline */
-display: flex;         /* Flexbox */
-display: grid;         /* Grid */
-display: none;         /* Hidden */
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: grid;
+display: none;
 ```
-
 ---
-
 ## Colors
-
 ```css
-color: red;                    /* Text color */
-background: blue;              /* Background */
-border-color: green;           /* Border */
-box-shadow: 0 0 10px rgba(); /* Shadow */
+color: #333;
+background: #f8f9fa;
+border-color: #ddd;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
 ```
-
 ---
-
 ## Typography
-
 ```css
-font-size: 16px;       /* Size */
-font-weight: bold;     /* Weight */
-font-style: italic;    /* Style */
-line-height: 1.5;      /* Line height */
-text-align: center;    /* Alignment */
+font-size: 16px;
+font-weight: 700;
+font-style: italic;
+line-height: 1.5;
+text-align: center;
 ```
-
 ---
-
 ## Positioning
-
 ```css
-position: static;      /* Default */
-position: relative;    /* Relative */
-position: absolute;    /* Absolute */
-position: fixed;       /* Fixed */
-position: sticky;      /* Sticky */
-top: 0;                /* Top position */
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
+top: 0;
+left: 0;
 ```
-
 ---
-
 ## Flexbox
-
 ```css
 display: flex;
 flex-direction: row;
@@ -91,32 +69,33 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 ```
-
 ---
-
 ## Grid
-
 ```css
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: auto;
 gap: 10px;
 ```
-
 ---
-
 ## Animations
-
 ```css
-animation: name 1s ease infinite;
-@keyframes name {
+animation: pulse 1.2s ease-in-out infinite;
+@keyframes pulse {
   0% { transform: scale(1); }
-  100% { transform: scale(1.2); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 ```
-
 ---
-
+## Useful Properties
+```css
+transition: all 0.3s ease;
+border-radius: 12px;
+box-sizing: border-box;
+overflow: hidden;
+white-space: nowrap;
+```
+---
 ## جمع‌بندی
-
-CSS راه سریع برای یادگیری.
+این یادداشت سریع به شما کمک می‌کند قوانینی که اغلب استفاده می‌شوند را به یاد داشته باشید و در طراحی وب سریع‌تر عمل کنید.

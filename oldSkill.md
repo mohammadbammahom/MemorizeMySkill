@@ -1,71 +1,210 @@
-### 🔧 Tech Stack
+اصلا اون طوری که انتظار داشتم خروجی نداد 
 
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" title="HTML5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" title="CSS3" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" title="JavaScript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" title="TypeScript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" title="React" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="40" title="Next.js" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" title="Node.js" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="40" title="Express.js" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40" title="Tailwind CSS" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="40" title="Bootstrap" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" width="40" title="Material UI" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" title="Git" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" width="40" title="Adobe Photoshop" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40" title="MongoDB" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" title="MySQL" />
-  <img src="https://vitejs.dev/logo.svg" width="40" title="Vite" />
-</p>
 
----
 
-### 🎯 Skills & Libraries I Work With
+├───📁 01-HTML
 
-<p align="left"> 
-  <img src="https://img.shields.io/badge/formik-000000?style=for-the-badge&logo=formik&logoColor=white" title="Formik" /> 
-  <img src="https://img.shields.io/badge/jwt_decode-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" title="JWT Decode" /> 
-  <img src="https://img.shields.io/badge/typewriter_effect-000000?style=for-the-badge&logo=typewriter&logoColor=white" title="Typewriter Effect" /> 
-  <img src="https://img.shields.io/badge/json_server-000000?style=for-the-badge&logo=json&logoColor=white" title="Json Server" /> 
-  <img src="https://img.shields.io/badge/server_only-000000?style=for-the-badge&logo=server&logoColor=white" title="server-only" />
-  <!-- Red -->
-  <img src="https://img.shields.io/badge/react_router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" title="React Router" /> 
-  <img src="https://img.shields.io/badge/body_parser-FF6347?style=for-the-badge&logo=body-parser&logoColor=white" title="body-parser" />
-  <img src="https://img.shields.io/badge/react_spinners-FF6347?style=for-the-badge&logo=react&logoColor=white" title="react-spinners" />
-  <img src="https://img.shields.io/badge/sweetalert2-FF5C5C?style=for-the-badge&logo=sweetalert2&logoColor=white" title="Sweet Alert2" /> 
-  <img src="https://img.shields.io/badge/react_notifications-FF6F61?style=for-the-badge&logo=react&logoColor=white" title="react-notifications" />
-  <img src="https://img.shields.io/badge/cors-FF6F61?style=for-the-badge&logoColor=white" title="CORS" />
-  <!-- Pink -->
-  <img src="https://img.shields.io/badge/recharts-FF6384?style=for-the-badge&logo=recharts&logoColor=white" title="React Charts" /> 
-  <img src="https://img.shields.io/badge/react_chart-FF6384?style=for-the-badge&logo=recharts&logoColor=white" title="react-chart" />
-  <img src="https://img.shields.io/badge/react_hook_form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white" title="React Hook Form" /> 
-  <img src="https://img.shields.io/badge/styled_components-FF69B4?style=for-the-badge&logo=styled-components&logoColor=white" title="styled-components" />
-  <img src="https://img.shields.io/badge/@emotion_styled-FF69B4?style=for-the-badge&logo=emotion&logoColor=white" title="@emotion/styled" />
-  <img src="https://img.shields.io/badge/framer_motion-FF00FF?style=for-the-badge&logo=framer&logoColor=white" title="Framer Motion" />
-  <!-- Purple -->
-  <img src="https://img.shields.io/badge/mongoose-800080?style=for-the-badge&logo=mongodb&logoColor=white" title="Mongoose" />
-  <img src="https://img.shields.io/badge/react_bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" title="React Bootstrap" /> 
-  <img src="https://img.shields.io/badge/react_shimmer_Effects-8E44AD?style=for-the-badge&logo=react&logoColor=white" title="React Shimmer Effects" /> 
-  <img src="https://img.shields.io/badge/dotenv-9B59B6?style=for-the-badge&logo=dotenv&logoColor=white" title="dotenv" />
-  <!-- Blue -->
-  <img src="https://img.shields.io/badge/swiper-6332F6?style=for-the-badge&logo=swiper&logoColor=white" title="Swiper" /> 
-  <img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" title="Axios" /> 
-  <img src="https://img.shields.io/badge/react_query-0052CC?style=for-the-badge&logo=react-query&logoColor=white" title="React Query" />
-  <img src="https://img.shields.io/badge/@mui_x_data_grid-007FFF?style=for-the-badge&logo=mui&logoColor=white" title="@mui/x-data-grid" />
-  <img src="https://img.shields.io/badge/Telegram_Bot_API-0088CC?style=for-the-badge&logo=telegram&logoColor=white" title="Telegram Bot API" />
-  <img src="https://img.shields.io/badge/lodash-3492FF?style=for-the-badge&logo=lodash&logoColor=white" title="Lodash" /> 
-  <img src="https://img.shields.io/badge/react_paginate-00A5FF?style=for-the-badge&logo=react&logoColor=white" title="react-paginate" />
-  <img src="https://img.shields.io/badge/zustand-00BFFF?style=for-the-badge&logo=zustand&logoColor=white" title="Zustand" />
-  <img src="https://img.shields.io/badge/client_only-00BFFF?style=for-the-badge&logo=client&logoColor=white" title="client-only" />
-  <img src="https://img.shields.io/badge/react_icons-61DAFB?style=for-the-badge&logo=react&logoColor=white" title="React Icons" /> 
-  <img src="https://img.shields.io/badge/json_parser-00CED1?style=for-the-badge&logoColor=white" title="JSON Parser" />
-  <!-- Green -->
-  <img src="https://img.shields.io/badge/@heroicons_react-4B8B3F?style=for-the-badge&logo=heroicons&logoColor=white" title="@heroicons/react" />
-  <img src="https://img.shields.io/badge/react_toastify-4CAF50?style=for-the-badge&logo=react&logoColor=white" title="React Toastify" /> 
-  <img src="https://img.shields.io/badge/nodemon-76D04B?style=for-the-badge&logo=nodemon&logoColor=white" title="nodemon" />
-  <!-- Yellow -->
-  <img src="https://img.shields.io/badge/react_draggable-FFC300?style=for-the-badge&logo=react&logoColor=black" title="React Draggable" /> 
-  <img src="https://img.shields.io/badge/uuid-FF8C00?style=for-the-badge&logoColor=white" title="UUID" />
-  <img src="https://img.shields.io/badge/yup-4B5563?style=for-the-badge&logo=yup&logoColor=white" title="Yup" /> 
-</p>
+│   ├───📁 01-DocumentStructure
+
+│   │   ├───📄 DocumentStructure.css
+
+│   │   ├───📄 DocumentStructure.html
+
+│   │   └───📄 DocumentStructure.md
+
+...
+
+
+
+
+
+│   ├───📁 48-FinalChallenge
+
+│   │   ├───📄 FinalChallenge.css
+
+│   │   ├───📄 FinalChallenge.html
+
+│   │   └───📄 FinalChallenge.md
+
+│   ├───📄 HTML-Roadmap.md
+
+│   └───📄 HTMLCheatSheet.md
+
+├───📁 02-CSS
+
+│   ├───📁 01-CSSIntroduction
+
+│   │   ├───📄 CSSIntroduction.css
+
+│   │   ├───📄 CSSIntroduction.html
+
+│   │   └───📄 CSSIntroduction.md
+
+...
+
+
+
+
+
+│   ├───📁 85-CSSCheatSheet
+
+│   │   ├───📄 CSSCheatSheet.css
+
+│   │   ├───📄 CSSCheatSheet.html
+
+│   │   └───📄 CSSCheatSheet.md
+
+│   ├───📄 CSS-Roadmap.md
+
+│   └───📄 CSSCheatSheet.md
+
+├───📁 03-JavaScript
+
+│   ├───📁 01-ES5
+
+│   │   ├───📄 CheatSheet.md
+
+│   │   ├───📄 Roadmap.md
+
+│   │   ├───📄 StrictMode.js
+
+│   │   └───📄 StrictMode.md
+
+│   ├───📁 02-ES6-2015
+
+│   │   ├───📄 CheatSheet.md
+
+│   │   ├───📄 LetConst.js
+
+│   │   ├───📄 LetConst.md
+
+│   │   └───📄 Roadmap.md
+
+│   ├───📁 03-ES7-2016
+
+│   │   ├───📄 CheatSheet.md
+
+│   │   ├───📄 Includes.js
+
+│   │   ├───📄 Includes.md
+
+│   │   └───📄 Roadmap.md
+
+│   ├───📁 04-ES8-2017
+
+│   │   ├───📄 CheatSheet.md
+
+│   │   ├───📄 ObjectEntries.js
+
+│   │   ├───📄 ObjectEntries.md
+
+│   │   └───📄 Roadmap.md
+
+│   ├───📁 05-ES9-2018
+
+│   │   ├───📄 CheatSheet.md
+
+│   │   ├───📄 PromiseFinally.js
+
+│   │   ├───📄 PromiseFinally.md
+
+│   │   └───📄 Roadmap.md
+
+│   ├───📁 06-ES10-2019
+
+│   │   ├───📄 CheatSheet.md
+
+│   │   ├───📄 Flat.js
+
+│   │   ├───📄 Flat.md
+
+│   │   └───📄 Roadmap.md
+
+│   ├───📁 07-ES11-2020
+
+│   │   ├───📄 CheatSheet.md
+
+│   │   └───📄 Roadmap.md
+
+│   ├───📁 08-ES12-2021
+
+│   ├───📁 09-ES13-2022
+
+│   ├───📁 10-ES14-2023
+
+│   ├───📁 11-ES15-2024
+
+│   └───📁 12-ES16-2025
+
+├───📁 03-JavaScript-Package
+
+├───📁 04-TypeScript
+
+├───📁 05-Git&GitHub
+
+├───📁 06-npm
+
+├───📁 07-React
+
+├───📁 07-React-Package
+
+│   ├───📁 01-React Router
+
+│   └───📁 02-ReactHookForm
+
+├───📁 08-TailwindCSS
+
+├───📁 09-NextJS
+
+├───📁 09-NextJS-Package
+
+├───📁 10-NodeJS
+
+├───📁 10-NodeJS-Package
+
+│   └───📁 01-ExpressJS
+
+├───📁 11-DataBases
+
+│   ├───📁 01-MongoDB
+
+│   └───📁 02-MySQL
+
+├───📁 12-Vite
+
+│   └───📄 Vite.md
+
+├───📄 LibraryTree.txt
+
+├───📄 README.txt
+
+├───📄 library_tree.py
+
+└───📄 oldSkill.md
+
+
+
+انتظار داشتم که توی پوشه
+
+es5 هر مبحث یک قسمت باشه 
+
+├───📁 03-JavaScript
+
+│   ├───📁 01-ES5
+
+│   │   ├───📁 01-var
+
+│   │   ├───📁 02-مباحث بعدی 
+
+
+
+انتظار داشتم یاد بده توی با نود جی اس توی ترمینال اجرا بشه
+
+js , md 
+
+ یا اگر عملیات منطقی بود 
+
+html , css , js , md
+
+باشه 
+

@@ -1,81 +1,134 @@
-   # CSS View Transitions
-
+# CSS View Transitions
 ---
-
-## معرفی
-
-View Transitions یک API جدید برای ایجاد انتقالات صاف بین تغییرات در صفحه است. این ویژگی برای single-page applications بسیار مفید است.
-
+## این مبحث چیست؟
+CSS View Transitions قابلیتی است که انتقال‌های صفحه یا محتوا را هنگام تغییر حالت به صورت خودکار و نرم انیمیت می‌کند. این ویژگی به شکل خاص برای بهبود تجربه تغییر بین نماهای مختلف در صفحات SPA طراحی شده است.
 ---
-
-## چرا این ویژگی مهم است؟
-
-- انتقالات صاف
-- بهتر از fade in/out
-- single-page apps
-- تجربه کاربری بهتر
-
+## چرا از آن استفاده می‌کنیم؟
+- برای کاهش پرش و چشمک هنگام تغییر صفحه یا بخش.
+- برای ایجاد انتقال‌های روان بین محتواهای مرتبط.
+- برای بهبود حس مداومت در رابط کاربری.
+- برای اعمال انیمیشن‌های صفحه با کمترین کد CSS.
 ---
-
-## پیش‌نیازها
-
-CSS، JavaScript، animations
-
----
-
-## سینتکس
-
+## چه زمانی استفاده می‌کنیم
+- وقتی بین دو بخش با ساختار مشابه جابجا می‌شویم:
 ```css
-::view-transition {
-  animation-duration: 0.5s;
-}
-
-::view-transition-old(root) {
-  animation-name: fade-out;
-}
-
-::view-transition-new(root) {
-  animation-name: fade-in;
+.page {
+  view-transition-name: content;
 }
 ```
-
----
-
-## تمام ویژگی‌ها
-
-- ::view-transition
-- ::view-transition-group()
-- ::view-transition-image-pair()
-- ::view-transition-old()
-- ::view-transition-new()
-
----
-
-## مثال ساده
-
+- وقتی مودال یا پنل جدید باز می‌شود:
 ```css
-@supports (view-transition-name: auto) {
-  ::view-transition-old(root) {
-    animation: fade-out 0.3s ease-out;
-  }
-
-  ::view-transition-new(root) {
-    animation: fade-in 0.3s ease-in;
-  }
+.modal {
+  view-transition-name: modal;
 }
 ```
-
+- وقتی محتوای تب‌ها تغییر می‌کند و می‌خواهیم انتقال آرام باشد:
+```css
+.tab-pane {
+  view-transition-name: tab-change;
+}
+```
 ---
-
-## نکات مهم
-
-- Experimental feature
-- Requires JavaScript
-- Desktop browsers فقط
-- Animation customization ممکن
-
+## چه زمانی نباید استفاده کنیم
+- وقتی صفحه‌های مقصد کاملاً متفاوت هستند.
+```css
+.page-a {
+  view-transition-name: auto;
+}
+.page-b {
+  view-transition-name: auto;
+}
+```
+- برای hover یا افکت‌های کوچک مستقل.
+```css
+.button:hover {
+  view-transition-name: hover;
+}
+```
+- وقتی پشتیبانی مرورگر خیلی مهم است بدون fallback.
+```css
+.content {
+  view-transition-name: page;
+}
+```
 ---
+## تفاوت با ویژگی‌های مشابه
+| ویژگی | کاربرد | تفاوت |
+|-------|--------|-------|
+| `view-transition` | انتقال بین نماها | خودکار و مرتبط با تغییر DOM است |
+| `transition` | انیمیت تغییرات CSS | فقط تغییرات مشخص را پوشش می‌دهد |
+| `animation` | انیمیشن کامل | برای تغییرات صفحه‌ای مناسب‌تر است |
+---
+## بهترین روش‌های استفاده
+- از `@supports (view-transition-name: auto)` برای fallback استفاده کنید.
+- نام‌های واضح و معنادار برای `view-transition-name` انتخاب کنید.
+- از انتقال برای عناصر بزرگ صفحه‌ای استفاده کنید، نه برای hover.
+- ترکیب `view-transition` با `transition` برای جزئیات داخلی مفید است.
+- در پروژه‌های SPA و ناوبری بین صفحات به صورت تدریجی استفاده کنید.
+---
+## اشتباهات رایج
+- ❌ استفاده برای موارد کوچک مثل hover:
+```css
+.btn:hover {
+  view-transition-name: hover;
+}
+```
+- ❌ عدم پشتیبانی fallback:
+```css
+.content {
+  view-transition-name: page;
+}
+```
+- ❌ نام‌گذاری گنگ:
+```css
+.card {
+  view-transition-name: fade;
+}
+```
+- ❌ استفاده روی تغییرات غیرمرتبط:
+```css
+.sidebar {
+  view-transition-name: auto;
+}
+```
+```
+---
+## نکات بازار کار
+- در پروژه‌های SPA، View Transitions می‌تواند تجربه کاربری را به‌طور چشمگیری بهبود دهد.
+- در مصاحبه باید فرق آن با `transition` و `animation` را توضیح دهید.
+- در بازبینی کد انتظار می‌رود fallback و سازگاری مرورگر بررسی شود.
+- این قابلیت برای تغییرات بزرگ محتوا بهتر است.
+- از آن برای صفحات سبک و روان استفاده کنید.
+---
+## چک‌لیست یادگیری
+- [ ] می‌دانم View Transitions چیست.
+- [ ] می‌توانم `view-transition-name` بنویسم.
+- [ ] می‌دانم چه زمانی نباید از آن استفاده کرد.
+- [ ] می‌توانم fallback با `@supports` بنویسم.
+- [ ] می‌توانم انتقال‌های صفحه را مدیریت کنم.
+---
+## تمرین
 
-## جمع‌بندی
+در این تمرین یک نمونه انتقال صفحه با View Transitions طراحی کنید.
 
-View Transitions برای صفحات نقل مکان است.
+مراحل انجام تمرین:
+
+1. در HTML دو بخش محتوایی (`section`) تعریف کنید که با کلیک روی دکمه یا لینک قابل تغییر باشند.
+   - یکی بخش اول و دیگری بخش دوم باشد.
+   - دو دکمه یا لینک برای جابجایی بین این بخش‌ها قرار دهید.
+
+2. در CSS برای کانتینر محتوایی که تغییر می‌کند، `view-transition-name: content;` قرار دهید.
+
+3. برای پشتیبانی مرورگر `@supports` اضافه کنید:
+   - اگر `view-transition-name` پشتیبانی می‌شود، انیمیشن به صورت خودکار فعال باشد.
+   - اگر پشتیبانی نشود، بخش‌ها بدون خطا نمایش داده شوند.
+
+4. جلوه انتقال را به صورت نرمی پیاده‌سازی کنید:
+   - هنگام خروج بخش فعلی از `opacity` کم شود.
+   - هنگام ورود بخش جدید، `opacity` از 0 به 1 تغییر کند.
+   - انتقال نباید به صورت پرش ناگهانی باشد.
+
+5. مطمئن شوید محتوا در حالت تغییر از نظر طراحی یکپارچه و روان دیده می‌شود.
+
+نتیجه نهایی:
+یک نمونه SPA-like بسازید که با کلیک روی دکمه‌ها بین دو بخش محتوا جابجا می‌شود و انتقال‌ها به صورت نرم و بدون پرش انجام می‌شوند.
