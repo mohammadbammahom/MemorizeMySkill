@@ -1,210 +1,36 @@
-اصلا اون طوری که انتظار داشتم خروجی نداد 
 
 
+(
+    1. 01-html , html , htm
 
-├───📁 01-HTML
+    2. 02-css , css
 
-│   ├───📁 01-DocumentStructure
+    3. 03-javascript , javascript , js
 
-│   │   ├───📄 DocumentStructure.css
+    4. 04-javascriptpackage , javascriptpackage , 
+    javascript_package , javascript-package , js-package , js_package ,jspackage , js-pack , js_pack , jspack , 
 
-│   │   ├───📄 DocumentStructure.html
+    5. 05-typescript , typescript , ts
 
-│   │   └───📄 DocumentStructure.md
+    6. 06-npm , npm
 
-...
+    7. 07-git&github , git&github , gitgithub , git-github , git_github
 
+    8. 08-react , react , jsx , tsx
 
+    9. 09-react-package , react-package , react_package , reactpackage , react-pack , react_pack , reactpack
 
+    10. 10-tailwindcss , tailwindcss , tailwind , tailwind-css , tailwind_css
 
+    11. 11-nextjs , nextjs , next , next_js , next-js
 
-│   ├───📁 48-FinalChallenge
+    12. 12-nextjs-package , nextjs-package , nextjs_package , nextjspackage ,nextjs-pack , nextjs_pack , nextjspack , next-package , next_package , nextpackage ,next-pack , next_pack , nextpack
 
-│   │   ├───📄 FinalChallenge.css
+    13. 13-nodejs , nodejs , node , node_js , node-js
 
-│   │   ├───📄 FinalChallenge.html
+    14. 14-nodejs-package , nodejs-package , nodejs_package , nodejspackage ,nodejs-pack , nodejs_pack , nodejspack , node-package , node_package , nodepackage , node-pack , node_pack , nodepack
 
-│   │   └───📄 FinalChallenge.md
+    15. 15-databases , databases , database , db
 
-│   ├───📄 HTML-Roadmap.md
-
-│   └───📄 HTMLCheatSheet.md
-
-├───📁 02-CSS
-
-│   ├───📁 01-CSSIntroduction
-
-│   │   ├───📄 CSSIntroduction.css
-
-│   │   ├───📄 CSSIntroduction.html
-
-│   │   └───📄 CSSIntroduction.md
-
-...
-
-
-
-
-
-│   ├───📁 85-CSSCheatSheet
-
-│   │   ├───📄 CSSCheatSheet.css
-
-│   │   ├───📄 CSSCheatSheet.html
-
-│   │   └───📄 CSSCheatSheet.md
-
-│   ├───📄 CSS-Roadmap.md
-
-│   └───📄 CSSCheatSheet.md
-
-├───📁 03-JavaScript
-
-│   ├───📁 01-ES5
-
-│   │   ├───📄 CheatSheet.md
-
-│   │   ├───📄 Roadmap.md
-
-│   │   ├───📄 StrictMode.js
-
-│   │   └───📄 StrictMode.md
-
-│   ├───📁 02-ES6-2015
-
-│   │   ├───📄 CheatSheet.md
-
-│   │   ├───📄 LetConst.js
-
-│   │   ├───📄 LetConst.md
-
-│   │   └───📄 Roadmap.md
-
-│   ├───📁 03-ES7-2016
-
-│   │   ├───📄 CheatSheet.md
-
-│   │   ├───📄 Includes.js
-
-│   │   ├───📄 Includes.md
-
-│   │   └───📄 Roadmap.md
-
-│   ├───📁 04-ES8-2017
-
-│   │   ├───📄 CheatSheet.md
-
-│   │   ├───📄 ObjectEntries.js
-
-│   │   ├───📄 ObjectEntries.md
-
-│   │   └───📄 Roadmap.md
-
-│   ├───📁 05-ES9-2018
-
-│   │   ├───📄 CheatSheet.md
-
-│   │   ├───📄 PromiseFinally.js
-
-│   │   ├───📄 PromiseFinally.md
-
-│   │   └───📄 Roadmap.md
-
-│   ├───📁 06-ES10-2019
-
-│   │   ├───📄 CheatSheet.md
-
-│   │   ├───📄 Flat.js
-
-│   │   ├───📄 Flat.md
-
-│   │   └───📄 Roadmap.md
-
-│   ├───📁 07-ES11-2020
-
-│   │   ├───📄 CheatSheet.md
-
-│   │   └───📄 Roadmap.md
-
-│   ├───📁 08-ES12-2021
-
-│   ├───📁 09-ES13-2022
-
-│   ├───📁 10-ES14-2023
-
-│   ├───📁 11-ES15-2024
-
-│   └───📁 12-ES16-2025
-
-├───📁 03-JavaScript-Package
-
-├───📁 04-TypeScript
-
-├───📁 05-Git&GitHub
-
-├───📁 06-npm
-
-├───📁 07-React
-
-├───📁 07-React-Package
-
-│   ├───📁 01-React Router
-
-│   └───📁 02-ReactHookForm
-
-├───📁 08-TailwindCSS
-
-├───📁 09-NextJS
-
-├───📁 09-NextJS-Package
-
-├───📁 10-NodeJS
-
-├───📁 10-NodeJS-Package
-
-│   └───📁 01-ExpressJS
-
-├───📁 11-DataBases
-
-│   ├───📁 01-MongoDB
-
-│   └───📁 02-MySQL
-
-├───📁 12-Vite
-
-│   └───📄 Vite.md
-
-├───📄 LibraryTree.txt
-
-├───📄 README.txt
-
-├───📄 library_tree.py
-
-└───📄 oldSkill.md
-
-
-
-انتظار داشتم که توی پوشه
-
-es5 هر مبحث یک قسمت باشه 
-
-├───📁 03-JavaScript
-
-│   ├───📁 01-ES5
-
-│   │   ├───📁 01-var
-
-│   │   ├───📁 02-مباحث بعدی 
-
-
-
-انتظار داشتم یاد بده توی با نود جی اس توی ترمینال اجرا بشه
-
-js , md 
-
- یا اگر عملیات منطقی بود 
-
-html , css , js , md
-
-باشه 
-
+    16. 16-vite , vite
+)

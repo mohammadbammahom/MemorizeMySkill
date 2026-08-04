@@ -1,152 +1,153 @@
+├───📄 [censored]
 ├───📁 01-HTML
 │   ├───📁 01-DocumentStructure
-│   │   ├───📄 DocumentStructure.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 DocumentStructure.html
-│   │   └───📄 DocumentStructure.md
+│   │   └───📄 [censored]
 │   ├───📁 02-SemanticHTML
 │   │   ├───📄 SemanticHTML.css
 │   │   ├───📄 SemanticHTML.html
 │   │   └───📄 SemanticHTML.md
 │   ├───📁 03-HeadAndMeta
-│   │   ├───📄 HeadAndMeta.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 HeadAndMeta.html
-│   │   └───📄 HeadAndMeta.md
+│   │   └───📄 [censored]
 │   ├───📁 04-TextAndParagraphs
-│   │   ├───📄 TextAndParagraphs.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 TextAndParagraphs.html
-│   │   └───📄 TextAndParagraphs.md
+│   │   └───📄 [censored]
 │   ├───📁 05-TextFormatting
-│   │   ├───📄 TextFormatting.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 TextFormatting.html
-│   │   └───📄 TextFormatting.md
+│   │   └───📄 [censored]
 │   ├───📁 06-DivAndSpan
-│   │   ├───📄 DivAndSpan.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 DivAndSpan.html
-│   │   └───📄 DivAndSpan.md
+│   │   └───📄 [censored]
 │   ├───📁 07-Lists
-│   │   ├───📄 Lists.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Lists.html
-│   │   └───📄 Lists.md
+│   │   └───📄 [censored]
 │   ├───📁 08-LinksAndNavigation
-│   │   ├───📄 LinksAndNavigation.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 LinksAndNavigation.html
-│   │   └───📄 LinksAndNavigation.md
+│   │   └───📄 [censored]
 │   ├───📁 09-Images
-│   │   ├───📄 Images.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Images.html
-│   │   └───📄 Images.md
+│   │   └───📄 [censored]
 │   ├───📁 10-ResponsiveImages
-│   │   ├───📄 ResponsiveImages.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ResponsiveImages.html
-│   │   └───📄 ResponsiveImages.md
+│   │   └───📄 [censored]
 │   ├───📁 11-FigureAndFigcaption
-│   │   ├───📄 FigureAndFigcaption.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 FigureAndFigcaption.html
-│   │   └───📄 FigureAndFigcaption.md
+│   │   └───📄 [censored]
 │   ├───📁 12-Tables
-│   │   ├───📄 Tables.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Tables.html
-│   │   └───📄 Tables.md
+│   │   └───📄 [censored]
 │   ├───📁 13-FormsBasics
-│   │   ├───📄 FormsBasics.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 FormsBasics.html
-│   │   └───📄 FormsBasics.md
+│   │   └───📄 [censored]
 │   ├───📁 14-InputTypes
-│   │   ├───📄 InputTypes.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 InputTypes.html
-│   │   └───📄 InputTypes.md
+│   │   └───📄 [censored]
 │   ├───📁 15-FormValidation
-│   │   ├───📄 FormValidation.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 FormValidation.html
-│   │   └───📄 FormValidation.md
+│   │   └───📄 [censored]
 │   ├───📁 16-Buttons
-│   │   ├───📄 Buttons.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Buttons.html
-│   │   └───📄 Buttons.md
+│   │   └───📄 [censored]
 │   ├───📁 17-Labels
-│   │   ├───📄 Labels.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Labels.html
-│   │   └───📄 Labels.md
+│   │   └───📄 [censored]
 │   ├───📁 18-FieldsetAndLegend
-│   │   ├───📄 FieldsetAndLegend.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 FieldsetAndLegend.html
-│   │   └───📄 FieldsetAndLegend.md
+│   │   └───📄 [censored]
 │   ├───📁 19-Datalist
-│   │   ├───📄 Datalist.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Datalist.html
-│   │   └───📄 Datalist.md
+│   │   └───📄 [censored]
 │   ├───📁 20-Output
-│   │   ├───📄 Output.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Output.html
-│   │   └───📄 Output.md
+│   │   └───📄 [censored]
 │   ├───📁 21-ProgressAndMeter
-│   │   ├───📄 ProgressAndMeter.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ProgressAndMeter.html
-│   │   └───📄 ProgressAndMeter.md
+│   │   └───📄 [censored]
 │   ├───📁 22-SemanticHTMLAdvanced
 │   │   ├───📄 SemanticHTMLAdvanced.css
 │   │   ├───📄 SemanticHTMLAdvanced.html
 │   │   └───📄 SemanticHTMLAdvanced.md
 │   ├───📁 23-HeaderMainFooter
-│   │   ├───📄 HeaderMainFooter.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 HeaderMainFooter.html
-│   │   └───📄 HeaderMainFooter.md
+│   │   └───📄 [censored]
 │   ├───📁 24-SectionArticleAside
-│   │   ├───📄 SectionArticleAside.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 SectionArticleAside.html
-│   │   └───📄 SectionArticleAside.md
+│   │   └───📄 [censored]
 │   ├───📁 25-Audio
-│   │   ├───📄 Audio.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Audio.html
-│   │   └───📄 Audio.md
+│   │   └───📄 [censored]
 │   ├───📁 26-Video
-│   │   ├───📄 Video.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Video.html
-│   │   └───📄 Video.md
+│   │   └───📄 [censored]
 │   ├───📁 27-Iframe
-│   │   ├───📄 Iframe.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Iframe.html
-│   │   └───📄 Iframe.md
+│   │   └───📄 [censored]
 │   ├───📁 28-SVG
-│   │   ├───📄 SVG.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 SVG.html
-│   │   └───📄 SVG.md
+│   │   └───📄 [censored]
 │   ├───📁 29-CanvasBasics
-│   │   ├───📄 CanvasBasics.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CanvasBasics.html
-│   │   └───📄 CanvasBasics.md
+│   │   └───📄 [censored]
 │   ├───📁 30-Dialog
-│   │   ├───📄 Dialog.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Dialog.html
-│   │   └───📄 Dialog.md
+│   │   └───📄 [censored]
 │   ├───📁 31-DetailsAndSummary
-│   │   ├───📄 DetailsAndSummary.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 DetailsAndSummary.html
-│   │   └───📄 DetailsAndSummary.md
+│   │   └───📄 [censored]
 │   ├───📁 32-Template
-│   │   ├───📄 Template.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Template.html
-│   │   └───📄 Template.md
+│   │   └───📄 [censored]
 │   ├───📁 33-GlobalAttributes
-│   │   ├───📄 GlobalAttributes.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 GlobalAttributes.html
-│   │   └───📄 GlobalAttributes.md
+│   │   └───📄 [censored]
 │   ├───📁 34-DataAttributes
-│   │   ├───📄 DataAttributes.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 DataAttributes.html
-│   │   └───📄 DataAttributes.md
+│   │   └───📄 [censored]
 │   ├───📁 35-WebComponents
-│   │   ├───📄 WebComponents.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 WebComponents.html
-│   │   └───📄 WebComponents.md
+│   │   └───📄 [censored]
 │   ├───📁 36-HTMLAccessibility
 │   │   ├───📄 HTMLAccessibility.css
 │   │   ├───📄 HTMLAccessibility.html
 │   │   └───📄 HTMLAccessibility.md
 │   ├───📁 37-ARIABasics
-│   │   ├───📄 ARIABasics.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ARIABasics.html
-│   │   └───📄 ARIABasics.md
+│   │   └───📄 [censored]
 │   ├───📁 38-SEOForHTML
 │   │   ├───📄 SEOForHTML.css
 │   │   ├───📄 SEOForHTML.html
@@ -156,9 +157,9 @@
 │   │   ├───📄 HTMLPerformance.html
 │   │   └───📄 HTMLPerformance.md
 │   ├───📁 40-BrowserDevTools
-│   │   ├───📄 BrowserDevTools.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 BrowserDevTools.html
-│   │   └───📄 BrowserDevTools.md
+│   │   └───📄 [censored]
 │   ├───📁 41-HTMLBestPractices
 │   │   ├───📄 HTMLBestPractices.css
 │   │   ├───📄 HTMLBestPractices.html
@@ -168,433 +169,389 @@
 │   │   ├───📄 CommonHTMLMistakes.html
 │   │   └───📄 CommonHTMLMistakes.md
 │   ├───📁 43-InterviewQuestions
-│   │   ├───📄 InterviewQuestions.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 InterviewQuestions.html
-│   │   └───📄 InterviewQuestions.md
+│   │   └───📄 [censored]
 │   ├───📁 44-Project-LandingPage
-│   │   ├───📄 LandingPage.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 LandingPage.html
-│   │   └───📄 LandingPage.md
+│   │   └───📄 [censored]
 │   ├───📁 45-Project-Blog
-│   │   ├───📄 Blog.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Blog.html
-│   │   └───📄 Blog.md
+│   │   └───📄 [censored]
 │   ├───📁 46-Project-Ecommerce
-│   │   ├───📄 Ecommerce.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Ecommerce.html
-│   │   └───📄 Ecommerce.md
+│   │   └───📄 [censored]
 │   ├───📁 47-Project-AdminDashboard
-│   │   ├───📄 AdminDashboard.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 AdminDashboard.html
-│   │   └───📄 AdminDashboard.md
+│   │   └───📄 [censored]
 │   ├───📁 48-FinalChallenge
-│   │   ├───📄 FinalChallenge.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 FinalChallenge.html
-│   │   └───📄 FinalChallenge.md
+│   │   └───📄 [censored]
 │   ├───📄 HTML-Roadmap.md
 │   └───📄 HTMLCheatSheet.md
 ├───📁 02-CSS
 │   ├───📁 01-CSSIntroduction
-│   │   ├───📄 CSSIntroduction.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSIntroduction.html
-│   │   └───📄 CSSIntroduction.md
+│   │   └───📄 [censored]
 │   ├───📁 02-Selectors
-│   │   ├───📄 Selectors.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Selectors.html
-│   │   └───📄 Selectors.md
+│   │   └───📄 [censored]
 │   ├───📁 03-Specificity
-│   │   ├───📄 Specificity.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Specificity.html
-│   │   └───📄 Specificity.md
+│   │   └───📄 [censored]
 │   ├───📁 04-Colors
-│   │   ├───📄 Colors.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Colors.html
-│   │   └───📄 Colors.md
+│   │   └───📄 [censored]
 │   ├───📁 05-Units
-│   │   ├───📄 Units.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Units.html
-│   │   └───📄 Units.md
+│   │   └───📄 [censored]
 │   ├───📁 06-BoxModel
-│   │   ├───📄 BoxModel.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 BoxModel.html
-│   │   └───📄 BoxModel.md
+│   │   └───📄 [censored]
 │   ├───📁 07-Display
-│   │   ├───📄 Display.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Display.html
-│   │   └───📄 Display.md
+│   │   └───📄 [censored]
 │   ├───📁 08-Overflow
-│   │   ├───📄 Overflow.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Overflow.html
-│   │   └───📄 Overflow.md
+│   │   └───📄 [censored]
 │   ├───📁 09-Position
-│   │   ├───📄 Position.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Position.html
-│   │   └───📄 Position.md
+│   │   └───📄 [censored]
 │   ├───📁 10-ZIndex
-│   │   ├───📄 ZIndex.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ZIndex.html
-│   │   └───📄 ZIndex.md
+│   │   └───📄 [censored]
 │   ├───📁 11-FloatAndClear
-│   │   ├───📄 FloatAndClear.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 FloatAndClear.html
-│   │   └───📄 FloatAndClear.md
+│   │   └───📄 [censored]
 │   ├───📁 12-Visibility
-│   │   ├───📄 Visibility.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Visibility.html
-│   │   └───📄 Visibility.md
+│   │   └───📄 [censored]
 │   ├───📁 13-Cursors
-│   │   ├───📄 Cursors.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Cursors.html
-│   │   └───📄 Cursors.md
+│   │   └───📄 [censored]
 │   ├───📁 14-Backgrounds
-│   │   ├───📄 Backgrounds.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Backgrounds.html
-│   │   └───📄 Backgrounds.md
+│   │   └───📄 [censored]
 │   ├───📁 15-Borders
-│   │   ├───📄 Borders.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Borders.html
-│   │   └───📄 Borders.md
+│   │   └───📄 [censored]
 │   ├───📁 16-Margin
-│   │   ├───📄 Margin.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Margin.html
-│   │   └───📄 Margin.md
+│   │   └───📄 [censored]
 │   ├───📁 17-Padding
-│   │   ├───📄 Padding.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Padding.html
-│   │   └───📄 Padding.md
+│   │   └───📄 [censored]
 │   ├───📁 18-Sizing
-│   │   ├───📄 Sizing.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Sizing.html
-│   │   └───📄 Sizing.md
+│   │   └───📄 [censored]
 │   ├───📁 19-FlexboxBasics
-│   │   ├───📄 FlexboxBasics.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 FlexboxBasics.html
-│   │   └───📄 FlexboxBasics.md
+│   │   └───📄 [censored]
 │   ├───📁 20-FlexboxAdvanced
-│   │   ├───📄 FlexboxAdvanced.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 FlexboxAdvanced.html
-│   │   └───📄 FlexboxAdvanced.md
+│   │   └───📄 [censored]
 │   ├───📁 21-GridBasics
-│   │   ├───📄 GridBasics.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 GridBasics.html
-│   │   └───📄 GridBasics.md
+│   │   └───📄 [censored]
 │   ├───📁 22-GridAdvanced
-│   │   ├───📄 GridAdvanced.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 GridAdvanced.html
-│   │   └───📄 GridAdvanced.md
+│   │   └───📄 [censored]
 │   ├───📁 23-Alignment
-│   │   ├───📄 Alignment.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Alignment.html
-│   │   └───📄 Alignment.md
+│   │   └───📄 [censored]
 │   ├───📁 24-ResponsiveDesign
-│   │   ├───📄 ResponsiveDesign.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ResponsiveDesign.html
-│   │   └───📄 ResponsiveDesign.md
+│   │   └───📄 [censored]
 │   ├───📁 25-MediaQueries
-│   │   ├───📄 MediaQueries.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 MediaQueries.html
-│   │   └───📄 MediaQueries.md
+│   │   └───📄 [censored]
 │   ├───📁 26-ContainerQueries
-│   │   ├───📄 ContainerQueries.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ContainerQueries.html
-│   │   └───📄 ContainerQueries.md
+│   │   └───📄 [censored]
 │   ├───📁 27-AspectRatio
-│   │   ├───📄 AspectRatio.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 AspectRatio.html
-│   │   └───📄 AspectRatio.md
+│   │   └───📄 [censored]
 │   ├───📁 28-ObjectFitAndObjectPosition
-│   │   ├───📄 ObjectFitAndObjectPosition.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ObjectFitAndObjectPosition.html
-│   │   └───📄 ObjectFitAndObjectPosition.md
+│   │   └───📄 [censored]
 │   ├───📁 29-OverflowAdvanced
-│   │   ├───📄 OverflowAdvanced.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 OverflowAdvanced.html
-│   │   └───📄 OverflowAdvanced.md
+│   │   └───📄 [censored]
 │   ├───📁 30-StickyLayouts
-│   │   ├───📄 StickyLayouts.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 StickyLayouts.html
-│   │   └───📄 StickyLayouts.md
+│   │   └───📄 [censored]
 │   ├───📁 31-Typography
-│   │   ├───📄 Typography.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Typography.html
-│   │   └───📄 Typography.md
+│   │   └───📄 [censored]
 │   ├───📁 32-WebFonts
-│   │   ├───📄 WebFonts.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 WebFonts.html
-│   │   └───📄 WebFonts.md
+│   │   └───📄 [censored]
 │   ├───📁 33-Icons
-│   │   ├───📄 Icons.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Icons.html
-│   │   └───📄 Icons.md
+│   │   └───📄 [censored]
 │   ├───📁 34-Shadows
-│   │   ├───📄 Shadows.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Shadows.html
-│   │   └───📄 Shadows.md
+│   │   └───📄 [censored]
 │   ├───📁 35-Filters
-│   │   ├───📄 Filters.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Filters.html
-│   │   └───📄 Filters.md
+│   │   └───📄 [censored]
 │   ├───📁 36-Gradients
-│   │   ├───📄 Gradients.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Gradients.html
-│   │   └───📄 Gradients.md
+│   │   └───📄 [censored]
 │   ├───📁 37-Transforms
-│   │   ├───📄 Transforms.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Transforms.html
-│   │   └───📄 Transforms.md
+│   │   └───📄 [censored]
 │   ├───📁 38-Transitions
-│   │   ├───📄 Transitions.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Transitions.html
-│   │   └───📄 Transitions.md
+│   │   └───📄 [censored]
 │   ├───📁 39-Animations
-│   │   ├───📄 Animations.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Animations.html
-│   │   └───📄 Animations.md
+│   │   └───📄 [censored]
 │   ├───📁 40-Keyframes
-│   │   ├───📄 Keyframes.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Keyframes.html
-│   │   └───📄 Keyframes.md
+│   │   └───📄 [censored]
 │   ├───📁 41-CSSVariables
-│   │   ├───📄 CSSVariables.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSVariables.html
-│   │   └───📄 CSSVariables.md
+│   │   └───📄 [censored]
 │   ├───📁 42-CalcClampMinMax
-│   │   ├───📄 CalcClampMinMax.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CalcClampMinMax.html
-│   │   └───📄 CalcClampMinMax.md
+│   │   └───📄 [censored]
 │   ├───📁 43-PseudoClasses
-│   │   ├───📄 PseudoClasses.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 PseudoClasses.html
-│   │   └───📄 PseudoClasses.md
+│   │   └───📄 [censored]
 │   ├───📁 44-PseudoElements
-│   │   ├───📄 PseudoElements.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 PseudoElements.html
-│   │   └───📄 PseudoElements.md
+│   │   └───📄 [censored]
 │   ├───📁 45-ModernCSSFunctions
-│   │   ├───📄 ModernCSSFunctions.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ModernCSSFunctions.html
-│   │   └───📄 ModernCSSFunctions.md
+│   │   └───📄 [censored]
 │   ├───📁 46-CSSArchitecture
-│   │   ├───📄 CSSArchitecture.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSArchitecture.html
-│   │   └───📄 CSSArchitecture.md
+│   │   └───📄 [censored]
 │   ├───📁 47-BEM
-│   │   ├───📄 BEM.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 BEM.html
-│   │   └───📄 BEM.md
+│   │   └───📄 [censored]
 │   ├───📁 48-CustomPropertiesAdvanced
-│   │   ├───📄 CustomPropertiesAdvanced.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CustomPropertiesAdvanced.html
-│   │   └───📄 CustomPropertiesAdvanced.md
+│   │   └───📄 [censored]
 │   ├───📁 49-CSSPerformance
-│   │   ├───📄 CSSPerformance.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSPerformance.html
-│   │   └───📄 CSSPerformance.md
+│   │   └───📄 [censored]
 │   ├───📁 50-CSSAccessibility
-│   │   ├───📄 CSSAccessibility.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSAccessibility.html
-│   │   └───📄 CSSAccessibility.md
+│   │   └───📄 [censored]
 │   ├───📁 51-DarkMode
-│   │   ├───📄 DarkMode.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 DarkMode.html
-│   │   └───📄 DarkMode.md
+│   │   └───📄 [censored]
 │   ├───📁 52-PrintCSS
-│   │   ├───📄 PrintCSS.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 PrintCSS.html
-│   │   └───📄 PrintCSS.md
+│   │   └───📄 [censored]
 │   ├───📁 53-Combinators
-│   │   ├───📄 Combinators.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Combinators.html
-│   │   └───📄 Combinators.md
+│   │   └───📄 [censored]
 │   ├───📁 54-AttributeSelectors
-│   │   ├───📄 AttributeSelectors.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 AttributeSelectors.html
-│   │   └───📄 AttributeSelectors.md
+│   │   └───📄 [censored]
 │   ├───📁 55-Nesting
-│   │   ├───📄 Nesting.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Nesting.html
-│   │   └───📄 Nesting.md
+│   │   └───📄 [censored]
 │   ├───📁 56-CSSFunctions
-│   │   ├───📄 CSSFunctions.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSFunctions.html
-│   │   └───📄 CSSFunctions.md
+│   │   └───📄 [censored]
 │   ├───📁 57-CSSMathFunctions
-│   │   ├───📄 CSSMathFunctions.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSMathFunctions.html
-│   │   └───📄 CSSMathFunctions.md
+│   │   └───📄 [censored]
 │   ├───📁 58-CSSLogicalProperties
-│   │   ├───📄 CSSLogicalProperties.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSLogicalProperties.html
-│   │   └───📄 CSSLogicalProperties.md
+│   │   └───📄 [censored]
 │   ├───📁 59-WritingModes
-│   │   ├───📄 WritingModes.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 WritingModes.html
-│   │   └───📄 WritingModes.md
+│   │   └───📄 [censored]
 │   ├───📁 60-ScrollBehavior
-│   │   ├───📄 ScrollBehavior.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ScrollBehavior.html
-│   │   └───📄 ScrollBehavior.md
+│   │   └───📄 [censored]
 │   ├───📁 61-ScrollSnap
-│   │   ├───📄 ScrollSnap.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ScrollSnap.html
-│   │   └───📄 ScrollSnap.md
+│   │   └───📄 [censored]
 │   ├───📁 62-OverscrollBehavior
-│   │   ├───📄 OverscrollBehavior.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 OverscrollBehavior.html
-│   │   └───📄 OverscrollBehavior.md
+│   │   └───📄 [censored]
 │   ├───📁 63-ScrollbarStyling
-│   │   ├───📄 ScrollbarStyling.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ScrollbarStyling.html
-│   │   └───📄 ScrollbarStyling.md
+│   │   └───📄 [censored]
 │   ├───📁 64-CSSMasks
-│   │   ├───📄 CSSMasks.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSMasks.html
-│   │   └───📄 CSSMasks.md
+│   │   └───📄 [censored]
 │   ├───📁 65-CSSBlendModes
-│   │   ├───📄 CSSBlendModes.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSBlendModes.html
-│   │   └───📄 CSSBlendModes.md
+│   │   └───📄 [censored]
 │   ├───📁 66-BackdropFilter
-│   │   ├───📄 BackdropFilter.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 BackdropFilter.html
-│   │   └───📄 BackdropFilter.md
+│   │   └───📄 [censored]
 │   ├───📁 67-ClipPath
-│   │   ├───📄 ClipPath.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ClipPath.html
-│   │   └───📄 ClipPath.md
+│   │   └───📄 [censored]
 │   ├───📁 68-CSSMotionPath
-│   │   ├───📄 CSSMotionPath.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSMotionPath.html
-│   │   └───📄 CSSMotionPath.md
+│   │   └───📄 [censored]
 │   ├───📁 69-CSSViewTransitions
-│   │   ├───📄 CSSViewTransitions.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSViewTransitions.html
-│   │   └───📄 CSSViewTransitions.md
+│   │   └───📄 [censored]
 │   ├───📁 70-CascadeLayers
-│   │   ├───📄 CascadeLayers.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CascadeLayers.html
-│   │   └───📄 CascadeLayers.md
+│   │   └───📄 [censored]
 │   ├───📁 71-CSSScope
-│   │   ├───📄 CSSScope.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSScope.html
-│   │   └───📄 CSSScope.md
+│   │   └───📄 [censored]
 │   ├───📁 72-AnchorPositioning
-│   │   ├───📄 AnchorPositioning.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 AnchorPositioning.html
-│   │   └───📄 AnchorPositioning.md
+│   │   └───📄 [censored]
 │   ├───📁 73-CaretAndSelection
-│   │   ├───📄 CaretAndSelection.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CaretAndSelection.html
-│   │   └───📄 CaretAndSelection.md
+│   │   └───📄 [censored]
 │   ├───📁 74-AccentColor
-│   │   ├───📄 AccentColor.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 AccentColor.html
-│   │   └───📄 AccentColor.md
+│   │   └───📄 [censored]
 │   ├───📁 75-Appearance
-│   │   ├───📄 Appearance.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Appearance.html
-│   │   └───📄 Appearance.md
+│   │   └───📄 [censored]
 │   ├───📁 76-Resize
-│   │   ├───📄 Resize.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 Resize.html
-│   │   └───📄 Resize.md
+│   │   └───📄 [censored]
 │   ├───📁 77-PointerEvents
-│   │   ├───📄 PointerEvents.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 PointerEvents.html
-│   │   └───📄 PointerEvents.md
+│   │   └───📄 [censored]
 │   ├───📁 78-UserSelect
-│   │   ├───📄 UserSelect.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 UserSelect.html
-│   │   └───📄 UserSelect.md
+│   │   └───📄 [censored]
 │   ├───📁 79-SVGFilters
-│   │   ├───📄 SVGFilters.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 SVGFilters.html
-│   │   └───📄 SVGFilters.md
+│   │   └───📄 [censored]
 │   ├───📁 80-TextWrap
-│   │   ├───📄 TextWrap.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 TextWrap.html
-│   │   └───📄 TextWrap.md
+│   │   └───📄 [censored]
 │   ├───📁 81-GridTemplateAreas
-│   │   ├───📄 GridTemplateAreas.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 GridTemplateAreas.html
-│   │   └───📄 GridTemplateAreas.md
+│   │   └───📄 [censored]
 │   ├───📁 82-PlaceItems
-│   │   ├───📄 PlaceItems.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 PlaceItems.html
-│   │   └───📄 PlaceItems.md
+│   │   └───📄 [censored]
 │   ├───📁 83-ColorMix
-│   │   ├───📄 ColorMix.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 ColorMix.html
-│   │   └───📄 ColorMix.md
+│   │   └───📄 [censored]
 │   ├───📁 84-CSSProjectCard
-│   │   ├───📄 CSSProjectCard.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSProjectCard.html
-│   │   └───📄 CSSProjectCard.md
+│   │   └───📄 [censored]
 │   ├───📁 85-CSSCheatSheet
-│   │   ├───📄 CSSCheatSheet.css
+│   │   ├───📄 [censored]
 │   │   ├───📄 CSSCheatSheet.html
-│   │   └───📄 CSSCheatSheet.md
-│   ├───📄 CSS-Roadmap.md
-│   └───📄 CSSCheatSheet.md
+│   │   └───📄 [censored]
+│   ├───📄 [censored]
+│   └───📄 [censored]
 ├───📁 03-JavaScript
-│   ├───📁 01-ES5
-│   │   ├───📄 CheatSheet.md
-│   │   ├───📄 Roadmap.md
-│   │   ├───📄 StrictMode.js
-│   │   └───📄 StrictMode.md
-│   ├───📁 02-ES6-2015
-│   │   ├───📄 CheatSheet.md
-│   │   ├───📄 LetConst.js
-│   │   ├───📄 LetConst.md
-│   │   └───📄 Roadmap.md
-│   ├───📁 03-ES7-2016
-│   │   ├───📄 CheatSheet.md
-│   │   ├───📄 Includes.js
-│   │   ├───📄 Includes.md
-│   │   └───📄 Roadmap.md
-│   ├───📁 04-ES8-2017
-│   │   ├───📄 CheatSheet.md
-│   │   ├───📄 ObjectEntries.js
-│   │   ├───📄 ObjectEntries.md
-│   │   └───📄 Roadmap.md
-│   ├───📁 05-ES9-2018
-│   │   ├───📄 CheatSheet.md
-│   │   ├───📄 PromiseFinally.js
-│   │   ├───📄 PromiseFinally.md
-│   │   └───📄 Roadmap.md
-│   ├───📁 06-ES10-2019
-│   │   ├───📄 CheatSheet.md
-│   │   ├───📄 Flat.js
-│   │   ├───📄 Flat.md
-│   │   └───📄 Roadmap.md
-│   ├───📁 07-ES11-2020
-│   │   ├───📄 CheatSheet.md
-│   │   └───📄 Roadmap.md
-│   ├───📁 08-ES12-2021
-│   ├───📁 09-ES13-2022
-│   ├───📁 10-ES14-2023
-│   ├───📁 11-ES15-2024
-│   └───📁 12-ES16-2025
 ├───📁 03-JavaScript-Package
 ├───📁 04-TypeScript
 ├───📁 05-Git&GitHub
 ├───📁 06-npm
 ├───📁 07-React
 ├───📁 07-React-Package
-│   ├───📁 01-React Router
-│   └───📁 02-ReactHookForm
 ├───📁 08-TailwindCSS
 ├───📁 09-NextJS
 ├───📁 09-NextJS-Package
 ├───📁 10-NodeJS
 ├───📁 10-NodeJS-Package
-│   └───📁 01-ExpressJS
 ├───📁 11-DataBases
-│   ├───📁 01-MongoDB
-│   └───📁 02-MySQL
 ├───📁 12-Vite
-│   └───📄 Vite.md
-├───📄 LibraryTree.txt
-├───📄 README.txt
-├───📄 library_tree.py
-└───📄 oldSkill.md
+├───📄 [censored]
+├───📄 [censored]
+├───📄 [censored]
+└───📄 [censored]
