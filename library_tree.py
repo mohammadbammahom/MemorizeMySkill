@@ -2,7 +2,9 @@ import os
 
 ROOT = "."
 
-# پوشه‌هایی که نمایش داده نشوند
+# -----------------------------
+# Ignore Folders
+# -----------------------------
 IGNORE = {
     ".git",
     "node_modules",
@@ -11,36 +13,77 @@ IGNORE = {
     "__pycache__",
     ".next",
     ".vscode",
+    ".venv",
+    "venv",
+    "env",
+    ".env",
+    ".idea",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".gitignore",
 }
 
-# نام پوشه‌ها و Aliasها
+# -----------------------------
+# Focus Map
+# -----------------------------
 FOCUS_MAP = {
-    "01-HTML": ["01-html", "html", "htm"],
-    "02-CSS": ["02-css", "css"],
-    "03-JavaScript": ["03-javascript", "javascript", "js"],
-    "03-JavaScript-Package": [
+    "01-HTML": [
+        "01-html",
+        "html",
+        "htm",
+    ],
+
+    "02-CSS": [
+        "02-css",
+        "css",
+    ],
+
+    "03-JavaScript": [
+        "03-javascript",
+        "javascript",
+        "js",
+    ],
+
+    "04-JavaScript-Package": [
         "04-javascriptpackage",
+        "javascriptpackage",
         "javascript_package",
         "javascript-package",
-        "javascriptpackage",
-        "js_package",
         "js-package",
+        "js_package",
         "jspackage",
-        "js_pack",
         "js-pack",
+        "js_pack",
         "jspack",
     ],
-    "04-TypeScript": ["05-typescript", "typescript", "ts"],
-    "05-Git&GitHub": [
+
+    "05-TypeScript": [
+        "05-typescript",
+        "typescript",
+        "ts",
+    ],
+
+    "06-npm": [
+        "06-npm",
+        "npm",
+    ],
+
+    "07-Git&GitHub": [
         "07-git&github",
         "git&github",
-        "git_github",
-        "git-github",
         "gitgithub",
+        "git-github",
+        "git_github",
     ],
-    "06-npm": ["06-npm", "npm"],
-    "07-React": ["08-react", "react", "jsx", "tsx"],
-    "07-React-Package": [
+
+    "08-React": [
+        "08-react",
+        "react",
+        "jsx",
+        "tsx",
+    ],
+
+    "09-React-Package": [
         "09-react-package",
         "react-package",
         "react_package",
@@ -49,76 +92,119 @@ FOCUS_MAP = {
         "react_pack",
         "reactpack",
     ],
-    "08-TailwindCSS": [
+
+    "10-TailwindCSS": [
         "10-tailwindcss",
-        "tailwind_css",
-        "tailwind-css",
         "tailwindcss",
         "tailwind",
+        "tailwind-css",
+        "tailwind_css",
     ],
-    "09-NextJS": [
+
+    "11-NextJS": [
         "11-nextjs",
-        "next_js",
-        "next-js",
         "nextjs",
         "next",
+        "next_js",
+        "next-js",
     ],
-    "09-NextJS-Package": [
+
+    "12-NextJS-Package": [
         "12-nextjs-package",
-        "nextjs_package",
         "nextjs-package",
+        "nextjs_package",
         "nextjspackage",
-        "nextjs_pack",
         "nextjs-pack",
+        "nextjs_pack",
         "nextjspack",
-        "next_package",
         "next-package",
+        "next_package",
         "nextpackage",
-        "next_pack",
         "next-pack",
+        "next_pack",
         "nextpack",
     ],
-    "10-NodeJS": [
+
+    "13-NodeJS": [
         "13-nodejs",
         "nodejs",
         "node",
         "node_js",
         "node-js",
     ],
-    "10-NodeJS-Package": [
+
+    "14-NodeJS-Package": [
         "14-nodejs-package",
-        "nodejs_package",
         "nodejs-package",
+        "nodejs_package",
         "nodejspackage",
-        "node-package",
-        "node_package",
         "nodejs-pack",
         "nodejs_pack",
-        "nodepackage",
         "nodejspack",
+        "node-package",
+        "node_package",
+        "nodepackage",
         "node-pack",
         "node_pack",
         "nodepack",
     ],
-    "11-DataBases": [
+
+    "15-DataBases": [
         "15-databases",
         "databases",
         "database",
         "db",
     ],
-    "12-Vite": ["16-vite", "vite"],
+
+    "16-Vite": [
+        "16-vite",
+        "vite",
+    ],
 }
 
+output = []
+
+# -----------------------------
+# Helpers
+# -----------------------------
+def list_items(path):
+    """
+    Return sorted items excluding ignored folders/files.
+    """
+
+    try:
+        items = sorted(os.listdir(path))
+    except PermissionError:
+        return []
+
+    result = []
+
+    for item in items:
+
+        if item.lower() in {
+            x.lower()
+            for x in IGNORE
+        }:
+            continue
+
+        result.append(item)
+
+    return result
 
 def get_focus():
+
     text = input(
-        "Is Focus Language Or Package? (Press Enter for Full Library): "
+        "Is Focus Language Or Package? (Press Enter = Full Library): "
     ).strip().lower()
 
-    if not text:
+    if text == "":
         return None
 
     for folder, aliases in FOCUS_MAP.items():
+
+        if text == folder.lower():
+            return folder
+
         if text in aliases:
             return folder
 
@@ -127,132 +213,267 @@ def get_focus():
 
 FOCUS_FOLDER = get_focus()
 
-output = []
+# ---------------------------------------
+# Tree Helpers
+# ---------------------------------------
+
+def add_folder(prefix, branch, name, is_root=False):
+    """
+    Add folder line.
+    Root folders start with '#'.
+    """
+
+    if is_root:
+        output.append(
+            "# "
+            + branch
+            + "📁 "
+            + name
+        )
+    else:
+        output.append(
+            prefix
+            + branch
+            + "📁 "
+            + name
+        )
 
 
-def list_items(path):
-    try:
-        items = sorted(os.listdir(path))
-    except PermissionError:
-        return []
-
-    return [i for i in items if i not in IGNORE]
+def add_file(prefix, branch, name):
+    output.append(prefix + branch + "📄 " + name)
 
 
-def tree(path, prefix=""):
+def get_child_folders(path):
+
+    folders = []
+
+    for item in list_items(path):
+
+        full = os.path.join(path, item)
+
+        if os.path.isdir(full):
+            folders.append(item)
+
+    return folders
+
+
+def get_child_files(path):
+
+    files = []
+
+    for item in list_items(path):
+
+        full = os.path.join(path, item)
+
+        if os.path.isfile(full):
+            files.append(item)
+
+    return files
+
+
+# ---------------------------------------
+# Expand Folder Until Files
+# ---------------------------------------
+
+def expand_until_files(path, prefix):
+    """
+    Open folders recursively until real files
+    are found.
+
+    Example:
+
+    01-ES5
+        01-var
+            var.js
+            var.md
+    """
+
     items = list_items(path)
 
     for index, item in enumerate(items):
+
         full = os.path.join(path, item)
 
         last = index == len(items) - 1
+
         branch = "└───" if last else "├───"
 
         if os.path.isdir(full):
-            output.append(prefix + branch + "📁 " + item)
 
-            new_prefix = prefix + ("    " if last else "│   ")
+            add_folder(prefix, branch, item)
 
-            if (
-                FOCUS_FOLDER
-                and path == ROOT
-                and item != FOCUS_FOLDER
-                and item in FOCUS_MAP
-            ):
-                tree_summary(full, new_prefix)
-            else:
-                tree(full, new_prefix)
+            new_prefix = prefix + (
+                "    "
+                if last
+                else "│   "
+            )
+
+            child_files = get_child_files(full)
+            child_dirs = get_child_folders(full)
+
+            if child_files:
+                expand_until_files(full, new_prefix)
+
+            elif child_dirs:
+                expand_until_files(full, new_prefix)
 
         else:
-            output.append(prefix + branch + "📄 " + item)
 
+            add_file(
+                prefix,
+                branch,
+                item,
+            )
+
+
+# ---------------------------------------
+# Summary Folder
+# ---------------------------------------
 
 def tree_summary(path, prefix):
-    items = list_items(path)
 
-    folders = [
-        i for i in items
-        if os.path.isdir(os.path.join(path, i))
-    ]
+    folders = get_child_folders(path)
 
-    files = [
-        i for i in items
-        if os.path.isfile(os.path.join(path, i))
-    ]
+    files = get_child_files(path)
 
-    if folders:
-        first = folders[0]
-        last = folders[-1]
+    if not folders:
 
-        summary = []
+        for i, file in enumerate(files):
 
-        summary.append(first)
-
-        if len(folders) > 2:
-            summary.append("...")
-
-        if len(folders) > 1:
-            summary.append(last)
-
-        for i, name in enumerate(summary):
-            is_last = (
-                i == len(summary) - 1
-                and len(files) == 0
+            branch = (
+                "└───"
+                if i == len(files) - 1
+                else "├───"
             )
 
-            branch = "└───" if is_last else "├───"
-
-            if name == "...":
-                output.append(prefix + branch + "...")
-                continue
-
-            folder_path = os.path.join(path, name)
-
-            output.append(prefix + branch + "📁 " + name)
-
-            sub_prefix = prefix + (
-                "    " if is_last else "│   "
+            add_file(
+                prefix,
+                branch,
+                file,
             )
 
-            children = list_items(folder_path)
+        return
 
-            for j, child in enumerate(children):
-                last_child = j == len(children) - 1
+    display = []
 
-                child_branch = (
-                    "└───"
-                    if last_child
-                    else "├───"
-                )
+    display.append(folders[0])
 
-                icon = (
-                    "📁"
-                    if os.path.isdir(os.path.join(folder_path, child))
-                    else "📄"
-                )
+    if len(folders) > 2:
+        display.append("...")
 
-                output.append(
-                    sub_prefix
-                    + child_branch
-                    + icon
-                    + " "
-                    + child
-                )
+    if len(folders) > 1:
+        display.append(folders[-1])
 
-    for i, file in enumerate(files):
+    for i, name in enumerate(display):
+
+        is_last = (
+            i == len(display) - 1
+            and not files
+        )
+
+        branch = "└───" if is_last else "├───"
+
+        if name == "...":
+            output.append(prefix + branch + "...")
+            continue
+
+        folder_path = os.path.join(path, name)
+
+        add_folder(prefix, branch, name)
+
+        new_prefix = prefix + (
+            "    " if is_last else "│   "
+        )
+
+        # مهم:
+        # فقط درس اول و آخر را تا رسیدن به فایل‌ها باز کن
+        expand_until_files(folder_path, new_prefix)
+
+    for index, file in enumerate(files):
+
         branch = (
             "└───"
-            if i == len(files) - 1
+            if index == len(files) - 1
             else "├───"
         )
 
-        output.append(prefix + branch + "📄 " + file)
+        add_file(prefix, branch, file)
 
+
+# ---------------------------------------
+# Main Tree
+# ---------------------------------------
+
+def tree(path, prefix=""):
+
+    items = list_items(path)
+
+    for index, item in enumerate(items):
+
+        full = os.path.join(path, item)
+
+        last = index == len(items) - 1
+
+        branch = "└───" if last else "├───"
+
+        if os.path.isdir(full):
+
+            is_root = os.path.abspath(path) == os.path.abspath(ROOT)
+
+            add_folder(
+                prefix,
+                branch,
+                item,
+                is_root=is_root,
+            )
+
+            if is_root:
+                new_prefix = "  "
+            else:
+                new_prefix = prefix + (
+                    "    "
+                    if last
+                    else "│   "
+                )
+
+            # اگر حالت Focus فعال باشد،
+            # فقط پوشه انتخاب شده کامل نمایش داده شود
+            if (
+                FOCUS_FOLDER
+                and is_root
+                and item in FOCUS_MAP
+                and item != FOCUS_FOLDER
+            ):
+
+                tree_summary(
+                    full,
+                    new_prefix,
+                )
+
+            else:
+
+                tree(
+                    full,
+                    new_prefix,
+                )
+
+        else:
+
+            add_file(
+                prefix,
+                branch,
+                item,
+            )
+
+
+# ---------------------------------------
+# Run
+# ---------------------------------------
 
 tree(ROOT)
 
 with open(
-    "LibraryTree.jsx",
+    "LibraryTree.txt",
     "w",
     encoding="utf-8",
 ) as f:

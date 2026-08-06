@@ -1,1409 +1,383 @@
-├───📄 .gitignore
-├───📁 .venv
-│   ├───📄 .gitignore
-│   ├───📁 Include
-│   ├───📁 Lib
-│   │   └───📁 site-packages
-│   │       ├───📁 _distutils_hack
-│   │       │   ├───📄 __init__.py
-│   │       │   └───📄 override.py
-│   │       ├───📄 distutils-precedence.pth
-│   │       ├───📁 pip
-│   │       │   ├───📄 __init__.py
-│   │       │   ├───📄 __main__.py
-│   │       │   ├───📄 __pip-runner__.py
-│   │       │   ├───📁 _internal
-│   │       │   │   ├───📄 __init__.py
-│   │       │   │   ├───📁 build_env
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 base.py
-│   │       │   │   │   ├───📄 installer.py
-│   │       │   │   │   ├───📄 noop.py
-│   │       │   │   │   ├───📄 venv.py
-│   │       │   │   │   └───📄 virtual.py
-│   │       │   │   ├───📄 cache.py
-│   │       │   │   ├───📁 cli
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 autocompletion.py
-│   │       │   │   │   ├───📄 base_command.py
-│   │       │   │   │   ├───📄 cmdoptions.py
-│   │       │   │   │   ├───📄 command_context.py
-│   │       │   │   │   ├───📄 index_command.py
-│   │       │   │   │   ├───📄 main.py
-│   │       │   │   │   ├───📄 main_parser.py
-│   │       │   │   │   ├───📄 parser.py
-│   │       │   │   │   ├───📄 progress_bars.py
-│   │       │   │   │   ├───📄 req_command.py
-│   │       │   │   │   ├───📄 spinners.py
-│   │       │   │   │   └───📄 status_codes.py
-│   │       │   │   ├───📁 commands
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 cache.py
-│   │       │   │   │   ├───📄 check.py
-│   │       │   │   │   ├───📄 completion.py
-│   │       │   │   │   ├───📄 configuration.py
-│   │       │   │   │   ├───📄 debug.py
-│   │       │   │   │   ├───📄 download.py
-│   │       │   │   │   ├───📄 freeze.py
-│   │       │   │   │   ├───📄 hash.py
-│   │       │   │   │   ├───📄 help.py
-│   │       │   │   │   ├───📄 index.py
-│   │       │   │   │   ├───📄 inspect.py
-│   │       │   │   │   ├───📄 install.py
-│   │       │   │   │   ├───📄 list.py
-│   │       │   │   │   ├───📄 lock.py
-│   │       │   │   │   ├───📄 search.py
-│   │       │   │   │   ├───📄 show.py
-│   │       │   │   │   ├───📄 uninstall.py
-│   │       │   │   │   └───📄 wheel.py
-│   │       │   │   ├───📄 configuration.py
-│   │       │   │   ├───📁 distributions
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 base.py
-│   │       │   │   │   ├───📄 installed.py
-│   │       │   │   │   ├───📄 sdist.py
-│   │       │   │   │   └───📄 wheel.py
-│   │       │   │   ├───📄 exceptions.py
-│   │       │   │   ├───📁 index
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 collector.py
-│   │       │   │   │   ├───📄 package_finder.py
-│   │       │   │   │   └───📄 sources.py
-│   │       │   │   ├───📁 locations
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _distutils.py
-│   │       │   │   │   ├───📄 _sysconfig.py
-│   │       │   │   │   └───📄 base.py
-│   │       │   │   ├───📄 main.py
-│   │       │   │   ├───📁 metadata
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _json.py
-│   │       │   │   │   ├───📄 base.py
-│   │       │   │   │   ├───📁 importlib
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   ├───📄 _compat.py
-│   │       │   │   │   │   ├───📄 _dists.py
-│   │       │   │   │   │   └───📄 _envs.py
-│   │       │   │   │   └───📄 pkg_resources.py
-│   │       │   │   ├───📁 models
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 candidate.py
-│   │       │   │   │   ├───📄 direct_url.py
-│   │       │   │   │   ├───📄 format_control.py
-│   │       │   │   │   ├───📄 index.py
-│   │       │   │   │   ├───📄 installation_report.py
-│   │       │   │   │   ├───📄 link.py
-│   │       │   │   │   ├───📄 release_control.py
-│   │       │   │   │   ├───📄 scheme.py
-│   │       │   │   │   ├───📄 search_scope.py
-│   │       │   │   │   ├───📄 selection_prefs.py
-│   │       │   │   │   ├───📄 target_python.py
-│   │       │   │   │   └───📄 wheel.py
-│   │       │   │   ├───📁 network
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 auth.py
-│   │       │   │   │   ├───📄 cache.py
-│   │       │   │   │   ├───📄 download.py
-│   │       │   │   │   ├───📄 lazy_wheel.py
-│   │       │   │   │   ├───📄 session.py
-│   │       │   │   │   ├───📄 utils.py
-│   │       │   │   │   └───📄 xmlrpc.py
-│   │       │   │   ├───📁 operations
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 check.py
-│   │       │   │   │   ├───📄 freeze.py
-│   │       │   │   │   ├───📁 install
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   └───📄 wheel.py
-│   │       │   │   │   └───📄 prepare.py
-│   │       │   │   ├───📄 pyproject.py
-│   │       │   │   ├───📁 req
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 constructors.py
-│   │       │   │   │   ├───📄 pep723.py
-│   │       │   │   │   ├───📄 req_dependency_group.py
-│   │       │   │   │   ├───📄 req_file.py
-│   │       │   │   │   ├───📄 req_install.py
-│   │       │   │   │   ├───📄 req_set.py
-│   │       │   │   │   └───📄 req_uninstall.py
-│   │       │   │   ├───📁 resolution
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 base.py
-│   │       │   │   │   ├───📁 legacy
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   └───📄 resolver.py
-│   │       │   │   │   └───📁 resolvelib
-│   │       │   │   │       ├───📄 __init__.py
-│   │       │   │   │       ├───📄 base.py
-│   │       │   │   │       ├───📄 candidates.py
-│   │       │   │   │       ├───📄 factory.py
-│   │       │   │   │       ├───📄 found_candidates.py
-│   │       │   │   │       ├───📄 provider.py
-│   │       │   │   │       ├───📄 reporter.py
-│   │       │   │   │       ├───📄 requirements.py
-│   │       │   │   │       └───📄 resolver.py
-│   │       │   │   ├───📄 self_outdated_check.py
-│   │       │   │   ├───📁 utils
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _jaraco_text.py
-│   │       │   │   │   ├───📄 _log.py
-│   │       │   │   │   ├───📄 appdirs.py
-│   │       │   │   │   ├───📄 compat.py
-│   │       │   │   │   ├───📄 compatibility_tags.py
-│   │       │   │   │   ├───📄 datetime.py
-│   │       │   │   │   ├───📄 deprecation.py
-│   │       │   │   │   ├───📄 direct_url_helpers.py
-│   │       │   │   │   ├───📄 egg_link.py
-│   │       │   │   │   ├───📄 entrypoints.py
-│   │       │   │   │   ├───📄 filesystem.py
-│   │       │   │   │   ├───📄 filetypes.py
-│   │       │   │   │   ├───📄 glibc.py
-│   │       │   │   │   ├───📄 hashes.py
-│   │       │   │   │   ├───📄 logging.py
-│   │       │   │   │   ├───📄 misc.py
-│   │       │   │   │   ├───📄 packaging.py
-│   │       │   │   │   ├───📄 pylock.py
-│   │       │   │   │   ├───📄 retry.py
-│   │       │   │   │   ├───📄 subprocess.py
-│   │       │   │   │   ├───📄 temp_dir.py
-│   │       │   │   │   ├───📄 unpacking.py
-│   │       │   │   │   ├───📄 urls.py
-│   │       │   │   │   ├───📄 virtualenv.py
-│   │       │   │   │   └───📄 wheel.py
-│   │       │   │   ├───📁 vcs
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 bazaar.py
-│   │       │   │   │   ├───📄 git.py
-│   │       │   │   │   ├───📄 mercurial.py
-│   │       │   │   │   ├───📄 subversion.py
-│   │       │   │   │   └───📄 versioncontrol.py
-│   │       │   │   └───📄 wheel_builder.py
-│   │       │   ├───📁 _vendor
-│   │       │   │   ├───📄 README.rst
-│   │       │   │   ├───📄 __init__.py
-│   │       │   │   ├───📄 bom.cdx.json
-│   │       │   │   ├───📁 cachecontrol
-│   │       │   │   │   ├───📄 LICENSE.txt
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _cmd.py
-│   │       │   │   │   ├───📄 adapter.py
-│   │       │   │   │   ├───📄 cache.py
-│   │       │   │   │   ├───📁 caches
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   ├───📄 file_cache.py
-│   │       │   │   │   │   └───📄 redis_cache.py
-│   │       │   │   │   ├───📄 controller.py
-│   │       │   │   │   ├───📄 filewrapper.py
-│   │       │   │   │   ├───📄 heuristics.py
-│   │       │   │   │   ├───📄 py.typed
-│   │       │   │   │   ├───📄 serialize.py
-│   │       │   │   │   └───📄 wrapper.py
-│   │       │   │   ├───📁 certifi
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 __main__.py
-│   │       │   │   │   ├───📄 cacert.pem
-│   │       │   │   │   ├───📄 core.py
-│   │       │   │   │   └───📄 py.typed
-│   │       │   │   ├───📁 distlib
-│   │       │   │   │   ├───📄 LICENSE.txt
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 compat.py
-│   │       │   │   │   ├───📄 resources.py
-│   │       │   │   │   ├───📄 scripts.py
-│   │       │   │   │   ├───📄 t32.exe
-│   │       │   │   │   ├───📄 t64-arm.exe
-│   │       │   │   │   ├───📄 t64.exe
-│   │       │   │   │   ├───📄 util.py
-│   │       │   │   │   ├───📄 w32.exe
-│   │       │   │   │   ├───📄 w64-arm.exe
-│   │       │   │   │   └───📄 w64.exe
-│   │       │   │   ├───📁 distro
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 __main__.py
-│   │       │   │   │   ├───📄 distro.py
-│   │       │   │   │   └───📄 py.typed
-│   │       │   │   ├───📁 idna
-│   │       │   │   │   ├───📄 LICENSE.md
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 __main__.py
-│   │       │   │   │   ├───📄 cli.py
-│   │       │   │   │   ├───📄 codec.py
-│   │       │   │   │   ├───📄 compat.py
-│   │       │   │   │   ├───📄 core.py
-│   │       │   │   │   ├───📄 idnadata.py
-│   │       │   │   │   ├───📄 intranges.py
-│   │       │   │   │   ├───📄 package_data.py
-│   │       │   │   │   ├───📄 py.typed
-│   │       │   │   │   └───📄 uts46data.py
-│   │       │   │   ├───📁 msgpack
-│   │       │   │   │   ├───📄 COPYING
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 exceptions.py
-│   │       │   │   │   ├───📄 ext.py
-│   │       │   │   │   └───📄 fallback.py
-│   │       │   │   ├───📁 packaging
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 LICENSE.APACHE
-│   │       │   │   │   ├───📄 LICENSE.BSD
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _elffile.py
-│   │       │   │   │   ├───📄 _manylinux.py
-│   │       │   │   │   ├───📄 _musllinux.py
-│   │       │   │   │   ├───📄 _parser.py
-│   │       │   │   │   ├───📄 _structures.py
-│   │       │   │   │   ├───📄 _tokenizer.py
-│   │       │   │   │   ├───📄 dependency_groups.py
-│   │       │   │   │   ├───📄 direct_url.py
-│   │       │   │   │   ├───📄 errors.py
-│   │       │   │   │   ├───📁 licenses
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   └───📄 _spdx.py
-│   │       │   │   │   ├───📄 markers.py
-│   │       │   │   │   ├───📄 metadata.py
-│   │       │   │   │   ├───📄 py.typed
-│   │       │   │   │   ├───📄 pylock.py
-│   │       │   │   │   ├───📄 requirements.py
-│   │       │   │   │   ├───📄 specifiers.py
-│   │       │   │   │   ├───📄 tags.py
-│   │       │   │   │   ├───📄 utils.py
-│   │       │   │   │   └───📄 version.py
-│   │       │   │   ├───📁 pkg_resources
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   └───📄 __init__.py
-│   │       │   │   ├───📁 platformdirs
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 __main__.py
-│   │       │   │   │   ├───📄 _xdg.py
-│   │       │   │   │   ├───📄 android.py
-│   │       │   │   │   ├───📄 api.py
-│   │       │   │   │   ├───📄 macos.py
-│   │       │   │   │   ├───📄 py.typed
-│   │       │   │   │   ├───📄 unix.py
-│   │       │   │   │   ├───📄 version.py
-│   │       │   │   │   └───📄 windows.py
-│   │       │   │   ├───📁 pygments
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 __main__.py
-│   │       │   │   │   ├───📄 console.py
-│   │       │   │   │   ├───📄 filter.py
-│   │       │   │   │   ├───📁 filters
-│   │       │   │   │   │   └───📄 __init__.py
-│   │       │   │   │   ├───📄 formatter.py
-│   │       │   │   │   ├───📁 formatters
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   └───📄 _mapping.py
-│   │       │   │   │   ├───📄 lexer.py
-│   │       │   │   │   ├───📁 lexers
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   ├───📄 _mapping.py
-│   │       │   │   │   │   └───📄 python.py
-│   │       │   │   │   ├───📄 modeline.py
-│   │       │   │   │   ├───📄 plugin.py
-│   │       │   │   │   ├───📄 regexopt.py
-│   │       │   │   │   ├───📄 scanner.py
-│   │       │   │   │   ├───📄 sphinxext.py
-│   │       │   │   │   ├───📄 style.py
-│   │       │   │   │   ├───📁 styles
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   └───📄 _mapping.py
-│   │       │   │   │   ├───📄 token.py
-│   │       │   │   │   ├───📄 unistring.py
-│   │       │   │   │   └───📄 util.py
-│   │       │   │   ├───📁 pyproject_hooks
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _impl.py
-│   │       │   │   │   ├───📁 _in_process
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   └───📄 _in_process.py
-│   │       │   │   │   └───📄 py.typed
-│   │       │   │   ├───📁 requests
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 __version__.py
-│   │       │   │   │   ├───📄 _internal_utils.py
-│   │       │   │   │   ├───📄 _types.py
-│   │       │   │   │   ├───📄 adapters.py
-│   │       │   │   │   ├───📄 api.py
-│   │       │   │   │   ├───📄 auth.py
-│   │       │   │   │   ├───📄 certs.py
-│   │       │   │   │   ├───📄 compat.py
-│   │       │   │   │   ├───📄 cookies.py
-│   │       │   │   │   ├───📄 exceptions.py
-│   │       │   │   │   ├───📄 help.py
-│   │       │   │   │   ├───📄 hooks.py
-│   │       │   │   │   ├───📄 models.py
-│   │       │   │   │   ├───📄 packages.py
-│   │       │   │   │   ├───📄 py.typed
-│   │       │   │   │   ├───📄 sessions.py
-│   │       │   │   │   ├───📄 status_codes.py
-│   │       │   │   │   ├───📄 structures.py
-│   │       │   │   │   └───📄 utils.py
-│   │       │   │   ├───📁 resolvelib
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 providers.py
-│   │       │   │   │   ├───📄 py.typed
-│   │       │   │   │   ├───📄 reporters.py
-│   │       │   │   │   ├───📁 resolvers
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   ├───📄 abstract.py
-│   │       │   │   │   │   ├───📄 criterion.py
-│   │       │   │   │   │   ├───📄 exceptions.py
-│   │       │   │   │   │   └───📄 resolution.py
-│   │       │   │   │   └───📄 structs.py
-│   │       │   │   ├───📁 rich
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 __main__.py
-│   │       │   │   │   ├───📄 _cell_widths.py
-│   │       │   │   │   ├───📄 _emoji_codes.py
-│   │       │   │   │   ├───📄 _emoji_replace.py
-│   │       │   │   │   ├───📄 _export_format.py
-│   │       │   │   │   ├───📄 _extension.py
-│   │       │   │   │   ├───📄 _fileno.py
-│   │       │   │   │   ├───📄 _inspect.py
-│   │       │   │   │   ├───📄 _log_render.py
-│   │       │   │   │   ├───📄 _loop.py
-│   │       │   │   │   ├───📄 _null_file.py
-│   │       │   │   │   ├───📄 _palettes.py
-│   │       │   │   │   ├───📄 _pick.py
-│   │       │   │   │   ├───📄 _ratio.py
-│   │       │   │   │   ├───📄 _spinners.py
-│   │       │   │   │   ├───📄 _stack.py
-│   │       │   │   │   ├───📄 _timer.py
-│   │       │   │   │   ├───📄 _win32_console.py
-│   │       │   │   │   ├───📄 _windows.py
-│   │       │   │   │   ├───📄 _windows_renderer.py
-│   │       │   │   │   ├───📄 _wrap.py
-│   │       │   │   │   ├───📄 abc.py
-│   │       │   │   │   ├───📄 align.py
-│   │       │   │   │   ├───📄 ansi.py
-│   │       │   │   │   ├───📄 bar.py
-│   │       │   │   │   ├───📄 box.py
-│   │       │   │   │   ├───📄 cells.py
-│   │       │   │   │   ├───📄 color.py
-│   │       │   │   │   ├───📄 color_triplet.py
-│   │       │   │   │   ├───📄 columns.py
-│   │       │   │   │   ├───📄 console.py
-│   │       │   │   │   ├───📄 constrain.py
-│   │       │   │   │   ├───📄 containers.py
-│   │       │   │   │   ├───📄 control.py
-│   │       │   │   │   ├───📄 default_styles.py
-│   │       │   │   │   ├───📄 diagnose.py
-│   │       │   │   │   ├───📄 emoji.py
-│   │       │   │   │   ├───📄 errors.py
-│   │       │   │   │   ├───📄 file_proxy.py
-│   │       │   │   │   ├───📄 filesize.py
-│   │       │   │   │   ├───📄 highlighter.py
-│   │       │   │   │   ├───📄 json.py
-│   │       │   │   │   ├───📄 jupyter.py
-│   │       │   │   │   ├───📄 layout.py
-│   │       │   │   │   ├───📄 live.py
-│   │       │   │   │   ├───📄 live_render.py
-│   │       │   │   │   ├───📄 logging.py
-│   │       │   │   │   ├───📄 markup.py
-│   │       │   │   │   ├───📄 measure.py
-│   │       │   │   │   ├───📄 padding.py
-│   │       │   │   │   ├───📄 pager.py
-│   │       │   │   │   ├───📄 palette.py
-│   │       │   │   │   ├───📄 panel.py
-│   │       │   │   │   ├───📄 pretty.py
-│   │       │   │   │   ├───📄 progress.py
-│   │       │   │   │   ├───📄 progress_bar.py
-│   │       │   │   │   ├───📄 prompt.py
-│   │       │   │   │   ├───📄 protocol.py
-│   │       │   │   │   ├───📄 py.typed
-│   │       │   │   │   ├───📄 region.py
-│   │       │   │   │   ├───📄 repr.py
-│   │       │   │   │   ├───📄 rule.py
-│   │       │   │   │   ├───📄 scope.py
-│   │       │   │   │   ├───📄 screen.py
-│   │       │   │   │   ├───📄 segment.py
-│   │       │   │   │   ├───📄 spinner.py
-│   │       │   │   │   ├───📄 status.py
-│   │       │   │   │   ├───📄 style.py
-│   │       │   │   │   ├───📄 styled.py
-│   │       │   │   │   ├───📄 syntax.py
-│   │       │   │   │   ├───📄 table.py
-│   │       │   │   │   ├───📄 terminal_theme.py
-│   │       │   │   │   ├───📄 text.py
-│   │       │   │   │   ├───📄 theme.py
-│   │       │   │   │   ├───📄 themes.py
-│   │       │   │   │   ├───📄 traceback.py
-│   │       │   │   │   └───📄 tree.py
-│   │       │   │   ├───📁 tomli
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _parser.py
-│   │       │   │   │   ├───📄 _re.py
-│   │       │   │   │   ├───📄 _types.py
-│   │       │   │   │   └───📄 py.typed
-│   │       │   │   ├───📁 tomli_w
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _writer.py
-│   │       │   │   │   └───📄 py.typed
-│   │       │   │   ├───📁 truststore
-│   │       │   │   │   ├───📄 LICENSE
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _api.py
-│   │       │   │   │   ├───📄 _macos.py
-│   │       │   │   │   ├───📄 _openssl.py
-│   │       │   │   │   ├───📄 _ssl_constants.py
-│   │       │   │   │   ├───📄 _windows.py
-│   │       │   │   │   └───📄 py.typed
-│   │       │   │   ├───📁 urllib3
-│   │       │   │   │   ├───📄 LICENSE.txt
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _base_connection.py
-│   │       │   │   │   ├───📄 _collections.py
-│   │       │   │   │   ├───📄 _request_methods.py
-│   │       │   │   │   ├───📄 _version.py
-│   │       │   │   │   ├───📄 connection.py
-│   │       │   │   │   ├───📄 connectionpool.py
-│   │       │   │   │   ├───📁 contrib
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   ├───📁 emscripten
-│   │       │   │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   │   ├───📄 connection.py
-│   │       │   │   │   │   │   ├───📄 emscripten_fetch_worker.js
-│   │       │   │   │   │   │   ├───📄 fetch.py
-│   │       │   │   │   │   │   ├───📄 request.py
-│   │       │   │   │   │   │   └───📄 response.py
-│   │       │   │   │   │   ├───📄 pyopenssl.py
-│   │       │   │   │   │   └───📄 socks.py
-│   │       │   │   │   ├───📄 exceptions.py
-│   │       │   │   │   ├───📄 fields.py
-│   │       │   │   │   ├───📄 filepost.py
-│   │       │   │   │   ├───📁 http2
-│   │       │   │   │   │   ├───📄 __init__.py
-│   │       │   │   │   │   ├───📄 connection.py
-│   │       │   │   │   │   └───📄 probe.py
-│   │       │   │   │   ├───📄 poolmanager.py
-│   │       │   │   │   ├───📄 py.typed
-│   │       │   │   │   ├───📄 response.py
-│   │       │   │   │   └───📁 util
-│   │       │   │   │       ├───📄 __init__.py
-│   │       │   │   │       ├───📄 connection.py
-│   │       │   │   │       ├───📄 proxy.py
-│   │       │   │   │       ├───📄 request.py
-│   │       │   │   │       ├───📄 response.py
-│   │       │   │   │       ├───📄 retry.py
-│   │       │   │   │       ├───📄 ssl_.py
-│   │       │   │   │       ├───📄 ssl_match_hostname.py
-│   │       │   │   │       ├───📄 ssltransport.py
-│   │       │   │   │       ├───📄 timeout.py
-│   │       │   │   │       ├───📄 url.py
-│   │       │   │   │       ├───📄 util.py
-│   │       │   │   │       └───📄 wait.py
-│   │       │   │   └───📄 vendor.txt
-│   │       │   └───📄 py.typed
-│   │       ├───📁 pip-26.2.dist-info
-│   │       │   ├───📄 INSTALLER
-│   │       │   ├───📄 METADATA
-│   │       │   ├───📄 RECORD
-│   │       │   ├───📄 REQUESTED
-│   │       │   ├───📄 WHEEL
-│   │       │   ├───📄 entry_points.txt
-│   │       │   └───📁 licenses
-│   │       │       ├───📄 AUTHORS.txt
-│   │       │       ├───📄 LICENSE.txt
-│   │       │       └───📁 src
-│   │       │           └───📁 pip
-│   │       │               └───📁 _vendor
-│   │       │                   ├───📁 cachecontrol
-│   │       │                   │   └───📄 LICENSE.txt
-│   │       │                   ├───📁 certifi
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   ├───📁 distlib
-│   │       │                   │   └───📄 LICENSE.txt
-│   │       │                   ├───📁 distro
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   ├───📁 idna
-│   │       │                   │   └───📄 LICENSE.md
-│   │       │                   ├───📁 msgpack
-│   │       │                   │   └───📄 COPYING
-│   │       │                   ├───📁 packaging
-│   │       │                   │   ├───📄 LICENSE
-│   │       │                   │   ├───📄 LICENSE.APACHE
-│   │       │                   │   └───📄 LICENSE.BSD
-│   │       │                   ├───📁 pkg_resources
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   ├───📁 platformdirs
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   ├───📁 pygments
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   ├───📁 pyproject_hooks
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   ├───📁 requests
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   ├───📁 resolvelib
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   ├───📁 rich
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   ├───📁 tomli
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   ├───📁 tomli_w
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   ├───📁 truststore
-│   │       │                   │   └───📄 LICENSE
-│   │       │                   └───📁 urllib3
-│   │       │                       └───📄 LICENSE.txt
-│   │       ├───📁 pkg_resources
-│   │       │   ├───📄 __init__.py
-│   │       │   ├───📁 _vendor
-│   │       │   │   ├───📄 __init__.py
-│   │       │   │   ├───📄 appdirs.py
-│   │       │   │   ├───📁 importlib_resources
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _adapters.py
-│   │       │   │   │   ├───📄 _common.py
-│   │       │   │   │   ├───📄 _compat.py
-│   │       │   │   │   ├───📄 _itertools.py
-│   │       │   │   │   ├───📄 _legacy.py
-│   │       │   │   │   ├───📄 abc.py
-│   │       │   │   │   ├───📄 readers.py
-│   │       │   │   │   └───📄 simple.py
-│   │       │   │   ├───📁 jaraco
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 context.py
-│   │       │   │   │   ├───📄 functools.py
-│   │       │   │   │   └───📁 text
-│   │       │   │   │       └───📄 __init__.py
-│   │       │   │   ├───📁 more_itertools
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 more.py
-│   │       │   │   │   └───📄 recipes.py
-│   │       │   │   ├───📁 packaging
-│   │       │   │   │   ├───📄 __about__.py
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _manylinux.py
-│   │       │   │   │   ├───📄 _musllinux.py
-│   │       │   │   │   ├───📄 _structures.py
-│   │       │   │   │   ├───📄 markers.py
-│   │       │   │   │   ├───📄 requirements.py
-│   │       │   │   │   ├───📄 specifiers.py
-│   │       │   │   │   ├───📄 tags.py
-│   │       │   │   │   ├───📄 utils.py
-│   │       │   │   │   └───📄 version.py
-│   │       │   │   ├───📁 pyparsing
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 actions.py
-│   │       │   │   │   ├───📄 common.py
-│   │       │   │   │   ├───📄 core.py
-│   │       │   │   │   ├───📁 diagram
-│   │       │   │   │   │   └───📄 __init__.py
-│   │       │   │   │   ├───📄 exceptions.py
-│   │       │   │   │   ├───📄 helpers.py
-│   │       │   │   │   ├───📄 results.py
-│   │       │   │   │   ├───📄 testing.py
-│   │       │   │   │   ├───📄 unicode.py
-│   │       │   │   │   └───📄 util.py
-│   │       │   │   └───📄 zipp.py
-│   │       │   └───📁 extern
-│   │       │       └───📄 __init__.py
-│   │       ├───📁 setuptools
-│   │       │   ├───📄 __init__.py
-│   │       │   ├───📄 _deprecation_warning.py
-│   │       │   ├───📁 _distutils
-│   │       │   │   ├───📄 __init__.py
-│   │       │   │   ├───📄 _collections.py
-│   │       │   │   ├───📄 _functools.py
-│   │       │   │   ├───📄 _macos_compat.py
-│   │       │   │   ├───📄 _msvccompiler.py
-│   │       │   │   ├───📄 archive_util.py
-│   │       │   │   ├───📄 bcppcompiler.py
-│   │       │   │   ├───📄 ccompiler.py
-│   │       │   │   ├───📄 cmd.py
-│   │       │   │   ├───📁 command
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _framework_compat.py
-│   │       │   │   │   ├───📄 bdist.py
-│   │       │   │   │   ├───📄 bdist_dumb.py
-│   │       │   │   │   ├───📄 bdist_rpm.py
-│   │       │   │   │   ├───📄 build.py
-│   │       │   │   │   ├───📄 build_clib.py
-│   │       │   │   │   ├───📄 build_ext.py
-│   │       │   │   │   ├───📄 build_py.py
-│   │       │   │   │   ├───📄 build_scripts.py
-│   │       │   │   │   ├───📄 check.py
-│   │       │   │   │   ├───📄 clean.py
-│   │       │   │   │   ├───📄 config.py
-│   │       │   │   │   ├───📄 install.py
-│   │       │   │   │   ├───📄 install_data.py
-│   │       │   │   │   ├───📄 install_egg_info.py
-│   │       │   │   │   ├───📄 install_headers.py
-│   │       │   │   │   ├───📄 install_lib.py
-│   │       │   │   │   ├───📄 install_scripts.py
-│   │       │   │   │   ├───📄 py37compat.py
-│   │       │   │   │   ├───📄 register.py
-│   │       │   │   │   ├───📄 sdist.py
-│   │       │   │   │   └───📄 upload.py
-│   │       │   │   ├───📄 config.py
-│   │       │   │   ├───📄 core.py
-│   │       │   │   ├───📄 cygwinccompiler.py
-│   │       │   │   ├───📄 debug.py
-│   │       │   │   ├───📄 dep_util.py
-│   │       │   │   ├───📄 dir_util.py
-│   │       │   │   ├───📄 dist.py
-│   │       │   │   ├───📄 errors.py
-│   │       │   │   ├───📄 extension.py
-│   │       │   │   ├───📄 fancy_getopt.py
-│   │       │   │   ├───📄 file_util.py
-│   │       │   │   ├───📄 filelist.py
-│   │       │   │   ├───📄 log.py
-│   │       │   │   ├───📄 msvc9compiler.py
-│   │       │   │   ├───📄 msvccompiler.py
-│   │       │   │   ├───📄 py38compat.py
-│   │       │   │   ├───📄 py39compat.py
-│   │       │   │   ├───📄 spawn.py
-│   │       │   │   ├───📄 sysconfig.py
-│   │       │   │   ├───📄 text_file.py
-│   │       │   │   ├───📄 unixccompiler.py
-│   │       │   │   ├───📄 util.py
-│   │       │   │   ├───📄 version.py
-│   │       │   │   └───📄 versionpredicate.py
-│   │       │   ├───📄 _entry_points.py
-│   │       │   ├───📄 _imp.py
-│   │       │   ├───📄 _importlib.py
-│   │       │   ├───📄 _itertools.py
-│   │       │   ├───📄 _path.py
-│   │       │   ├───📄 _reqs.py
-│   │       │   ├───📁 _vendor
-│   │       │   │   ├───📄 __init__.py
-│   │       │   │   ├───📁 importlib_metadata
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _adapters.py
-│   │       │   │   │   ├───📄 _collections.py
-│   │       │   │   │   ├───📄 _compat.py
-│   │       │   │   │   ├───📄 _functools.py
-│   │       │   │   │   ├───📄 _itertools.py
-│   │       │   │   │   ├───📄 _meta.py
-│   │       │   │   │   └───📄 _text.py
-│   │       │   │   ├───📁 importlib_resources
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _adapters.py
-│   │       │   │   │   ├───📄 _common.py
-│   │       │   │   │   ├───📄 _compat.py
-│   │       │   │   │   ├───📄 _itertools.py
-│   │       │   │   │   ├───📄 _legacy.py
-│   │       │   │   │   ├───📄 abc.py
-│   │       │   │   │   ├───📄 readers.py
-│   │       │   │   │   └───📄 simple.py
-│   │       │   │   ├───📁 jaraco
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 context.py
-│   │       │   │   │   ├───📄 functools.py
-│   │       │   │   │   └───📁 text
-│   │       │   │   │       └───📄 __init__.py
-│   │       │   │   ├───📁 more_itertools
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 more.py
-│   │       │   │   │   └───📄 recipes.py
-│   │       │   │   ├───📄 ordered_set.py
-│   │       │   │   ├───📁 packaging
-│   │       │   │   │   ├───📄 __about__.py
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _manylinux.py
-│   │       │   │   │   ├───📄 _musllinux.py
-│   │       │   │   │   ├───📄 _structures.py
-│   │       │   │   │   ├───📄 markers.py
-│   │       │   │   │   ├───📄 requirements.py
-│   │       │   │   │   ├───📄 specifiers.py
-│   │       │   │   │   ├───📄 tags.py
-│   │       │   │   │   ├───📄 utils.py
-│   │       │   │   │   └───📄 version.py
-│   │       │   │   ├───📁 pyparsing
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 actions.py
-│   │       │   │   │   ├───📄 common.py
-│   │       │   │   │   ├───📄 core.py
-│   │       │   │   │   ├───📁 diagram
-│   │       │   │   │   │   └───📄 __init__.py
-│   │       │   │   │   ├───📄 exceptions.py
-│   │       │   │   │   ├───📄 helpers.py
-│   │       │   │   │   ├───📄 results.py
-│   │       │   │   │   ├───📄 testing.py
-│   │       │   │   │   ├───📄 unicode.py
-│   │       │   │   │   └───📄 util.py
-│   │       │   │   ├───📁 tomli
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 _parser.py
-│   │       │   │   │   ├───📄 _re.py
-│   │       │   │   │   └───📄 _types.py
-│   │       │   │   ├───📄 typing_extensions.py
-│   │       │   │   └───📄 zipp.py
-│   │       │   ├───📄 archive_util.py
-│   │       │   ├───📄 build_meta.py
-│   │       │   ├───📄 cli-32.exe
-│   │       │   ├───📄 cli-64.exe
-│   │       │   ├───📄 cli-arm64.exe
-│   │       │   ├───📄 cli.exe
-│   │       │   ├───📁 command
-│   │       │   │   ├───📄 __init__.py
-│   │       │   │   ├───📄 alias.py
-│   │       │   │   ├───📄 bdist_egg.py
-│   │       │   │   ├───📄 bdist_rpm.py
-│   │       │   │   ├───📄 build.py
-│   │       │   │   ├───📄 build_clib.py
-│   │       │   │   ├───📄 build_ext.py
-│   │       │   │   ├───📄 build_py.py
-│   │       │   │   ├───📄 develop.py
-│   │       │   │   ├───📄 dist_info.py
-│   │       │   │   ├───📄 easy_install.py
-│   │       │   │   ├───📄 editable_wheel.py
-│   │       │   │   ├───📄 egg_info.py
-│   │       │   │   ├───📄 install.py
-│   │       │   │   ├───📄 install_egg_info.py
-│   │       │   │   ├───📄 install_lib.py
-│   │       │   │   ├───📄 install_scripts.py
-│   │       │   │   ├───📄 launcher manifest.xml
-│   │       │   │   ├───📄 py36compat.py
-│   │       │   │   ├───📄 register.py
-│   │       │   │   ├───📄 rotate.py
-│   │       │   │   ├───📄 saveopts.py
-│   │       │   │   ├───📄 sdist.py
-│   │       │   │   ├───📄 setopt.py
-│   │       │   │   ├───📄 test.py
-│   │       │   │   ├───📄 upload.py
-│   │       │   │   └───📄 upload_docs.py
-│   │       │   ├───📁 config
-│   │       │   │   ├───📄 __init__.py
-│   │       │   │   ├───📄 _apply_pyprojecttoml.py
-│   │       │   │   ├───📁 _validate_pyproject
-│   │       │   │   │   ├───📄 __init__.py
-│   │       │   │   │   ├───📄 error_reporting.py
-│   │       │   │   │   ├───📄 extra_validations.py
-│   │       │   │   │   ├───📄 fastjsonschema_exceptions.py
-│   │       │   │   │   ├───📄 fastjsonschema_validations.py
-│   │       │   │   │   └───📄 formats.py
-│   │       │   │   ├───📄 expand.py
-│   │       │   │   ├───📄 pyprojecttoml.py
-│   │       │   │   └───📄 setupcfg.py
-│   │       │   ├───📄 dep_util.py
-│   │       │   ├───📄 depends.py
-│   │       │   ├───📄 discovery.py
-│   │       │   ├───📄 dist.py
-│   │       │   ├───📄 errors.py
-│   │       │   ├───📄 extension.py
-│   │       │   ├───📁 extern
-│   │       │   │   └───📄 __init__.py
-│   │       │   ├───📄 glob.py
-│   │       │   ├───📄 gui-32.exe
-│   │       │   ├───📄 gui-64.exe
-│   │       │   ├───📄 gui-arm64.exe
-│   │       │   ├───📄 gui.exe
-│   │       │   ├───📄 installer.py
-│   │       │   ├───📄 launch.py
-│   │       │   ├───📄 logging.py
-│   │       │   ├───📄 monkey.py
-│   │       │   ├───📄 msvc.py
-│   │       │   ├───📄 namespaces.py
-│   │       │   ├───📄 package_index.py
-│   │       │   ├───📄 py34compat.py
-│   │       │   ├───📄 sandbox.py
-│   │       │   ├───📄 script (dev).tmpl
-│   │       │   ├───📄 script.tmpl
-│   │       │   ├───📄 unicode_utils.py
-│   │       │   ├───📄 version.py
-│   │       │   ├───📄 wheel.py
-│   │       │   └───📄 windows_support.py
-│   │       └───📁 setuptools-65.5.0.dist-info
-│   │           ├───📄 INSTALLER
-│   │           ├───📄 LICENSE
-│   │           ├───📄 METADATA
-│   │           ├───📄 RECORD
-│   │           ├───📄 REQUESTED
-│   │           ├───📄 WHEEL
-│   │           ├───📄 entry_points.txt
-│   │           └───📄 top_level.txt
-│   ├───📁 Scripts
-│   │   ├───📄 Activate.ps1
-│   │   ├───📄 activate
-│   │   ├───📄 activate.bat
-│   │   ├───📄 deactivate.bat
-│   │   ├───📄 pip.exe
-│   │   ├───📄 pip3.11.exe
-│   │   ├───📄 pip3.exe
-│   │   ├───📄 python.exe
-│   │   └───📄 pythonw.exe
-│   └───📄 pyvenv.cfg
-├───📁 01-HTML
-│   ├───📁 01-DocumentStructure
-│   │   ├───📄 DocumentStructure.css
-│   │   ├───📄 DocumentStructure.html
-│   │   └───📄 DocumentStructure.md
-│   ├───📁 02-SemanticHTML
-│   │   ├───📄 SemanticHTML.css
-│   │   ├───📄 SemanticHTML.html
-│   │   └───📄 SemanticHTML.md
-│   ├───📁 03-HeadAndMeta
-│   │   ├───📄 HeadAndMeta.css
-│   │   ├───📄 HeadAndMeta.html
-│   │   └───📄 HeadAndMeta.md
-│   ├───📁 04-TextAndParagraphs
-│   │   ├───📄 TextAndParagraphs.css
-│   │   ├───📄 TextAndParagraphs.html
-│   │   └───📄 TextAndParagraphs.md
-│   ├───📁 05-TextFormatting
-│   │   ├───📄 TextFormatting.css
-│   │   ├───📄 TextFormatting.html
-│   │   └───📄 TextFormatting.md
-│   ├───📁 06-DivAndSpan
-│   │   ├───📄 DivAndSpan.css
-│   │   ├───📄 DivAndSpan.html
-│   │   └───📄 DivAndSpan.md
-│   ├───📁 07-Lists
-│   │   ├───📄 Lists.css
-│   │   ├───📄 Lists.html
-│   │   └───📄 Lists.md
-│   ├───📁 08-LinksAndNavigation
-│   │   ├───📄 LinksAndNavigation.css
-│   │   ├───📄 LinksAndNavigation.html
-│   │   └───📄 LinksAndNavigation.md
-│   ├───📁 09-Images
-│   │   ├───📄 Images.css
-│   │   ├───📄 Images.html
-│   │   └───📄 Images.md
-│   ├───📁 10-ResponsiveImages
-│   │   ├───📄 ResponsiveImages.css
-│   │   ├───📄 ResponsiveImages.html
-│   │   └───📄 ResponsiveImages.md
-│   ├───📁 11-FigureAndFigcaption
-│   │   ├───📄 FigureAndFigcaption.css
-│   │   ├───📄 FigureAndFigcaption.html
-│   │   └───📄 FigureAndFigcaption.md
-│   ├───📁 12-Tables
-│   │   ├───📄 Tables.css
-│   │   ├───📄 Tables.html
-│   │   └───📄 Tables.md
-│   ├───📁 13-FormsBasics
-│   │   ├───📄 FormsBasics.css
-│   │   ├───📄 FormsBasics.html
-│   │   └───📄 FormsBasics.md
-│   ├───📁 14-InputTypes
-│   │   ├───📄 InputTypes.css
-│   │   ├───📄 InputTypes.html
-│   │   └───📄 InputTypes.md
-│   ├───📁 15-FormValidation
-│   │   ├───📄 FormValidation.css
-│   │   ├───📄 FormValidation.html
-│   │   └───📄 FormValidation.md
-│   ├───📁 16-Buttons
-│   │   ├───📄 Buttons.css
-│   │   ├───📄 Buttons.html
-│   │   └───📄 Buttons.md
-│   ├───📁 17-Labels
-│   │   ├───📄 Labels.css
-│   │   ├───📄 Labels.html
-│   │   └───📄 Labels.md
-│   ├───📁 18-FieldsetAndLegend
-│   │   ├───📄 FieldsetAndLegend.css
-│   │   ├───📄 FieldsetAndLegend.html
-│   │   └───📄 FieldsetAndLegend.md
-│   ├───📁 19-Datalist
-│   │   ├───📄 Datalist.css
-│   │   ├───📄 Datalist.html
-│   │   └───📄 Datalist.md
-│   ├───📁 20-Output
-│   │   ├───📄 Output.css
-│   │   ├───📄 Output.html
-│   │   └───📄 Output.md
-│   ├───📁 21-ProgressAndMeter
-│   │   ├───📄 ProgressAndMeter.css
-│   │   ├───📄 ProgressAndMeter.html
-│   │   └───📄 ProgressAndMeter.md
-│   ├───📁 22-SemanticHTMLAdvanced
-│   │   ├───📄 SemanticHTMLAdvanced.css
-│   │   ├───📄 SemanticHTMLAdvanced.html
-│   │   └───📄 SemanticHTMLAdvanced.md
-│   ├───📁 23-HeaderMainFooter
-│   │   ├───📄 HeaderMainFooter.css
-│   │   ├───📄 HeaderMainFooter.html
-│   │   └───📄 HeaderMainFooter.md
-│   ├───📁 24-SectionArticleAside
-│   │   ├───📄 SectionArticleAside.css
-│   │   ├───📄 SectionArticleAside.html
-│   │   └───📄 SectionArticleAside.md
-│   ├───📁 25-Audio
-│   │   ├───📄 Audio.css
-│   │   ├───📄 Audio.html
-│   │   └───📄 Audio.md
-│   ├───📁 26-Video
-│   │   ├───📄 Video.css
-│   │   ├───📄 Video.html
-│   │   └───📄 Video.md
-│   ├───📁 27-Iframe
-│   │   ├───📄 Iframe.css
-│   │   ├───📄 Iframe.html
-│   │   └───📄 Iframe.md
-│   ├───📁 28-SVG
-│   │   ├───📄 SVG.css
-│   │   ├───📄 SVG.html
-│   │   └───📄 SVG.md
-│   ├───📁 29-CanvasBasics
-│   │   ├───📄 CanvasBasics.css
-│   │   ├───📄 CanvasBasics.html
-│   │   └───📄 CanvasBasics.md
-│   ├───📁 30-Dialog
-│   │   ├───📄 Dialog.css
-│   │   ├───📄 Dialog.html
-│   │   └───📄 Dialog.md
-│   ├───📁 31-DetailsAndSummary
-│   │   ├───📄 DetailsAndSummary.css
-│   │   ├───📄 DetailsAndSummary.html
-│   │   └───📄 DetailsAndSummary.md
-│   ├───📁 32-Template
-│   │   ├───📄 Template.css
-│   │   ├───📄 Template.html
-│   │   └───📄 Template.md
-│   ├───📁 33-GlobalAttributes
-│   │   ├───📄 GlobalAttributes.css
-│   │   ├───📄 GlobalAttributes.html
-│   │   └───📄 GlobalAttributes.md
-│   ├───📁 34-DataAttributes
-│   │   ├───📄 DataAttributes.css
-│   │   ├───📄 DataAttributes.html
-│   │   └───📄 DataAttributes.md
-│   ├───📁 35-WebComponents
-│   │   ├───📄 WebComponents.css
-│   │   ├───📄 WebComponents.html
-│   │   └───📄 WebComponents.md
-│   ├───📁 36-HTMLAccessibility
-│   │   ├───📄 HTMLAccessibility.css
-│   │   ├───📄 HTMLAccessibility.html
-│   │   └───📄 HTMLAccessibility.md
-│   ├───📁 37-ARIABasics
-│   │   ├───📄 ARIABasics.css
-│   │   ├───📄 ARIABasics.html
-│   │   └───📄 ARIABasics.md
-│   ├───📁 38-SEOForHTML
-│   │   ├───📄 SEOForHTML.css
-│   │   ├───📄 SEOForHTML.html
-│   │   └───📄 SEOForHTML.md
-│   ├───📁 39-HTMLPerformance
-│   │   ├───📄 HTMLPerformance.css
-│   │   ├───📄 HTMLPerformance.html
-│   │   └───📄 HTMLPerformance.md
-│   ├───📁 40-BrowserDevTools
-│   │   ├───📄 BrowserDevTools.css
-│   │   ├───📄 BrowserDevTools.html
-│   │   └───📄 BrowserDevTools.md
-│   ├───📁 41-HTMLBestPractices
-│   │   ├───📄 HTMLBestPractices.css
-│   │   ├───📄 HTMLBestPractices.html
-│   │   └───📄 HTMLBestPractices.md
-│   ├───📁 42-CommonHTMLMistakes
-│   │   ├───📄 CommonHTMLMistakes.css
-│   │   ├───📄 CommonHTMLMistakes.html
-│   │   └───📄 CommonHTMLMistakes.md
-│   ├───📁 43-InterviewQuestions
-│   │   ├───📄 InterviewQuestions.css
-│   │   ├───📄 InterviewQuestions.html
-│   │   └───📄 InterviewQuestions.md
-│   ├───📁 44-Project-LandingPage
-│   │   ├───📄 LandingPage.css
-│   │   ├───📄 LandingPage.html
-│   │   └───📄 LandingPage.md
-│   ├───📁 45-Project-Blog
-│   │   ├───📄 Blog.css
-│   │   ├───📄 Blog.html
-│   │   └───📄 Blog.md
-│   ├───📁 46-Project-Ecommerce
-│   │   ├───📄 Ecommerce.css
-│   │   ├───📄 Ecommerce.html
-│   │   └───📄 Ecommerce.md
-│   ├───📁 47-Project-AdminDashboard
-│   │   ├───📄 AdminDashboard.css
-│   │   ├───📄 AdminDashboard.html
-│   │   └───📄 AdminDashboard.md
-│   ├───📁 48-FinalChallenge
-│   │   ├───📄 FinalChallenge.css
-│   │   ├───📄 FinalChallenge.html
-│   │   └───📄 FinalChallenge.md
-│   ├───📄 HTML-Roadmap.md
-│   └───📄 HTMLCheatSheet.md
-├───📁 02-CSS
-│   ├───📁 01-CSSIntroduction
-│   │   ├───📄 CSSIntroduction.css
-│   │   ├───📄 CSSIntroduction.html
-│   │   └───📄 CSSIntroduction.md
-│   ├───📁 02-Selectors
-│   │   ├───📄 Selectors.css
-│   │   ├───📄 Selectors.html
-│   │   └───📄 Selectors.md
-│   ├───📁 03-Specificity
-│   │   ├───📄 Specificity.css
-│   │   ├───📄 Specificity.html
-│   │   └───📄 Specificity.md
-│   ├───📁 04-Colors
-│   │   ├───📄 Colors.css
-│   │   ├───📄 Colors.html
-│   │   └───📄 Colors.md
-│   ├───📁 05-Units
-│   │   ├───📄 Units.css
-│   │   ├───📄 Units.html
-│   │   └───📄 Units.md
-│   ├───📁 06-BoxModel
-│   │   ├───📄 BoxModel.css
-│   │   ├───📄 BoxModel.html
-│   │   └───📄 BoxModel.md
-│   ├───📁 07-Display
-│   │   ├───📄 Display.css
-│   │   ├───📄 Display.html
-│   │   └───📄 Display.md
-│   ├───📁 08-Overflow
-│   │   ├───📄 Overflow.css
-│   │   ├───📄 Overflow.html
-│   │   └───📄 Overflow.md
-│   ├───📁 09-Position
-│   │   ├───📄 Position.css
-│   │   ├───📄 Position.html
-│   │   └───📄 Position.md
-│   ├───📁 10-ZIndex
-│   │   ├───📄 ZIndex.css
-│   │   ├───📄 ZIndex.html
-│   │   └───📄 ZIndex.md
-│   ├───📁 11-FloatAndClear
-│   │   ├───📄 FloatAndClear.css
-│   │   ├───📄 FloatAndClear.html
-│   │   └───📄 FloatAndClear.md
-│   ├───📁 12-Visibility
-│   │   ├───📄 Visibility.css
-│   │   ├───📄 Visibility.html
-│   │   └───📄 Visibility.md
-│   ├───📁 13-Cursors
-│   │   ├───📄 Cursors.css
-│   │   ├───📄 Cursors.html
-│   │   └───📄 Cursors.md
-│   ├───📁 14-Backgrounds
-│   │   ├───📄 Backgrounds.css
-│   │   ├───📄 Backgrounds.html
-│   │   └───📄 Backgrounds.md
-│   ├───📁 15-Borders
-│   │   ├───📄 Borders.css
-│   │   ├───📄 Borders.html
-│   │   └───📄 Borders.md
-│   ├───📁 16-Margin
-│   │   ├───📄 Margin.css
-│   │   ├───📄 Margin.html
-│   │   └───📄 Margin.md
-│   ├───📁 17-Padding
-│   │   ├───📄 Padding.css
-│   │   ├───📄 Padding.html
-│   │   └───📄 Padding.md
-│   ├───📁 18-Sizing
-│   │   ├───📄 Sizing.css
-│   │   ├───📄 Sizing.html
-│   │   └───📄 Sizing.md
-│   ├───📁 19-FlexboxBasics
-│   │   ├───📄 FlexboxBasics.css
-│   │   ├───📄 FlexboxBasics.html
-│   │   └───📄 FlexboxBasics.md
-│   ├───📁 20-FlexboxAdvanced
-│   │   ├───📄 FlexboxAdvanced.css
-│   │   ├───📄 FlexboxAdvanced.html
-│   │   └───📄 FlexboxAdvanced.md
-│   ├───📁 21-GridBasics
-│   │   ├───📄 GridBasics.css
-│   │   ├───📄 GridBasics.html
-│   │   └───📄 GridBasics.md
-│   ├───📁 22-GridAdvanced
-│   │   ├───📄 GridAdvanced.css
-│   │   ├───📄 GridAdvanced.html
-│   │   └───📄 GridAdvanced.md
-│   ├───📁 23-Alignment
-│   │   ├───📄 Alignment.css
-│   │   ├───📄 Alignment.html
-│   │   └───📄 Alignment.md
-│   ├───📁 24-ResponsiveDesign
-│   │   ├───📄 ResponsiveDesign.css
-│   │   ├───📄 ResponsiveDesign.html
-│   │   └───📄 ResponsiveDesign.md
-│   ├───📁 25-MediaQueries
-│   │   ├───📄 MediaQueries.css
-│   │   ├───📄 MediaQueries.html
-│   │   └───📄 MediaQueries.md
-│   ├───📁 26-ContainerQueries
-│   │   ├───📄 ContainerQueries.css
-│   │   ├───📄 ContainerQueries.html
-│   │   └───📄 ContainerQueries.md
-│   ├───📁 27-AspectRatio
-│   │   ├───📄 AspectRatio.css
-│   │   ├───📄 AspectRatio.html
-│   │   └───📄 AspectRatio.md
-│   ├───📁 28-ObjectFitAndObjectPosition
-│   │   ├───📄 ObjectFitAndObjectPosition.css
-│   │   ├───📄 ObjectFitAndObjectPosition.html
-│   │   └───📄 ObjectFitAndObjectPosition.md
-│   ├───📁 29-OverflowAdvanced
-│   │   ├───📄 OverflowAdvanced.css
-│   │   ├───📄 OverflowAdvanced.html
-│   │   └───📄 OverflowAdvanced.md
-│   ├───📁 30-StickyLayouts
-│   │   ├───📄 StickyLayouts.css
-│   │   ├───📄 StickyLayouts.html
-│   │   └───📄 StickyLayouts.md
-│   ├───📁 31-Typography
-│   │   ├───📄 Typography.css
-│   │   ├───📄 Typography.html
-│   │   └───📄 Typography.md
-│   ├───📁 32-WebFonts
-│   │   ├───📄 WebFonts.css
-│   │   ├───📄 WebFonts.html
-│   │   └───📄 WebFonts.md
-│   ├───📁 33-Icons
-│   │   ├───📄 Icons.css
-│   │   ├───📄 Icons.html
-│   │   └───📄 Icons.md
-│   ├───📁 34-Shadows
-│   │   ├───📄 Shadows.css
-│   │   ├───📄 Shadows.html
-│   │   └───📄 Shadows.md
-│   ├───📁 35-Filters
-│   │   ├───📄 Filters.css
-│   │   ├───📄 Filters.html
-│   │   └───📄 Filters.md
-│   ├───📁 36-Gradients
-│   │   ├───📄 Gradients.css
-│   │   ├───📄 Gradients.html
-│   │   └───📄 Gradients.md
-│   ├───📁 37-Transforms
-│   │   ├───📄 Transforms.css
-│   │   ├───📄 Transforms.html
-│   │   └───📄 Transforms.md
-│   ├───📁 38-Transitions
-│   │   ├───📄 Transitions.css
-│   │   ├───📄 Transitions.html
-│   │   └───📄 Transitions.md
-│   ├───📁 39-Animations
-│   │   ├───📄 Animations.css
-│   │   ├───📄 Animations.html
-│   │   └───📄 Animations.md
-│   ├───📁 40-Keyframes
-│   │   ├───📄 Keyframes.css
-│   │   ├───📄 Keyframes.html
-│   │   └───📄 Keyframes.md
-│   ├───📁 41-CSSVariables
-│   │   ├───📄 CSSVariables.css
-│   │   ├───📄 CSSVariables.html
-│   │   └───📄 CSSVariables.md
-│   ├───📁 42-CalcClampMinMax
-│   │   ├───📄 CalcClampMinMax.css
-│   │   ├───📄 CalcClampMinMax.html
-│   │   └───📄 CalcClampMinMax.md
-│   ├───📁 43-PseudoClasses
-│   │   ├───📄 PseudoClasses.css
-│   │   ├───📄 PseudoClasses.html
-│   │   └───📄 PseudoClasses.md
-│   ├───📁 44-PseudoElements
-│   │   ├───📄 PseudoElements.css
-│   │   ├───📄 PseudoElements.html
-│   │   └───📄 PseudoElements.md
-│   ├───📁 45-ModernCSSFunctions
-│   │   ├───📄 ModernCSSFunctions.css
-│   │   ├───📄 ModernCSSFunctions.html
-│   │   └───📄 ModernCSSFunctions.md
-│   ├───📁 46-CSSArchitecture
-│   │   ├───📄 CSSArchitecture.css
-│   │   ├───📄 CSSArchitecture.html
-│   │   └───📄 CSSArchitecture.md
-│   ├───📁 47-BEM
-│   │   ├───📄 BEM.css
-│   │   ├───📄 BEM.html
-│   │   └───📄 BEM.md
-│   ├───📁 48-CustomPropertiesAdvanced
-│   │   ├───📄 CustomPropertiesAdvanced.css
-│   │   ├───📄 CustomPropertiesAdvanced.html
-│   │   └───📄 CustomPropertiesAdvanced.md
-│   ├───📁 49-CSSPerformance
-│   │   ├───📄 CSSPerformance.css
-│   │   ├───📄 CSSPerformance.html
-│   │   └───📄 CSSPerformance.md
-│   ├───📁 50-CSSAccessibility
-│   │   ├───📄 CSSAccessibility.css
-│   │   ├───📄 CSSAccessibility.html
-│   │   └───📄 CSSAccessibility.md
-│   ├───📁 51-DarkMode
-│   │   ├───📄 DarkMode.css
-│   │   ├───📄 DarkMode.html
-│   │   └───📄 DarkMode.md
-│   ├───📁 52-PrintCSS
-│   │   ├───📄 PrintCSS.css
-│   │   ├───📄 PrintCSS.html
-│   │   └───📄 PrintCSS.md
-│   ├───📁 53-Combinators
-│   │   ├───📄 Combinators.css
-│   │   ├───📄 Combinators.html
-│   │   └───📄 Combinators.md
-│   ├───📁 54-AttributeSelectors
-│   │   ├───📄 AttributeSelectors.css
-│   │   ├───📄 AttributeSelectors.html
-│   │   └───📄 AttributeSelectors.md
-│   ├───📁 55-Nesting
-│   │   ├───📄 Nesting.css
-│   │   ├───📄 Nesting.html
-│   │   └───📄 Nesting.md
-│   ├───📁 56-CSSFunctions
-│   │   ├───📄 CSSFunctions.css
-│   │   ├───📄 CSSFunctions.html
-│   │   └───📄 CSSFunctions.md
-│   ├───📁 57-CSSMathFunctions
-│   │   ├───📄 CSSMathFunctions.css
-│   │   ├───📄 CSSMathFunctions.html
-│   │   └───📄 CSSMathFunctions.md
-│   ├───📁 58-CSSLogicalProperties
-│   │   ├───📄 CSSLogicalProperties.css
-│   │   ├───📄 CSSLogicalProperties.html
-│   │   └───📄 CSSLogicalProperties.md
-│   ├───📁 59-WritingModes
-│   │   ├───📄 WritingModes.css
-│   │   ├───📄 WritingModes.html
-│   │   └───📄 WritingModes.md
-│   ├───📁 60-ScrollBehavior
-│   │   ├───📄 ScrollBehavior.css
-│   │   ├───📄 ScrollBehavior.html
-│   │   └───📄 ScrollBehavior.md
-│   ├───📁 61-ScrollSnap
-│   │   ├───📄 ScrollSnap.css
-│   │   ├───📄 ScrollSnap.html
-│   │   └───📄 ScrollSnap.md
-│   ├───📁 62-OverscrollBehavior
-│   │   ├───📄 OverscrollBehavior.css
-│   │   ├───📄 OverscrollBehavior.html
-│   │   └───📄 OverscrollBehavior.md
-│   ├───📁 63-ScrollbarStyling
-│   │   ├───📄 ScrollbarStyling.css
-│   │   ├───📄 ScrollbarStyling.html
-│   │   └───📄 ScrollbarStyling.md
-│   ├───📁 64-CSSMasks
-│   │   ├───📄 CSSMasks.css
-│   │   ├───📄 CSSMasks.html
-│   │   └───📄 CSSMasks.md
-│   ├───📁 65-CSSBlendModes
-│   │   ├───📄 CSSBlendModes.css
-│   │   ├───📄 CSSBlendModes.html
-│   │   └───📄 CSSBlendModes.md
-│   ├───📁 66-BackdropFilter
-│   │   ├───📄 BackdropFilter.css
-│   │   ├───📄 BackdropFilter.html
-│   │   └───📄 BackdropFilter.md
-│   ├───📁 67-ClipPath
-│   │   ├───📄 ClipPath.css
-│   │   ├───📄 ClipPath.html
-│   │   └───📄 ClipPath.md
-│   ├───📁 68-CSSMotionPath
-│   │   ├───📄 CSSMotionPath.css
-│   │   ├───📄 CSSMotionPath.html
-│   │   └───📄 CSSMotionPath.md
-│   ├───📁 69-CSSViewTransitions
-│   │   ├───📄 CSSViewTransitions.css
-│   │   ├───📄 CSSViewTransitions.html
-│   │   └───📄 CSSViewTransitions.md
-│   ├───📁 70-CascadeLayers
-│   │   ├───📄 CascadeLayers.css
-│   │   ├───📄 CascadeLayers.html
-│   │   └───📄 CascadeLayers.md
-│   ├───📁 71-CSSScope
-│   │   ├───📄 CSSScope.css
-│   │   ├───📄 CSSScope.html
-│   │   └───📄 CSSScope.md
-│   ├───📁 72-AnchorPositioning
-│   │   ├───📄 AnchorPositioning.css
-│   │   ├───📄 AnchorPositioning.html
-│   │   └───📄 AnchorPositioning.md
-│   ├───📁 73-CaretAndSelection
-│   │   ├───📄 CaretAndSelection.css
-│   │   ├───📄 CaretAndSelection.html
-│   │   └───📄 CaretAndSelection.md
-│   ├───📁 74-AccentColor
-│   │   ├───📄 AccentColor.css
-│   │   ├───📄 AccentColor.html
-│   │   └───📄 AccentColor.md
-│   ├───📁 75-Appearance
-│   │   ├───📄 Appearance.css
-│   │   ├───📄 Appearance.html
-│   │   └───📄 Appearance.md
-│   ├───📁 76-Resize
-│   │   ├───📄 Resize.css
-│   │   ├───📄 Resize.html
-│   │   └───📄 Resize.md
-│   ├───📁 77-PointerEvents
-│   │   ├───📄 PointerEvents.css
-│   │   ├───📄 PointerEvents.html
-│   │   └───📄 PointerEvents.md
-│   ├───📁 78-UserSelect
-│   │   ├───📄 UserSelect.css
-│   │   ├───📄 UserSelect.html
-│   │   └───📄 UserSelect.md
-│   ├───📁 79-SVGFilters
-│   │   ├───📄 SVGFilters.css
-│   │   ├───📄 SVGFilters.html
-│   │   └───📄 SVGFilters.md
-│   ├───📁 80-TextWrap
-│   │   ├───📄 TextWrap.css
-│   │   ├───📄 TextWrap.html
-│   │   └───📄 TextWrap.md
-│   ├───📁 81-GridTemplateAreas
-│   │   ├───📄 GridTemplateAreas.css
-│   │   ├───📄 GridTemplateAreas.html
-│   │   └───📄 GridTemplateAreas.md
-│   ├───📁 82-PlaceItems
-│   │   ├───📄 PlaceItems.css
-│   │   ├───📄 PlaceItems.html
-│   │   └───📄 PlaceItems.md
-│   ├───📁 83-ColorMix
-│   │   ├───📄 ColorMix.css
-│   │   ├───📄 ColorMix.html
-│   │   └───📄 ColorMix.md
-│   ├───📁 84-CSSProjectCard
-│   │   ├───📄 CSSProjectCard.css
-│   │   ├───📄 CSSProjectCard.html
-│   │   └───📄 CSSProjectCard.md
-│   ├───📁 85-CSSCheatSheet
-│   │   ├───📄 CSSCheatSheet.css
-│   │   ├───📄 CSSCheatSheet.html
-│   │   └───📄 CSSCheatSheet.md
-│   ├───📄 CSS-Roadmap.md
-│   └───📄 CSSCheatSheet.md
-├───📁 03-JavaScript
-│   ├───📁 01-ES5
-│   ├───📁 02-ES6-2015
-│   ├───📁 03-ES7-2016
-│   ├───📁 04-ES8-2017
-│   ├───📁 05-ES9-2018
-│   ├───📁 06-ES10-2019
-│   ├───📁 07-ES11-2020
-│   ├───📁 08-ES12-2021
-│   ├───📁 09-ES13-2022
-│   ├───📁 10-ES14-2023
-│   ├───📁 11-ES15-2024
-│   └───📁 12-ES16-2025
-├───📁 04-JavaScript-Package
-├───📁 05-TypeScript
-├───📁 06-npm
-├───📁 07-Git&GitHub
-├───📁 08-React
-├───📁 09-React-Package
-│   ├───📁 01-React Router
-│   └───📁 02-ReactHookForm
-├───📁 10-TailwindCSS
-├───📁 11-NextJS
-├───📁 12-NextJS-Package
-├───📁 13-NodeJS
-├───📁 14-NodeJS-Package
-│   └───📁 01-ExpressJS
-├───📁 15-DataBases
-│   ├───📁 01-MongoDB
-│   └───📁 02-MySQL
-├───📁 16-Vite
-│   └───📄 Vite.md
+# ├───📁 01-HTML
+  ├───📁 01-DocumentStructure
+  │   ├───📄 DocumentStructure.css
+  │   ├───📄 DocumentStructure.html
+  │   └───📄 DocumentStructure.md
+  ├───...
+  ├───📁 48-FinalChallenge
+  │   ├───📄 FinalChallenge.css
+  │   ├───📄 FinalChallenge.html
+  │   └───📄 FinalChallenge.md
+  ├───📄 HTML-Roadmap.md
+  └───📄 HTMLCheatSheet.md
+# ├───📁 02-CSS
+  ├───📁 01-CSSIntroduction
+  │   ├───📄 CSSIntroduction.css
+  │   ├───📄 CSSIntroduction.html
+  │   └───📄 CSSIntroduction.md
+  ├───📁 02-Selectors
+  │   ├───📄 Selectors.css
+  │   ├───📄 Selectors.html
+  │   └───📄 Selectors.md
+  ├───📁 03-Specificity
+  │   ├───📄 Specificity.css
+  │   ├───📄 Specificity.html
+  │   └───📄 Specificity.md
+  ├───📁 04-Colors
+  │   ├───📄 Colors.css
+  │   ├───📄 Colors.html
+  │   └───📄 Colors.md
+  ├───📁 05-Units
+  │   ├───📄 Units.css
+  │   ├───📄 Units.html
+  │   └───📄 Units.md
+  ├───📁 06-BoxModel
+  │   ├───📄 BoxModel.css
+  │   ├───📄 BoxModel.html
+  │   └───📄 BoxModel.md
+  ├───📁 07-Display
+  │   ├───📄 Display.css
+  │   ├───📄 Display.html
+  │   └───📄 Display.md
+  ├───📁 08-Overflow
+  │   ├───📄 Overflow.css
+  │   ├───📄 Overflow.html
+  │   └───📄 Overflow.md
+  ├───📁 09-Position
+  │   ├───📄 Position.css
+  │   ├───📄 Position.html
+  │   └───📄 Position.md
+  ├───📁 10-ZIndex
+  │   ├───📄 ZIndex.css
+  │   ├───📄 ZIndex.html
+  │   └───📄 ZIndex.md
+  ├───📁 11-FloatAndClear
+  │   ├───📄 FloatAndClear.css
+  │   ├───📄 FloatAndClear.html
+  │   └───📄 FloatAndClear.md
+  ├───📁 12-Visibility
+  │   ├───📄 Visibility.css
+  │   ├───📄 Visibility.html
+  │   └───📄 Visibility.md
+  ├───📁 13-Cursors
+  │   ├───📄 Cursors.css
+  │   ├───📄 Cursors.html
+  │   └───📄 Cursors.md
+  ├───📁 14-Backgrounds
+  │   ├───📄 Backgrounds.css
+  │   ├───📄 Backgrounds.html
+  │   └───📄 Backgrounds.md
+  ├───📁 15-Borders
+  │   ├───📄 Borders.css
+  │   ├───📄 Borders.html
+  │   └───📄 Borders.md
+  ├───📁 16-Margin
+  │   ├───📄 Margin.css
+  │   ├───📄 Margin.html
+  │   └───📄 Margin.md
+  ├───📁 17-Padding
+  │   ├───📄 Padding.css
+  │   ├───📄 Padding.html
+  │   └───📄 Padding.md
+  ├───📁 18-Sizing
+  │   ├───📄 Sizing.css
+  │   ├───📄 Sizing.html
+  │   └───📄 Sizing.md
+  ├───📁 19-FlexboxBasics
+  │   ├───📄 FlexboxBasics.css
+  │   ├───📄 FlexboxBasics.html
+  │   └───📄 FlexboxBasics.md
+  ├───📁 20-FlexboxAdvanced
+  │   ├───📄 FlexboxAdvanced.css
+  │   ├───📄 FlexboxAdvanced.html
+  │   └───📄 FlexboxAdvanced.md
+  ├───📁 21-GridBasics
+  │   ├───📄 GridBasics.css
+  │   ├───📄 GridBasics.html
+  │   └───📄 GridBasics.md
+  ├───📁 22-GridAdvanced
+  │   ├───📄 GridAdvanced.css
+  │   ├───📄 GridAdvanced.html
+  │   └───📄 GridAdvanced.md
+  ├───📁 23-Alignment
+  │   ├───📄 Alignment.css
+  │   ├───📄 Alignment.html
+  │   └───📄 Alignment.md
+  ├───📁 24-ResponsiveDesign
+  │   ├───📄 ResponsiveDesign.css
+  │   ├───📄 ResponsiveDesign.html
+  │   └───📄 ResponsiveDesign.md
+  ├───📁 25-MediaQueries
+  │   ├───📄 MediaQueries.css
+  │   ├───📄 MediaQueries.html
+  │   └───📄 MediaQueries.md
+  ├───📁 26-ContainerQueries
+  │   ├───📄 ContainerQueries.css
+  │   ├───📄 ContainerQueries.html
+  │   └───📄 ContainerQueries.md
+  ├───📁 27-AspectRatio
+  │   ├───📄 AspectRatio.css
+  │   ├───📄 AspectRatio.html
+  │   └───📄 AspectRatio.md
+  ├───📁 28-ObjectFitAndObjectPosition
+  │   ├───📄 ObjectFitAndObjectPosition.css
+  │   ├───📄 ObjectFitAndObjectPosition.html
+  │   └───📄 ObjectFitAndObjectPosition.md
+  ├───📁 29-OverflowAdvanced
+  │   ├───📄 OverflowAdvanced.css
+  │   ├───📄 OverflowAdvanced.html
+  │   └───📄 OverflowAdvanced.md
+  ├───📁 30-StickyLayouts
+  │   ├───📄 StickyLayouts.css
+  │   ├───📄 StickyLayouts.html
+  │   └───📄 StickyLayouts.md
+  ├───📁 31-Typography
+  │   ├───📄 Typography.css
+  │   ├───📄 Typography.html
+  │   └───📄 Typography.md
+  ├───📁 32-WebFonts
+  │   ├───📄 WebFonts.css
+  │   ├───📄 WebFonts.html
+  │   └───📄 WebFonts.md
+  ├───📁 33-Icons
+  │   ├───📄 Icons.css
+  │   ├───📄 Icons.html
+  │   └───📄 Icons.md
+  ├───📁 34-Shadows
+  │   ├───📄 Shadows.css
+  │   ├───📄 Shadows.html
+  │   └───📄 Shadows.md
+  ├───📁 35-Filters
+  │   ├───📄 Filters.css
+  │   ├───📄 Filters.html
+  │   └───📄 Filters.md
+  ├───📁 36-Gradients
+  │   ├───📄 Gradients.css
+  │   ├───📄 Gradients.html
+  │   └───📄 Gradients.md
+  ├───📁 37-Transforms
+  │   ├───📄 Transforms.css
+  │   ├───📄 Transforms.html
+  │   └───📄 Transforms.md
+  ├───📁 38-Transitions
+  │   ├───📄 Transitions.css
+  │   ├───📄 Transitions.html
+  │   └───📄 Transitions.md
+  ├───📁 39-Animations
+  │   ├───📄 Animations.css
+  │   ├───📄 Animations.html
+  │   └───📄 Animations.md
+  ├───📁 40-Keyframes
+  │   ├───📄 Keyframes.css
+  │   ├───📄 Keyframes.html
+  │   └───📄 Keyframes.md
+  ├───📁 41-CSSVariables
+  │   ├───📄 CSSVariables.css
+  │   ├───📄 CSSVariables.html
+  │   └───📄 CSSVariables.md
+  ├───📁 42-CalcClampMinMax
+  │   ├───📄 CalcClampMinMax.css
+  │   ├───📄 CalcClampMinMax.html
+  │   └───📄 CalcClampMinMax.md
+  ├───📁 43-PseudoClasses
+  │   ├───📄 PseudoClasses.css
+  │   ├───📄 PseudoClasses.html
+  │   └───📄 PseudoClasses.md
+  ├───📁 44-PseudoElements
+  │   ├───📄 PseudoElements.css
+  │   ├───📄 PseudoElements.html
+  │   └───📄 PseudoElements.md
+  ├───📁 45-ModernCSSFunctions
+  │   ├───📄 ModernCSSFunctions.css
+  │   ├───📄 ModernCSSFunctions.html
+  │   └───📄 ModernCSSFunctions.md
+  ├───📁 46-CSSArchitecture
+  │   ├───📄 CSSArchitecture.css
+  │   ├───📄 CSSArchitecture.html
+  │   └───📄 CSSArchitecture.md
+  ├───📁 47-BEM
+  │   ├───📄 BEM.css
+  │   ├───📄 BEM.html
+  │   └───📄 BEM.md
+  ├───📁 48-CustomPropertiesAdvanced
+  │   ├───📄 CustomPropertiesAdvanced.css
+  │   ├───📄 CustomPropertiesAdvanced.html
+  │   └───📄 CustomPropertiesAdvanced.md
+  ├───📁 49-CSSPerformance
+  │   ├───📄 CSSPerformance.css
+  │   ├───📄 CSSPerformance.html
+  │   └───📄 CSSPerformance.md
+  ├───📁 50-CSSAccessibility
+  │   ├───📄 CSSAccessibility.css
+  │   ├───📄 CSSAccessibility.html
+  │   └───📄 CSSAccessibility.md
+  ├───📁 51-DarkMode
+  │   ├───📄 DarkMode.css
+  │   ├───📄 DarkMode.html
+  │   └───📄 DarkMode.md
+  ├───📁 52-PrintCSS
+  │   ├───📄 PrintCSS.css
+  │   ├───📄 PrintCSS.html
+  │   └───📄 PrintCSS.md
+  ├───📁 53-Combinators
+  │   ├───📄 Combinators.css
+  │   ├───📄 Combinators.html
+  │   └───📄 Combinators.md
+  ├───📁 54-AttributeSelectors
+  │   ├───📄 AttributeSelectors.css
+  │   ├───📄 AttributeSelectors.html
+  │   └───📄 AttributeSelectors.md
+  ├───📁 55-Nesting
+  │   ├───📄 Nesting.css
+  │   ├───📄 Nesting.html
+  │   └───📄 Nesting.md
+  ├───📁 56-CSSFunctions
+  │   ├───📄 CSSFunctions.css
+  │   ├───📄 CSSFunctions.html
+  │   └───📄 CSSFunctions.md
+  ├───📁 57-CSSMathFunctions
+  │   ├───📄 CSSMathFunctions.css
+  │   ├───📄 CSSMathFunctions.html
+  │   └───📄 CSSMathFunctions.md
+  ├───📁 58-CSSLogicalProperties
+  │   ├───📄 CSSLogicalProperties.css
+  │   ├───📄 CSSLogicalProperties.html
+  │   └───📄 CSSLogicalProperties.md
+  ├───📁 59-WritingModes
+  │   ├───📄 WritingModes.css
+  │   ├───📄 WritingModes.html
+  │   └───📄 WritingModes.md
+  ├───📁 60-ScrollBehavior
+  │   ├───📄 ScrollBehavior.css
+  │   ├───📄 ScrollBehavior.html
+  │   └───📄 ScrollBehavior.md
+  ├───📁 61-ScrollSnap
+  │   ├───📄 ScrollSnap.css
+  │   ├───📄 ScrollSnap.html
+  │   └───📄 ScrollSnap.md
+  ├───📁 62-OverscrollBehavior
+  │   ├───📄 OverscrollBehavior.css
+  │   ├───📄 OverscrollBehavior.html
+  │   └───📄 OverscrollBehavior.md
+  ├───📁 63-ScrollbarStyling
+  │   ├───📄 ScrollbarStyling.css
+  │   ├───📄 ScrollbarStyling.html
+  │   └───📄 ScrollbarStyling.md
+  ├───📁 64-CSSMasks
+  │   ├───📄 CSSMasks.css
+  │   ├───📄 CSSMasks.html
+  │   └───📄 CSSMasks.md
+  ├───📁 65-CSSBlendModes
+  │   ├───📄 CSSBlendModes.css
+  │   ├───📄 CSSBlendModes.html
+  │   └───📄 CSSBlendModes.md
+  ├───📁 66-BackdropFilter
+  │   ├───📄 BackdropFilter.css
+  │   ├───📄 BackdropFilter.html
+  │   └───📄 BackdropFilter.md
+  ├───📁 67-ClipPath
+  │   ├───📄 ClipPath.css
+  │   ├───📄 ClipPath.html
+  │   └───📄 ClipPath.md
+  ├───📁 68-CSSMotionPath
+  │   ├───📄 CSSMotionPath.css
+  │   ├───📄 CSSMotionPath.html
+  │   └───📄 CSSMotionPath.md
+  ├───📁 69-CSSViewTransitions
+  │   ├───📄 CSSViewTransitions.css
+  │   ├───📄 CSSViewTransitions.html
+  │   └───📄 CSSViewTransitions.md
+  ├───📁 70-CascadeLayers
+  │   ├───📄 CascadeLayers.css
+  │   ├───📄 CascadeLayers.html
+  │   └───📄 CascadeLayers.md
+  ├───📁 71-CSSScope
+  │   ├───📄 CSSScope.css
+  │   ├───📄 CSSScope.html
+  │   └───📄 CSSScope.md
+  ├───📁 72-AnchorPositioning
+  │   ├───📄 AnchorPositioning.css
+  │   ├───📄 AnchorPositioning.html
+  │   └───📄 AnchorPositioning.md
+  ├───📁 73-CaretAndSelection
+  │   ├───📄 CaretAndSelection.css
+  │   ├───📄 CaretAndSelection.html
+  │   └───📄 CaretAndSelection.md
+  ├───📁 74-AccentColor
+  │   ├───📄 AccentColor.css
+  │   ├───📄 AccentColor.html
+  │   └───📄 AccentColor.md
+  ├───📁 75-Appearance
+  │   ├───📄 Appearance.css
+  │   ├───📄 Appearance.html
+  │   └───📄 Appearance.md
+  ├───📁 76-Resize
+  │   ├───📄 Resize.css
+  │   ├───📄 Resize.html
+  │   └───📄 Resize.md
+  ├───📁 77-PointerEvents
+  │   ├───📄 PointerEvents.css
+  │   ├───📄 PointerEvents.html
+  │   └───📄 PointerEvents.md
+  ├───📁 78-UserSelect
+  │   ├───📄 UserSelect.css
+  │   ├───📄 UserSelect.html
+  │   └───📄 UserSelect.md
+  ├───📁 79-SVGFilters
+  │   ├───📄 SVGFilters.css
+  │   ├───📄 SVGFilters.html
+  │   └───📄 SVGFilters.md
+  ├───📁 80-TextWrap
+  │   ├───📄 TextWrap.css
+  │   ├───📄 TextWrap.html
+  │   └───📄 TextWrap.md
+  ├───📁 81-GridTemplateAreas
+  │   ├───📄 GridTemplateAreas.css
+  │   ├───📄 GridTemplateAreas.html
+  │   └───📄 GridTemplateAreas.md
+  ├───📁 82-PlaceItems
+  │   ├───📄 PlaceItems.css
+  │   ├───📄 PlaceItems.html
+  │   └───📄 PlaceItems.md
+  ├───📁 83-ColorMix
+  │   ├───📄 ColorMix.css
+  │   ├───📄 ColorMix.html
+  │   └───📄 ColorMix.md
+  ├───📁 84-CSSProjectCard
+  │   ├───📄 CSSProjectCard.css
+  │   ├───📄 CSSProjectCard.html
+  │   └───📄 CSSProjectCard.md
+  ├───📁 85-CSSCheatSheet
+  │   ├───📄 CSSCheatSheet.css
+  │   ├───📄 CSSCheatSheet.html
+  │   └───📄 CSSCheatSheet.md
+  ├───📄 CSS-Roadmap.md
+  └───📄 CSSCheatSheet.md
+# ├───📁 03-JavaScript
+  ├───📁 01-ES5
+  ├───...
+  └───📁 12-ES16-2025
+# ├───📁 04-JavaScript-Package
+# ├───📁 05-TypeScript
+# ├───📁 06-npm
+# ├───📁 07-Git&GitHub
+# ├───📁 08-React
+# ├───📁 09-React-Package
+  ├───📁 01-React Router
+  └───📁 02-ReactHookForm
+# ├───📁 10-TailwindCSS
+# ├───📁 11-NextJS
+# ├───📁 12-NextJS-Package
+# ├───📁 13-NodeJS
+# ├───📁 14-NodeJS-Package
+  └───📁 01-ExpressJS
+# ├───📁 15-DataBases
+  ├───📁 01-MongoDB
+  └───📁 02-MySQL
+# ├───📁 16-Vite
+  └───📄 Vite.md
 ├───📄 LibraryTree.txt
 ├───📄 README.txt
 ├───📄 fixLibraryTree.md
-└───📄 library_tree.py
+├───📄 library_tree.py
+└───📄 rmdir.txt
