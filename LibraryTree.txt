@@ -15,338 +15,7 @@
   │   ├───📄 CSSIntroduction.css
   │   ├───📄 CSSIntroduction.html
   │   └───📄 CSSIntroduction.md
-  ├───📁 02-Selectors
-  │   ├───📄 Selectors.css
-  │   ├───📄 Selectors.html
-  │   └───📄 Selectors.md
-  ├───📁 03-Specificity
-  │   ├───📄 Specificity.css
-  │   ├───📄 Specificity.html
-  │   └───📄 Specificity.md
-  ├───📁 04-Colors
-  │   ├───📄 Colors.css
-  │   ├───📄 Colors.html
-  │   └───📄 Colors.md
-  ├───📁 05-Units
-  │   ├───📄 Units.css
-  │   ├───📄 Units.html
-  │   └───📄 Units.md
-  ├───📁 06-BoxModel
-  │   ├───📄 BoxModel.css
-  │   ├───📄 BoxModel.html
-  │   └───📄 BoxModel.md
-  ├───📁 07-Display
-  │   ├───📄 Display.css
-  │   ├───📄 Display.html
-  │   └───📄 Display.md
-  ├───📁 08-Overflow
-  │   ├───📄 Overflow.css
-  │   ├───📄 Overflow.html
-  │   └───📄 Overflow.md
-  ├───📁 09-Position
-  │   ├───📄 Position.css
-  │   ├───📄 Position.html
-  │   └───📄 Position.md
-  ├───📁 10-ZIndex
-  │   ├───📄 ZIndex.css
-  │   ├───📄 ZIndex.html
-  │   └───📄 ZIndex.md
-  ├───📁 11-FloatAndClear
-  │   ├───📄 FloatAndClear.css
-  │   ├───📄 FloatAndClear.html
-  │   └───📄 FloatAndClear.md
-  ├───📁 12-Visibility
-  │   ├───📄 Visibility.css
-  │   ├───📄 Visibility.html
-  │   └───📄 Visibility.md
-  ├───📁 13-Cursors
-  │   ├───📄 Cursors.css
-  │   ├───📄 Cursors.html
-  │   └───📄 Cursors.md
-  ├───📁 14-Backgrounds
-  │   ├───📄 Backgrounds.css
-  │   ├───📄 Backgrounds.html
-  │   └───📄 Backgrounds.md
-  ├───📁 15-Borders
-  │   ├───📄 Borders.css
-  │   ├───📄 Borders.html
-  │   └───📄 Borders.md
-  ├───📁 16-Margin
-  │   ├───📄 Margin.css
-  │   ├───📄 Margin.html
-  │   └───📄 Margin.md
-  ├───📁 17-Padding
-  │   ├───📄 Padding.css
-  │   ├───📄 Padding.html
-  │   └───📄 Padding.md
-  ├───📁 18-Sizing
-  │   ├───📄 Sizing.css
-  │   ├───📄 Sizing.html
-  │   └───📄 Sizing.md
-  ├───📁 19-FlexboxBasics
-  │   ├───📄 FlexboxBasics.css
-  │   ├───📄 FlexboxBasics.html
-  │   └───📄 FlexboxBasics.md
-  ├───📁 20-FlexboxAdvanced
-  │   ├───📄 FlexboxAdvanced.css
-  │   ├───📄 FlexboxAdvanced.html
-  │   └───📄 FlexboxAdvanced.md
-  ├───📁 21-GridBasics
-  │   ├───📄 GridBasics.css
-  │   ├───📄 GridBasics.html
-  │   └───📄 GridBasics.md
-  ├───📁 22-GridAdvanced
-  │   ├───📄 GridAdvanced.css
-  │   ├───📄 GridAdvanced.html
-  │   └───📄 GridAdvanced.md
-  ├───📁 23-Alignment
-  │   ├───📄 Alignment.css
-  │   ├───📄 Alignment.html
-  │   └───📄 Alignment.md
-  ├───📁 24-ResponsiveDesign
-  │   ├───📄 ResponsiveDesign.css
-  │   ├───📄 ResponsiveDesign.html
-  │   └───📄 ResponsiveDesign.md
-  ├───📁 25-MediaQueries
-  │   ├───📄 MediaQueries.css
-  │   ├───📄 MediaQueries.html
-  │   └───📄 MediaQueries.md
-  ├───📁 26-ContainerQueries
-  │   ├───📄 ContainerQueries.css
-  │   ├───📄 ContainerQueries.html
-  │   └───📄 ContainerQueries.md
-  ├───📁 27-AspectRatio
-  │   ├───📄 AspectRatio.css
-  │   ├───📄 AspectRatio.html
-  │   └───📄 AspectRatio.md
-  ├───📁 28-ObjectFitAndObjectPosition
-  │   ├───📄 ObjectFitAndObjectPosition.css
-  │   ├───📄 ObjectFitAndObjectPosition.html
-  │   └───📄 ObjectFitAndObjectPosition.md
-  ├───📁 29-OverflowAdvanced
-  │   ├───📄 OverflowAdvanced.css
-  │   ├───📄 OverflowAdvanced.html
-  │   └───📄 OverflowAdvanced.md
-  ├───📁 30-StickyLayouts
-  │   ├───📄 StickyLayouts.css
-  │   ├───📄 StickyLayouts.html
-  │   └───📄 StickyLayouts.md
-  ├───📁 31-Typography
-  │   ├───📄 Typography.css
-  │   ├───📄 Typography.html
-  │   └───📄 Typography.md
-  ├───📁 32-WebFonts
-  │   ├───📄 WebFonts.css
-  │   ├───📄 WebFonts.html
-  │   └───📄 WebFonts.md
-  ├───📁 33-Icons
-  │   ├───📄 Icons.css
-  │   ├───📄 Icons.html
-  │   └───📄 Icons.md
-  ├───📁 34-Shadows
-  │   ├───📄 Shadows.css
-  │   ├───📄 Shadows.html
-  │   └───📄 Shadows.md
-  ├───📁 35-Filters
-  │   ├───📄 Filters.css
-  │   ├───📄 Filters.html
-  │   └───📄 Filters.md
-  ├───📁 36-Gradients
-  │   ├───📄 Gradients.css
-  │   ├───📄 Gradients.html
-  │   └───📄 Gradients.md
-  ├───📁 37-Transforms
-  │   ├───📄 Transforms.css
-  │   ├───📄 Transforms.html
-  │   └───📄 Transforms.md
-  ├───📁 38-Transitions
-  │   ├───📄 Transitions.css
-  │   ├───📄 Transitions.html
-  │   └───📄 Transitions.md
-  ├───📁 39-Animations
-  │   ├───📄 Animations.css
-  │   ├───📄 Animations.html
-  │   └───📄 Animations.md
-  ├───📁 40-Keyframes
-  │   ├───📄 Keyframes.css
-  │   ├───📄 Keyframes.html
-  │   └───📄 Keyframes.md
-  ├───📁 41-CSSVariables
-  │   ├───📄 CSSVariables.css
-  │   ├───📄 CSSVariables.html
-  │   └───📄 CSSVariables.md
-  ├───📁 42-CalcClampMinMax
-  │   ├───📄 CalcClampMinMax.css
-  │   ├───📄 CalcClampMinMax.html
-  │   └───📄 CalcClampMinMax.md
-  ├───📁 43-PseudoClasses
-  │   ├───📄 PseudoClasses.css
-  │   ├───📄 PseudoClasses.html
-  │   └───📄 PseudoClasses.md
-  ├───📁 44-PseudoElements
-  │   ├───📄 PseudoElements.css
-  │   ├───📄 PseudoElements.html
-  │   └───📄 PseudoElements.md
-  ├───📁 45-ModernCSSFunctions
-  │   ├───📄 ModernCSSFunctions.css
-  │   ├───📄 ModernCSSFunctions.html
-  │   └───📄 ModernCSSFunctions.md
-  ├───📁 46-CSSArchitecture
-  │   ├───📄 CSSArchitecture.css
-  │   ├───📄 CSSArchitecture.html
-  │   └───📄 CSSArchitecture.md
-  ├───📁 47-BEM
-  │   ├───📄 BEM.css
-  │   ├───📄 BEM.html
-  │   └───📄 BEM.md
-  ├───📁 48-CustomPropertiesAdvanced
-  │   ├───📄 CustomPropertiesAdvanced.css
-  │   ├───📄 CustomPropertiesAdvanced.html
-  │   └───📄 CustomPropertiesAdvanced.md
-  ├───📁 49-CSSPerformance
-  │   ├───📄 CSSPerformance.css
-  │   ├───📄 CSSPerformance.html
-  │   └───📄 CSSPerformance.md
-  ├───📁 50-CSSAccessibility
-  │   ├───📄 CSSAccessibility.css
-  │   ├───📄 CSSAccessibility.html
-  │   └───📄 CSSAccessibility.md
-  ├───📁 51-DarkMode
-  │   ├───📄 DarkMode.css
-  │   ├───📄 DarkMode.html
-  │   └───📄 DarkMode.md
-  ├───📁 52-PrintCSS
-  │   ├───📄 PrintCSS.css
-  │   ├───📄 PrintCSS.html
-  │   └───📄 PrintCSS.md
-  ├───📁 53-Combinators
-  │   ├───📄 Combinators.css
-  │   ├───📄 Combinators.html
-  │   └───📄 Combinators.md
-  ├───📁 54-AttributeSelectors
-  │   ├───📄 AttributeSelectors.css
-  │   ├───📄 AttributeSelectors.html
-  │   └───📄 AttributeSelectors.md
-  ├───📁 55-Nesting
-  │   ├───📄 Nesting.css
-  │   ├───📄 Nesting.html
-  │   └───📄 Nesting.md
-  ├───📁 56-CSSFunctions
-  │   ├───📄 CSSFunctions.css
-  │   ├───📄 CSSFunctions.html
-  │   └───📄 CSSFunctions.md
-  ├───📁 57-CSSMathFunctions
-  │   ├───📄 CSSMathFunctions.css
-  │   ├───📄 CSSMathFunctions.html
-  │   └───📄 CSSMathFunctions.md
-  ├───📁 58-CSSLogicalProperties
-  │   ├───📄 CSSLogicalProperties.css
-  │   ├───📄 CSSLogicalProperties.html
-  │   └───📄 CSSLogicalProperties.md
-  ├───📁 59-WritingModes
-  │   ├───📄 WritingModes.css
-  │   ├───📄 WritingModes.html
-  │   └───📄 WritingModes.md
-  ├───📁 60-ScrollBehavior
-  │   ├───📄 ScrollBehavior.css
-  │   ├───📄 ScrollBehavior.html
-  │   └───📄 ScrollBehavior.md
-  ├───📁 61-ScrollSnap
-  │   ├───📄 ScrollSnap.css
-  │   ├───📄 ScrollSnap.html
-  │   └───📄 ScrollSnap.md
-  ├───📁 62-OverscrollBehavior
-  │   ├───📄 OverscrollBehavior.css
-  │   ├───📄 OverscrollBehavior.html
-  │   └───📄 OverscrollBehavior.md
-  ├───📁 63-ScrollbarStyling
-  │   ├───📄 ScrollbarStyling.css
-  │   ├───📄 ScrollbarStyling.html
-  │   └───📄 ScrollbarStyling.md
-  ├───📁 64-CSSMasks
-  │   ├───📄 CSSMasks.css
-  │   ├───📄 CSSMasks.html
-  │   └───📄 CSSMasks.md
-  ├───📁 65-CSSBlendModes
-  │   ├───📄 CSSBlendModes.css
-  │   ├───📄 CSSBlendModes.html
-  │   └───📄 CSSBlendModes.md
-  ├───📁 66-BackdropFilter
-  │   ├───📄 BackdropFilter.css
-  │   ├───📄 BackdropFilter.html
-  │   └───📄 BackdropFilter.md
-  ├───📁 67-ClipPath
-  │   ├───📄 ClipPath.css
-  │   ├───📄 ClipPath.html
-  │   └───📄 ClipPath.md
-  ├───📁 68-CSSMotionPath
-  │   ├───📄 CSSMotionPath.css
-  │   ├───📄 CSSMotionPath.html
-  │   └───📄 CSSMotionPath.md
-  ├───📁 69-CSSViewTransitions
-  │   ├───📄 CSSViewTransitions.css
-  │   ├───📄 CSSViewTransitions.html
-  │   └───📄 CSSViewTransitions.md
-  ├───📁 70-CascadeLayers
-  │   ├───📄 CascadeLayers.css
-  │   ├───📄 CascadeLayers.html
-  │   └───📄 CascadeLayers.md
-  ├───📁 71-CSSScope
-  │   ├───📄 CSSScope.css
-  │   ├───📄 CSSScope.html
-  │   └───📄 CSSScope.md
-  ├───📁 72-AnchorPositioning
-  │   ├───📄 AnchorPositioning.css
-  │   ├───📄 AnchorPositioning.html
-  │   └───📄 AnchorPositioning.md
-  ├───📁 73-CaretAndSelection
-  │   ├───📄 CaretAndSelection.css
-  │   ├───📄 CaretAndSelection.html
-  │   └───📄 CaretAndSelection.md
-  ├───📁 74-AccentColor
-  │   ├───📄 AccentColor.css
-  │   ├───📄 AccentColor.html
-  │   └───📄 AccentColor.md
-  ├───📁 75-Appearance
-  │   ├───📄 Appearance.css
-  │   ├───📄 Appearance.html
-  │   └───📄 Appearance.md
-  ├───📁 76-Resize
-  │   ├───📄 Resize.css
-  │   ├───📄 Resize.html
-  │   └───📄 Resize.md
-  ├───📁 77-PointerEvents
-  │   ├───📄 PointerEvents.css
-  │   ├───📄 PointerEvents.html
-  │   └───📄 PointerEvents.md
-  ├───📁 78-UserSelect
-  │   ├───📄 UserSelect.css
-  │   ├───📄 UserSelect.html
-  │   └───📄 UserSelect.md
-  ├───📁 79-SVGFilters
-  │   ├───📄 SVGFilters.css
-  │   ├───📄 SVGFilters.html
-  │   └───📄 SVGFilters.md
-  ├───📁 80-TextWrap
-  │   ├───📄 TextWrap.css
-  │   ├───📄 TextWrap.html
-  │   └───📄 TextWrap.md
-  ├───📁 81-GridTemplateAreas
-  │   ├───📄 GridTemplateAreas.css
-  │   ├───📄 GridTemplateAreas.html
-  │   └───📄 GridTemplateAreas.md
-  ├───📁 82-PlaceItems
-  │   ├───📄 PlaceItems.css
-  │   ├───📄 PlaceItems.html
-  │   └───📄 PlaceItems.md
-  ├───📁 83-ColorMix
-  │   ├───📄 ColorMix.css
-  │   ├───📄 ColorMix.html
-  │   └───📄 ColorMix.md
-  ├───📁 84-CSSProjectCard
-  │   ├───📄 CSSProjectCard.css
-  │   ├───📄 CSSProjectCard.html
-  │   └───📄 CSSProjectCard.md
+  ├───...
   ├───📁 85-CSSCheatSheet
   │   ├───📄 CSSCheatSheet.css
   │   ├───📄 CSSCheatSheet.html
@@ -355,7 +24,81 @@
   └───📄 CSSCheatSheet.md
 # ├───📁 03-JavaScript
   ├───📁 01-ES5
-  ├───...
+  │   ├───📁 01-VariablesAndDataTypes
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 02-OperatorsAndConditionals
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 03-LoopsAndArrays
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 04-FunctionsAndScopes
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 05-ObjectsAndMethods
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 06-ArrayMethodsAndIterations
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 07-StringsNumbersAndDates
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 08-MathAndRandom
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 09-ClosuresAndCallbacks
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 10-ErrorHandlingAndDebugging
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 11-DOMManipulationBasics
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 12-EventsAndForms
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 13-JSONAndStorage
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 14-AJAXAndHTTP
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 15-PrototypeAndOOP
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   ├───📁 16-FinalProjectMiniApp
+  │   │   ├───📄 README.md
+  │   │   ├───📄 exercise.js
+  │   │   └───📄 lesson.js
+  │   └───📄 README.md
+  ├───📁 02-ES6-2015
+  ├───📁 03-ES7-2016
+  ├───📁 04-ES8-2017
+  ├───📁 05-ES9-2018
+  ├───📁 06-ES10-2019
+  ├───📁 07-ES11-2020
+  ├───📁 08-ES12-2021
+  ├───📁 09-ES13-2022
+  ├───📁 10-ES14-2023
+  ├───📁 11-ES15-2024
   └───📁 12-ES16-2025
 # ├───📁 04-JavaScript-Package
 # ├───📁 05-TypeScript
@@ -379,5 +122,4 @@
 ├───📄 LibraryTree.txt
 ├───📄 README.txt
 ├───📄 fixLibraryTree.md
-├───📄 library_tree.py
-└───📄 rmdir.txt
+└───📄 library_tree.py
