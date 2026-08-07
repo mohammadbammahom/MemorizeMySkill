@@ -194,24 +194,39 @@ def list_items(path):
 def get_focus():
 
     text = input(
-        "Is Focus Language Or Package? (Press Enter = Full Library): "
+        "Focus Path (example javascript/es5) (Enter = Full Library): "
     ).strip().lower()
 
     if text == "":
         return None
 
-    for folder, aliases in FOCUS_MAP.items():
+    parts = text.replace("\\","/").split("/")
 
-        if text == folder.lower():
-            return folder
+    result = []
 
-        if text in aliases:
-            return folder
+    for part in parts:
 
-    return None
+        found = None
 
+        for folder, aliases in FOCUS_MAP.items():
 
-FOCUS_FOLDER = get_focus()
+            if part == folder.lower():
+                found = folder
+                break
+
+            if part in aliases:
+                found = folder
+                break
+
+        if found:
+            result.append(found)
+
+        else:
+            result.append(part)
+
+    return result
+
+FOCUS_PATH = get_focus()
 
 # ---------------------------------------
 # Tree Helpers
@@ -399,6 +414,51 @@ def tree_summary(path, prefix):
 
         add_file(prefix, branch, file)
 
+def tree_focus(path, prefix, targets):
+
+    if not targets:
+
+        tree(path, prefix)
+        return
+
+
+    wanted = targets[0]
+
+
+    for item in list_items(path):
+
+        full = os.path.join(path,item)
+
+
+        if os.path.isdir(full):
+
+            if (
+                item.lower() == wanted.lower()
+                or item.lower().replace("-","") ==
+                   wanted.lower().replace("-","")
+            ):
+
+                add_folder(
+                    prefix,
+                    "└───",
+                    item
+                )
+
+                tree_focus(
+                    full,
+                    prefix + "    ",
+                    targets[1:]
+                )
+
+                return
+
+
+    # اگر پیدا نشد کل مسیر را نشان بده
+    tree(
+        path,
+        prefix
+    )  
+
 
 # ---------------------------------------
 # Main Tree
@@ -416,9 +476,11 @@ def tree(path, prefix=""):
 
         branch = "└───" if last else "├───"
 
+
         if os.path.isdir(full):
 
             is_root = os.path.abspath(path) == os.path.abspath(ROOT)
+
 
             add_folder(
                 prefix,
@@ -426,6 +488,7 @@ def tree(path, prefix=""):
                 item,
                 is_root=is_root,
             )
+
 
             if is_root:
                 new_prefix = "  "
@@ -436,26 +499,32 @@ def tree(path, prefix=""):
                     else "│   "
                 )
 
-            # اگر حالت Focus فعال باشد،
-            # فقط پوشه انتخاب شده کامل نمایش داده شود
-            if (
-                FOCUS_FOLDER
-                and is_root
-                and item in FOCUS_MAP
-                and item != FOCUS_FOLDER
-            ):
 
-                tree_summary(
-                    full,
-                    new_prefix,
-                )
+            # Focus چند سطحی
+            if FOCUS_PATH and is_root:
+
+                if item == FOCUS_PATH[0]:
+
+                    tree_focus(
+                        full,
+                        new_prefix,
+                        FOCUS_PATH[1:]
+                    )
+
+                else:
+
+                    tree_summary(
+                        full,
+                        new_prefix
+                    )
 
             else:
 
                 tree(
                     full,
-                    new_prefix,
+                    new_prefix
                 )
+
 
         else:
 
@@ -464,7 +533,6 @@ def tree(path, prefix=""):
                 branch,
                 item,
             )
-
 
 # ---------------------------------------
 # Run

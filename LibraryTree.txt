@@ -25,70 +25,101 @@
 # ├───📁 03-JavaScript
   ├───📁 01-ES5
   │   ├───📁 01-VariablesAndDataTypes
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 02-OperatorsAndConditionals
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 03-LoopsAndArrays
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 04-FunctionsAndScopes
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 05-ObjectsAndMethods
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 06-ArrayMethodsAndIterations
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 07-StringsNumbersAndDates
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 08-MathAndRandom
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 09-ClosuresAndCallbacks
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 10-ErrorHandlingAndDebugging
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 11-DOMManipulationBasics
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 12-EventsAndForms
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 13-JSONAndStorage
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 14-AJAXAndHTTP
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 15-PrototypeAndOOP
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   ├───📁 16-FinalProjectMiniApp
-  │   │   ├───📄 README.md
-  │   │   ├───📄 exercise.js
-  │   │   └───📄 lesson.js
-  │   └───📄 README.md
+  │   │   ├───📄 VariablesAndDataTypes.exercise.js
+  │   │   ├───📄 VariablesAndDataTypes.js
+  │   │   └───📄 VariablesAndDataTypes.md
+  │   ├───📁 02-OperatorsAndExpressions
+  │   │   ├───📄 OperatorsAndExpressions.exercise.js
+  │   │   ├───📄 OperatorsAndExpressions.js
+  │   │   └───📄 OperatorsAndExpressions.md
+  │   ├───📁 03-ConditionalStatements
+  │   │   ├───📄 ConditionalStatements.exercise.js
+  │   │   ├───📄 ConditionalStatements.js
+  │   │   └───📄 ConditionalStatements.md
+  │   ├───📁 04-Loops
+  │   │   ├───📄 Loops.exercise.js
+  │   │   ├───📄 Loops.js
+  │   │   └───📄 Loops.md
+  │   ├───📁 05-Functions
+  │   │   ├───📄 Functions.exercise.js
+  │   │   ├───📄 Functions.js
+  │   │   └───📄 Functions.md
+  │   ├───📁 06-ArraysAndArrayMethods
+  │   │   ├───📄 ArraysAndArrayMethods.exercise.js
+  │   │   ├───📄 ArraysAndArrayMethods.js
+  │   │   └───📄 ArraysAndArrayMethods.md
+  │   ├───📁 07-StringsAndStringMethods
+  │   │   ├───📄 StringsAndStringMethods.exercise.js
+  │   │   ├───📄 StringsAndStringMethods.js
+  │   │   └───📄 StringsAndStringMethods.md
+  │   ├───📁 08-ObjectsAndObjectMethods
+  │   │   ├───📄 ObjectsAndObjectMethods.exercise.js
+  │   │   ├───📄 ObjectsAndObjectMethods.js
+  │   │   └───📄 ObjectsAndObjectMethods.md
+  │   ├───📁 09-DateAndTime
+  │   │   ├───📄 DateAndTime.exercise.js
+  │   │   ├───📄 DateAndTime.js
+  │   │   └───📄 DateAndTime.md
+  │   ├───📁 10-MathAndNumberOperations
+  │   │   ├───📄 MathAndNumberOperations.exercise.js
+  │   │   ├───📄 MathAndNumberOperations.js
+  │   │   └───📄 MathAndNumberOperations.md
+  │   ├───📁 11-ScopesAndClosures
+  │   │   ├───📄 ScopesAndClosures.exercise.js
+  │   │   ├───📄 ScopesAndClosures.js
+  │   │   └───📄 ScopesAndClosures.md
+  │   ├───📁 12-ErrorHandling
+  │   │   ├───📄 ErrorHandling.exercise.js
+  │   │   ├───📄 ErrorHandling.js
+  │   │   └───📄 ErrorHandling.md
+  │   ├───📁 13-ModulesAndNamespaces
+  │   │   ├───📄 ModulesAndNamespaces.exercise.js
+  │   │   ├───📄 ModulesAndNamespaces.js
+  │   │   └───📄 ModulesAndNamespaces.md
+  │   ├───📁 14-JSONAndParsing
+  │   │   ├───📄 JSONAndParsing.exercise.js
+  │   │   ├───📄 JSONAndParsing.js
+  │   │   └───📄 JSONAndParsing.md
+  │   ├───📁 15-ArrayIterationAndMapping
+  │   │   ├───📄 ArrayIterationAndMapping.exercise.js
+  │   │   ├───📄 ArrayIterationAndMapping.js
+  │   │   └───📄 ArrayIterationAndMapping.md
+  │   ├───📁 16-ArrayFilteringAndSearching
+  │   │   ├───📄 ArrayFilteringAndSearching.exercise.js
+  │   │   ├───📄 ArrayFilteringAndSearching.js
+  │   │   └───📄 ArrayFilteringAndSearching.md
+  │   ├───📁 17-ArraySortingAndReducing
+  │   │   ├───📄 ArraySortingAndReducing.exercise.js
+  │   │   ├───📄 ArraySortingAndReducing.js
+  │   │   └───📄 ArraySortingAndReducing.md
+  │   ├───📁 18-FunctionArgumentsAndDefaultValues
+  │   │   ├───📄 FunctionArgumentsAndDefaultValues.exercise.js
+  │   │   ├───📄 FunctionArgumentsAndDefaultValues.js
+  │   │   └───📄 FunctionArgumentsAndDefaultValues.md
+  │   ├───📁 19-FunctionScopeAndHoisting
+  │   │   ├───📄 FunctionScopeAndHoisting.exercise.js
+  │   │   ├───📄 FunctionScopeAndHoisting.js
+  │   │   └───📄 FunctionScopeAndHoisting.md
+  │   ├───📁 20-ClosuresAndCallbacks
+  │   │   ├───📄 ClosuresAndCallbacks.exercise.js
+  │   │   ├───📄 ClosuresAndCallbacks.js
+  │   │   └───📄 ClosuresAndCallbacks.md
+  │   ├───📁 21-PrototypeBasics
+  │   │   ├───📄 PrototypeBasics.exercise.js
+  │   │   ├───📄 PrototypeBasics.js
+  │   │   └───📄 PrototypeBasics.md
+  │   ├───📁 22-FunctionBindingAndThis
+  │   │   ├───📄 FunctionBindingAndThis.exercise.js
+  │   │   ├───📄 FunctionBindingAndThis.js
+  │   │   └───📄 FunctionBindingAndThis.md
+  │   ├───📁 23-ConstructorFunctionsAndOOP
+  │   │   ├───📄 ConstructorFunctionsAndOOP.exercise.js
+  │   │   ├───📄 ConstructorFunctionsAndOOP.js
+  │   │   └───📄 ConstructorFunctionsAndOOP.md
+  │   └───📁 24-RegularExpressions
+  │       ├───📄 RegularExpressions.exercise.js
+  │       ├───📄 RegularExpressions.js
+  │       └───📄 RegularExpressions.md
   ├───📁 02-ES6-2015
   ├───📁 03-ES7-2016
   ├───📁 04-ES8-2017
