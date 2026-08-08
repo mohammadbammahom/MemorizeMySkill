@@ -121,7 +121,167 @@
   │       ├───📄 RegularExpressions.js
   │       └───📄 RegularExpressions.md
   ├───📁 02-ES6-2015
+  │   ├───📁 01-LetAndConst
+  │   │   ├───📄 LetAndConst.exercise.js
+  │   │   ├───📄 LetAndConst.js
+  │   │   └───📄 LetAndConst.md
+  │   ├───📁 02-ArrowFunctions
+  │   │   ├───📄 ArrowFunctions.exercise.js
+  │   │   ├───📄 ArrowFunctions.js
+  │   │   └───📄 ArrowFunctions.md
+  │   ├───📁 03-TemplateLiterals
+  │   │   ├───📄 TemplateLiterals.exercise.js
+  │   │   ├───📄 TemplateLiterals.js
+  │   │   └───📄 TemplateLiterals.md
+  │   ├───📁 04-DefaultParameters
+  │   │   ├───📄 DefaultParameters.exercise.js
+  │   │   ├───📄 DefaultParameters.js
+  │   │   └───📄 DefaultParameters.md
+  │   ├───📁 05-DestructuringAssignment
+  │   │   ├───📄 DestructuringAssignment.exercise.js
+  │   │   ├───📄 DestructuringAssignment.js
+  │   │   └───📄 DestructuringAssignment.md
+  │   ├───📁 06-RestOperator
+  │   │   ├───📄 RestOperator.exercise.js
+  │   │   ├───📄 RestOperator.js
+  │   │   └───📄 RestOperator.md
+  │   ├───📁 07-SpreadOperator
+  │   │   ├───📄 SpreadOperator.exercise.js
+  │   │   ├───📄 SpreadOperator.js
+  │   │   └───📄 SpreadOperator.md
+  │   ├───📁 08-EnhancedObjectLiterals
+  │   │   ├───📄 EnhancedObjectLiterals.exercise.js
+  │   │   ├───📄 EnhancedObjectLiterals.js
+  │   │   └───📄 EnhancedObjectLiterals.md
+  │   ├───📁 09-DestructuringObjectsAndArraysAdvanced
+  │   │   ├───📄 DestructuringObjectsAndArraysAdvanced.exercise.js
+  │   │   ├───📄 DestructuringObjectsAndArraysAdvanced.js
+  │   │   └───📄 DestructuringObjectsAndArraysAdvanced.md
+  │   ├───📁 10-ES6ModulesImportExport
+  │   │   ├───📄 ES6ModulesImportExport.exercise.js
+  │   │   ├───📄 ES6ModulesImportExport.js
+  │   │   └───📄 ES6ModulesImportExport.md
+  │   ├───📁 11-Promises
+  │   │   ├───📄 Promises.exercise.js
+  │   │   ├───📄 Promises.js
+  │   │   └───📄 Promises.md
+  │   ├───📁 12-Classes
+  │   │   ├───📄 Classes.exercise.js
+  │   │   ├───📄 Classes.js
+  │   │   └───📄 Classes.md
+  │   ├───📁 13-MapAndSet
+  │   │   ├───📄 MapAndSet.exercise.js
+  │   │   ├───📄 MapAndSet.js
+  │   │   └───📄 MapAndSet.md
+  │   ├───📁 14-IteratorsAndGenerators
+  │   │   ├───📄 IteratorsAndGenerators.exercise.js
+  │   │   ├───📄 IteratorsAndGenerators.js
+  │   │   └───📄 IteratorsAndGenerators.md
+  │   └───📁 15-WeakMapAndWeakSet
+  │       ├───📄 WeakMapAndWeakSet.exercise.js
+  │       ├───📄 WeakMapAndWeakSet.js
+  │       └───📄 WeakMapAndWeakSet.md
   ├───📁 03-ES7-2016
+  │   ├───📁 01-ExponentiationOperator
+  │   │   ├───📄 ExponentiationOperator.exercise.js
+  │   │   ├───📄 ExponentiationOperator.js
+  │   │   └───📄 ExponentiationOperator.md
+  │   ├───📁 02-ExponentiationAssignmentOperator
+  │   │   ├───📄 ExponentiationAssignmentOperator.exercise.js
+  │   │   ├───📄 ExponentiationAssignmentOperator.js
+  │   │   └───📄 ExponentiationAssignmentOperator.md
+  │   ├───📁 03-ArrayIncludes
+  │   │   ├───📄 ArrayIncludes.exercise.js
+  │   │   ├───📄 ArrayIncludes.js
+  │   │   └───📄 ArrayIncludes.md
+  │   ├───📁 04-AsyncProgrammingContext
+  │   │   ├───📄 AsyncProgrammingContext.exercise.js
+  │   │   ├───📄 AsyncProgrammingContext.js
+  │   │   └───📄 AsyncProgrammingContext.md
+  │   ├───📁 05-ES7ModernJavaScriptReview
+  │   │   ├───📄 ES7ModernJavaScriptReview.exercise.js
+  │   │   ├───📄 ES7ModernJavaScriptReview.js
+  │   │   └───📄 ES7ModernJavaScriptReview.md
+  │   ├───📁 06-ExponentiationPracticalUsage
+  │   │   ├───📄 ExponentiationPracticalUsage.exercise.js
+  │   │   ├───📄 ExponentiationPracticalUsage.js
+  │   │   └───📄 ExponentiationPracticalUsage.md
+  │   ├───📁 07-ArrayIncludesPracticalUsage
+  │   │   ├───📄 ArrayIncludesPracticalUsage.exercise.js
+  │   │   ├───📄 ArrayIncludesPracticalUsage.js
+  │   │   └───📄 ArrayIncludesPracticalUsage.md
+  │   ├───📁 08-ES7MathAndArrayPatterns
+  │   │   ├───📄 ES7MathAndArrayPatterns.exercise.js
+  │   │   ├───📄 ES7MathAndArrayPatterns.js
+  │   │   └───📄 ES7MathAndArrayPatterns.md
+  │   ├───📁 09-ES7RealWorldDataProcessing
+  │   │   ├───📄 ES7RealWorldDataProcessing.exercise.js
+  │   │   ├───📄 ES7RealWorldDataProcessing.js
+  │   │   └───📄 ES7RealWorldDataProcessing.md
+  │   ├───📁 10-ES7FinalPracticalProject
+  │   │   ├───📄 ES7FinalPracticalProject.exercise.js
+  │   │   ├───📄 ES7FinalPracticalProject.js
+  │   │   └───📄 ES7FinalPracticalProject.md
+  │   ├───📁 11-ExponentiationOperatorDeepDive
+  │   │   ├───📄 ExponentiationOperatorDeepDive.exercise.js
+  │   │   ├───📄 ExponentiationOperatorDeepDive.js
+  │   │   └───📄 ExponentiationOperatorDeepDive.md
+  │   ├───📁 12-ArrayIncludesDeepDive
+  │   │   ├───📄 ArrayIncludesDeepDive.exercise.js
+  │   │   ├───📄 ArrayIncludesDeepDive.js
+  │   │   └───📄 ArrayIncludesDeepDive.md
+  │   ├───📁 13-ES7FeatureComparison
+  │   │   ├───📄 ES7FeatureComparison.exercise.js
+  │   │   ├───📄 ES7FeatureComparison.js
+  │   │   └───📄 ES7FeatureComparison.md
+  │   ├───📁 14-ES7PracticalNodeJSDataTask
+  │   │   ├───📄 ES7PracticalNodeJSDataTask.exercise.js
+  │   │   ├───📄 ES7PracticalNodeJSDataTask.js
+  │   │   └───📄 ES7PracticalNodeJSDataTask.md
+  │   ├───📁 15-ES7FinalProject
+  │   │   ├───📄 ES7FinalProject.exercise.js
+  │   │   ├───📄 ES7FinalProject.js
+  │   │   └───📄 ES7FinalProject.md
+  │   ├───📁 16-ES7NumericCalculations
+  │   │   ├───📄 ES7NumericCalculations.exercise.js
+  │   │   ├───📄 ES7NumericCalculations.js
+  │   │   └───📄 ES7NumericCalculations.md
+  │   ├───📁 17-ES7ArrayMembershipAndPermissions
+  │   │   ├───📄 ES7ArrayMembershipAndPermissions.exercise.js
+  │   │   ├───📄 ES7ArrayMembershipAndPermissions.js
+  │   │   └───📄 ES7ArrayMembershipAndPermissions.md
+  │   ├───📁 18-ES7DataProcessingProject
+  │   │   ├───📄 ES7DataProcessingProject.exercise.js
+  │   │   ├───📄 ES7DataProcessingProject.js
+  │   │   └───📄 ES7DataProcessingProject.md
+  │   ├───📁 19-ES7NodeJSApplication
+  │   │   ├───📄 ES7NodeJSApplication.exercise.js
+  │   │   ├───📄 ES7NodeJSApplication.js
+  │   │   └───📄 ES7NodeJSApplication.md
+  │   ├───📁 20-ES7FinalChallenge
+  │   │   ├───📄 ES7FinalChallenge.exercise.js
+  │   │   ├───📄 ES7FinalChallenge.js
+  │   │   └───📄 ES7FinalChallenge.md
+  │   ├───📁 21-ES7BusinessLogicPatterns
+  │   │   ├───📄 ES7BusinessLogicPatterns.exercise.js
+  │   │   ├───📄 ES7BusinessLogicPatterns.js
+  │   │   └───📄 ES7BusinessLogicPatterns.md
+  │   ├───📁 22-ES7UserPermissionSystem
+  │   │   ├───📄 ES7UserPermissionSystem.exercise.js
+  │   │   ├───📄 ES7UserPermissionSystem.js
+  │   │   └───📄 ES7UserPermissionSystem.md
+  │   ├───📁 23-ES7StatisticsAndCalculations
+  │   │   ├───📄 ES7StatisticsAndCalculations.exercise.js
+  │   │   ├───📄 ES7StatisticsAndCalculations.js
+  │   │   └───📄 ES7StatisticsAndCalculations.md
+  │   ├───📁 24-ES7InventoryTerminalApplication
+  │   │   ├───📄 ES7InventoryTerminalApplication.exercise.js
+  │   │   ├───📄 ES7InventoryTerminalApplication.js
+  │   │   └───📄 ES7InventoryTerminalApplication.md
+  │   └───📁 25-ES7ComprehensiveFinalProject
+  │       ├───📄 ES7ComprehensiveFinalProject.exercise.js
+  │       ├───📄 ES7ComprehensiveFinalProject.js
+  │       └───📄 ES7ComprehensiveFinalProject.md
   ├───📁 04-ES8-2017
   ├───📁 05-ES9-2018
   ├───📁 06-ES10-2019
