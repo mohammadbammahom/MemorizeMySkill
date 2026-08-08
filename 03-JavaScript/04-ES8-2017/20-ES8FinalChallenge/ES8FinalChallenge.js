@@ -1,76 +1,180 @@
 // چالش نهایی ES8
-// در این مثال، چند قابلیت ES8 به‌صورت ترکیبی در یک پروژه واقعی استفاده می‌شوند
+// سیستم مدیریت حسابات و گزارش‌گیری با ترکیب تمام قابلیت‌های ES8
 
-const productCatalog = {
-  laptop: { price: 1800, stock: 12 },
-  phone: { price: 900, stock: 40 },
-  tablet: { price: 600, stock: 24 }
+const accountDatabase = {
+  Muhammad: { id: 1, role: "admin", balance: 5000, status: "active" },
+  Ali: { id: 2, role: "user", balance: 3200, status: "active" },
+  Uthman: { id: 3, role: "user", balance: 1800, status: "inactive" },
+  Aisha: { id: 4, role: "admin", balance: 4500, status: "active" },
+  Umar: { id: 5, role: "user", balance: 2500, status: "active" }
 };
 
-function getProducts() {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(productCatalog), 180);
-  });
-}
+const transactionHistory = [
+  { user: "Muhammad", amount: 500, type: "deposit", status: "completed" },
+  { user: "Ali", amount: 300, type: "withdrawal", status: "completed" },
+  { user: "Uthman", amount: 200, type: "deposit", status: "pending" },
+  { user: "Aisha", amount: 1000, type: "withdrawal", status: "completed" },
+  { user: "Umar", amount: 400, type: "deposit", status: "completed" }
+];
 
-function getOrders() {
+function loadAccountData() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve([
-        { id: 1, product: "laptop", quantity: 2 },
-        { id: 2, product: "phone", quantity: 3 },
-        { id: 3, product: "tablet", quantity: 1 }
-      ]);
-    }, 220);
+      resolve(accountDatabase);
+    }, 150);
   });
 }
 
-async function buildSalesReport() {
+function loadTransactions() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(transactionHistory);
+    }, 120);
+  });
+}
+
+function validateAccounts(accounts) {
+  const values = Object.values(accounts);
+
+  return values.every((account) => {
+    return (
+      account.id !== undefined &&
+      account.role !== undefined &&
+      account.balance !== undefined &&
+      account.status !== undefined
+    );
+  });
+}
+
+function processAccountReport(accounts, transactions) {
+  const entries = Object.entries(accounts);
+
+  const report = entries.map(([name, account]) => {
+    const userTransactions = transactions.filter((t) => t.user === name);
+    const transactionCount = userTransactions.length;
+
+    const totalAmount = userTransactions.reduce(
+      (sum, t) => sum + t.amount,
+      0
+    );
+
+    return {
+      name: name.padEnd(12, "."),
+      role: account.role.padEnd(8, "."),
+      balance: String(account.balance).padStart(8, "0"),
+      status: account.status,
+      transactions: transactionCount,
+      total: String(totalAmount).padStart(8, "0")
+    };
+  });
+
+  return report;
+}
+
+function analyzeStatistics(accounts, transactions) {
+  const values = Object.values(accounts);
+
+  const totalBalance = values.reduce(
+    (sum, account) => sum + account.balance,
+    0
+  );
+
+  const activeCount = values.filter(
+    (account) => account.status === "active"
+  ).length;
+
+  const adminCount = values.filter(
+    (account) => account.role === "admin"
+  ).length;
+
+  const transactionStats = {
+    total: transactions.length,
+
+    completed: transactions.filter(
+      (t) => t.status === "completed"
+    ).length,
+
+    pending: transactions.filter(
+      (t) => t.status === "pending"
+    ).length,
+
+    totalAmount: transactions.reduce(
+      (sum, t) => sum + t.amount,
+      0
+    )
+  };
+
+  return {
+    accountStats: {
+      totalBalance: String(totalBalance).padStart(10, "0"),
+      activeAccounts: activeCount,
+      adminAccounts: adminCount,
+      totalAccounts: values.length
+    },
+
+    transactionStats
+  };
+}
+
+async function buildFinalChallenge() {
   try {
-    const [products, orders] = await Promise.all([
-      getProducts(),
-      getOrders()
+    const [accounts, transactions] = await Promise.all([
+      loadAccountData(),
+      loadTransactions()
     ]);
 
-    const productList = Object.entries(products);
-    const productSummary = productList.map(([name, info]) => ({
-      name,
-      price: info.price,
-      stock: info.stock,
-      stockLabel: String(info.stock).padStart(3, "0")
-    }));
+    if (!validateAccounts(accounts)) {
+      throw new Error("Invalid account data structure");
+    }
 
-    const totalOrderCount = orders.length;
-    const totalQuantity = orders.reduce((sum, order) => sum + order.quantity, 0);
-    const totalRevenue = orders.reduce((sum, order) => {
-      const price = products[order.product].price;
-      return sum + price * order.quantity;
-    }, 0);
+    const report = processAccountReport(
+      accounts,
+      transactions
+    );
 
-    const result = {
-      productSummary,
-      totalOrderCount,
-      totalQuantity,
-      totalRevenue,
-      report: {
-        ordersLabel: `Orders: ${String(totalOrderCount).padStart(4, "0")}`,
-        revenueLabel: `Revenue: ${String(totalRevenue).padStart(8, "0")}`
-      },
-      metadata: Object.getOwnPropertyDescriptors(products)
+    const stats = analyzeStatistics(
+      accounts,
+      transactions
+    );
+
+    const descriptors =
+      Object.getOwnPropertyDescriptors(accounts);
+
+    const totalDescriptors =
+      Object.keys(descriptors).length;
+
+    return {
+      status: "success",
+
+      accountReport: report,
+
+      statistics: stats,
+
+      metadata: {
+        accountProperties: totalDescriptors,
+        generatedAt: new Date().toISOString(),
+        reportVersion: "1.0"
+      }
     };
 
-    return result;
   } catch (error) {
+
     return {
       status: "error",
-      message: error.message
+      message: error.message,
+      timestamp: new Date().toISOString()
     };
+
   }
 }
 
 async function main() {
-  const report = await buildSalesReport();
-  console.log("Sales Report:", report);
+  const result = await buildFinalChallenge();
+
+  console.log(
+    "ES8 Final Challenge Result:",
+    JSON.stringify(result, null, 2)
+  );
 }
 
 main();

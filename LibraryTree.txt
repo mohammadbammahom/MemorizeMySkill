@@ -339,10 +339,28 @@
   │   │   ├───📄 ES8AtomicsAndConcurrency.exercise.js
   │   │   ├───📄 ES8AtomicsAndConcurrency.js
   │   │   └───📄 ES8AtomicsAndConcurrency.md
-  │   └───📁 15-ES8AdvancedReportingSystem
-  │       ├───📄 ES8AdvancedReportingSystem.exercise.js
-  │       ├───📄 ES8AdvancedReportingSystem.js
-  │       └───📄 ES8AdvancedReportingSystem.md
+  │   ├───📁 15-ES8AdvancedReportingSystem
+  │   │   ├───📄 ES8AdvancedReportingSystem.exercise.js
+  │   │   ├───📄 ES8AdvancedReportingSystem.js
+  │   │   └───📄 ES8AdvancedReportingSystem.md
+  │   ├───📁 16-ES8FeatureIntegration
+  │   │   ├───📄 ES8FeatureIntegration.exercise.js
+  │   │   ├───📄 ES8FeatureIntegration.js
+  │   │   └───📄 ES8FeatureIntegration.md
+  │   ├───📁 17-ES8AsyncErrorHandling
+  │   │   ├───📄 ES8AsyncErrorHandling.exercise.js
+  │   │   ├───📄 ES8AsyncErrorHandling.js
+  │   │   └───📄 ES8AsyncErrorHandling.md
+  │   ├───📁 18-ES8ObjectAndStringUtilities
+  │   │   ├───📄 ES8ObjectAndStringUtilities.exercise.js
+  │   │   ├───📄 ES8ObjectAndStringUtilities.js
+  │   │   └───📄 ES8ObjectAndStringUtilities.md
+  │   ├───📁 19-ES8RealWorldDataPipeline
+  │   │   ├───📄 ES8RealWorldDataPipeline.exercise.js
+  │   │   ├───📄 ES8RealWorldDataPipeline.js
+  │   │   └───📄 ES8RealWorldDataPipeline.md
+  │   └───📁 20-ES8FinalChallenge
+  │       └───📄 ES8FinalChallenge.js
   ├───📁 05-ES9-2018
   ├───📁 06-ES10-2019
   ├───📁 07-ES11-2020
@@ -372,5 +390,5 @@
   └───📄 Vite.md
 ├───📄 LibraryTree.txt
 ├───📄 README.txt
-├───📄 fixLibraryTree.md
-└───📄 library_tree.py
+├───📄 library_tree.py
+└───📄 propmtAndGmails.md
