@@ -283,6 +283,66 @@
   │       ├───📄 ES7ComprehensiveFinalProject.js
   │       └───📄 ES7ComprehensiveFinalProject.md
   ├───📁 04-ES8-2017
+  │   ├───📁 01-AsyncFunctionsAndAwait
+  │   │   ├───📄 AsyncFunctionsAndAwait.exercise.js
+  │   │   ├───📄 AsyncFunctionsAndAwait.js
+  │   │   └───📄 AsyncFunctionsAndAwait.md
+  │   ├───📁 02-ObjectValues
+  │   │   ├───📄 ObjectValues.exercise.js
+  │   │   ├───📄 ObjectValues.js
+  │   │   └───📄 ObjectValues.md
+  │   ├───📁 03-ObjectEntries
+  │   │   ├───📄 ObjectEntries.exercise.js
+  │   │   ├───📄 ObjectEntries.js
+  │   │   └───📄 ObjectEntries.md
+  │   ├───📁 04-StringPadding
+  │   │   ├───📄 StringPadding.exercise.js
+  │   │   ├───📄 StringPadding.js
+  │   │   └───📄 StringPadding.md
+  │   ├───📁 05-ES8PracticalDataProcessing
+  │   │   ├───📄 ES8PracticalDataProcessing.exercise.js
+  │   │   ├───📄 ES8PracticalDataProcessing.js
+  │   │   └───📄 ES8PracticalDataProcessing.md
+  │   ├───📁 06-ObjectPropertyDescriptors
+  │   │   ├───📄 ObjectPropertyDescriptors.exercise.js
+  │   │   ├───📄 ObjectPropertyDescriptors.js
+  │   │   └───📄 ObjectPropertyDescriptors.md
+  │   ├───📁 07-AdvancedAsyncPatterns
+  │   │   ├───📄 AdvancedAsyncPatterns.exercise.js
+  │   │   ├───📄 AdvancedAsyncPatterns.js
+  │   │   └───📄 AdvancedAsyncPatterns.md
+  │   ├───📁 08-ES8TerminalReporting
+  │   │   ├───📄 ES8TerminalReporting.exercise.js
+  │   │   ├───📄 ES8TerminalReporting.js
+  │   │   └───📄 ES8TerminalReporting.md
+  │   ├───📁 09-ES8ConcurrentDataProcessing
+  │   │   ├───📄 ES8ConcurrentDataProcessing.exercise.js
+  │   │   ├───📄 ES8ConcurrentDataProcessing.js
+  │   │   └───📄 ES8ConcurrentDataProcessing.md
+  │   ├───📁 10-ES8ComprehensiveApplication
+  │   │   ├───📄 ES8ComprehensiveApplication.exercise.js
+  │   │   ├───📄 ES8ComprehensiveApplication.js
+  │   │   └───📄 ES8ComprehensiveApplication.md
+  │   ├───📁 11-ES8AdvancedObjectInspection
+  │   │   ├───📄 ES8AdvancedObjectInspection.exercise.js
+  │   │   ├───📄 ES8AdvancedObjectInspection.js
+  │   │   └───📄 ES8AdvancedObjectInspection.md
+  │   ├───📁 12-ES8AsyncServiceArchitecture
+  │   │   ├───📄 ES8AsyncServiceArchitecture.exercise.js
+  │   │   ├───📄 ES8AsyncServiceArchitecture.js
+  │   │   └───📄 ES8AsyncServiceArchitecture.md
+  │   ├───📁 13-ES8SharedMemoryConcepts
+  │   │   ├───📄 ES8SharedMemoryConcepts.exercise.js
+  │   │   ├───📄 ES8SharedMemoryConcepts.js
+  │   │   └───📄 ES8SharedMemoryConcepts.md
+  │   ├───📁 14-ES8AtomicsAndConcurrency
+  │   │   ├───📄 ES8AtomicsAndConcurrency.exercise.js
+  │   │   ├───📄 ES8AtomicsAndConcurrency.js
+  │   │   └───📄 ES8AtomicsAndConcurrency.md
+  │   └───📁 15-ES8AdvancedReportingSystem
+  │       ├───📄 ES8AdvancedReportingSystem.exercise.js
+  │       ├───📄 ES8AdvancedReportingSystem.js
+  │       └───📄 ES8AdvancedReportingSystem.md
   ├───📁 05-ES9-2018
   ├───📁 06-ES10-2019
   ├───📁 07-ES11-2020
